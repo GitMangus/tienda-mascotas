@@ -105,8 +105,6 @@ ul li:hover ul {
 .banner {
     width: 100%;
     height: 800px;
-    animation-name: fadeInLeft;
-    animation-duration: 2s;
     padding-top: 190px;
 }
 
@@ -168,13 +166,7 @@ ul li:hover ul {
     min-height: 400px;
     padding: 0.5rem;
     box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
-    transition: all 1s;
 }
-
-.flex__contenedor:hover {
-    transform: scale(1.1, 1.1);
-}
-
 
 .flex__imagen {
     width: 100%;
@@ -517,11 +509,6 @@ ul li:hover ul {
     margin: 1rem;
     border: 0.2rem solid rgb(207, 205, 205);
     box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
-    transition: all 1s;
-}
-
-.contenedor:hover {
-    transform: scale(1.1, 1.1);
 }
 
 .grids {
