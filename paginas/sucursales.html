@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <title>Sucursales</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a class="nav__logo" href="../index.html"><img class="nav__logo" src="../imagenes/petland-logo.png"
+                    alt="PetLand Logotipo"></a>
+            <input class="nav__input" type="text" placeholder="Buscar productos">
+
+            <a href="#menu" class="nav__menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <ul class="nav__menu" id="menu">
+                <li><a class="nav__lista" href="perros.html">Perros</a>
+                    <ul>
+                        <li><a href="perros.html">Alimento balanceado</a></li>
+                        <li><a href="perros.html">Juguetes</a></li>
+                        <li><a href="perros.html">Camitas</a></li>
+                        <li><a href="perros.html">Peluquería</a></li>
+                        <li><a href="perros.html">Veterinaria</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav__lista" href="gatos.html">Gatos</a>
+                    <ul>
+                        <li><a href="gatos.html">Alimento balanceado</a></li>
+                        <li><a href="gatos.html">Juguetes</a></li>
+                        <li><a href="gatos.html">Camitas</a></li>
+                        <li><a href="gatos.html">Peluquería</a></li>
+                        <li><a href="gatos.html">Veterinaria</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav__lista" href="ayuda.html">Ayuda</a>
+                    <ul>
+                        <li><a href="ayuda.html">Sobre PetLand</a></li>
+                        <li><a href="ayuda.html">Preguntas frecuentes</a></li>
+                        <li><a href="ayuda.html">Contacto</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav__lista" href="sucursales.html">Sucursales</a></li>
+                <li>
+                    <a class="nav__lista nav__lista--close" href="#"><i class="fa-solid fa-xmark"></i>
+                    </a>
+                </li>
+            </ul>
+            <h3 class="nav__cuenta">
+                <a href="cuenta.html">Ingresar/Crear cuenta</a>
+            </h3>
+
+            <div class="nav__carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <a href="cuenta.html" class="nav__user">
+                <i class="fa-solid fa-user-large"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="grid">
+                <h2 class="grid__hijo grid__hijo--1">Dónde encontrarnos</h2>
+                <p class="grid__hijo grid__hijo--2">Actualmente PetLand posee 10 sucursales en Buenos Aires, y
+                    seguiremos creciendo con nuevas aperturas en el área y en el resto del país.</p>
+                <iframe class="grid__hijo grid__hijo--3"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38252.073663191964!2d-58.47627038959873!3d-34.58428368778748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1650481222679!5m2!1ses-419!2sar"
+                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="logoRed"></iframe>
+                <h3 class="grid__hijo--4">Seleccioná tu localidad</h3>
+                <div class="grid__hijo--5">
+                    <select name="localidad" id="localidad">
+                        <option value="Alto Avellaneda">Alto Avellaneda</option>
+                        <option value="Alto Palermo">Alto Palermo</option>
+                        <option value="Belgrano">Belgrano</option>
+                        <option value="Caballito">Caballito</option>
+                        <option value="Escobar">Escobar</option>
+                        <option value="Martínez">Martínez</option>
+                        <option value="Maschwitz">Maschwitz</option>
+                        <option value="Olivos">Olivos</option>
+                        <option value="Pilar">Pilar</option>
+                        <option value="Recoleta">Recoleta</option>
+                    </select>
+                </div>
+                <div class="grid__hijo--6">
+                    <h4>Av Rivadavia 3601 ·
+                        <h4>Ciudad Autónoma de Buenos Aires, Ciudad Autónoma de Buenos Aires.</h4>
+                </div>
+
+                <div class="grid__hijo--7">
+                    <p>Lunes a viernes: 8:00 a 20:30hs.
+                    <p>Sábados: 9:00 a 20:30hs.</p>
+                    <p>Domingos: 10:00 a 20:00hs. - Feriados: 10:00 a 19:00hs </p>
+                </div>
+                <p class="grid__hijo--8"><strong>Teléfono 0810-220-1502</strong></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer__padre">
+                <div class="footer__grupo">
+                    <img class="footer__logo" src="../imagenes/petland-logo.png" alt="PetLand Logotipo">
+                    <div class="footer__iconos">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </div>
+
+                <div class="footer__grupo footer__grupo--1">
+                    <h3>Nosotros</h3>
+                    <div>
+                        <a class="footer__enlace" href="ayuda.html">Sobre PetLand</a>
+                        <a class="footer__enlace" href="ayuda.html">Preguntas frecuentes</a>
+                        <a class="footer__enlace" href="ayuda.html">Legales</a>
+                    </div>
+                </div>
+
+                <div class="footer__grupo footer__grupo--1">
+                    <h3>Productos</h3>
+                    <div>
+                        <a class="footer__enlace" href="gatos.html">Alimento balanceado</a>
+                        <a class="footer__enlace" href="gatos.html">Juguetes</a>
+                        <a class="footer__enlace" href="gatos.html">Camitas</a>
+                    </div>
+                </div>
+
+                <div class="footer__grupo footer__grupo--1">
+                    <h3>Servicios</h3>
+                    <div>
+                        <a class="footer__enlace" href="gatos.html">Peluquería</a>
+                        <a class="footer__enlace" href="gatos.html">Veterinaria</a>
+                    </div>
+                </div>
+                <div class="nav__menu--1">
+                    <details>
+                        <summary>Nosotros</summary>
+                        <a class="enlace" href="ayuda.html">Sobre PetLand</a>
+                        <a class="enlace" href="ayuda.html">Preguntas frecuentes</a>
+                        <a class="enlace" href="ayuda.html">Legales</a>
+                    </details>
+
+                    <details>
+                        <summary>Productos</summary>
+                        <a class="enlace" href="#">Alimento balanceado</a>
+                        <a class="enlace" href="#">Juguetes</a>
+                        <a class="enlace" href="#">Camitas</a>
+                    </details>
+
+                    <details>
+                        <summary>Servicios</summary>
+                        <a class="enlace" href="#">Peluquería</a>
+                        <a class="enlace" href="#">Veterinaria</a>
+                    </details>
+                </div>
+                <div class="footer__grupo footer__grupo--2">
+                    <h3>Contacto</h3>
+                    <p class="footer__enlace">Atención telefónica: 0810-220-1502</p>
+                    <p class="footer__enlace">Atención Whatsapp: +54-911-6802-6324</p>
+                    <p class="footer__enlace">Lunes a Sábados de 9 a 21hs</p>
+                    <p class="footer__enlace">Domingos de 10 a 20hs</p>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

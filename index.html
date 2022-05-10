@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>PetLand PetShop</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a class="nav__logo" href="index.html">
+                <img class="nav__logo" src="./imagenes/petland-logo.png" alt="PetLand Logotipo">
+            </a>
+            <input class="nav__input" type="text" placeholder="Buscar productos">
+
+            <a href="#menu" class="nav__menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <ul class="nav__menu" id="menu">
+                <li><a class="nav__lista" href="paginas/perros.html">Perros</a>
+                    <ul>
+                        <li><a href="./paginas/perros.html">Alimento balanceado</a></li>
+                        <li><a href="./paginas/perros.html">Juguetes</a></li>
+                        <li><a href="./paginas/perros.html">Camitas</a></li>
+                        <li><a href="./paginas/perros.html">Peluquería</a></li>
+                        <li><a href="./paginas/perros.html">Veterinaria</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav__lista" href="paginas/gatos.html">Gatos</a>
+                    <ul>
+                        <li><a href="./paginas/gatos.html">Alimento balanceado</a></li>
+                        <li><a href="./paginas/gatos.html">Juguetes</a></li>
+                        <li><a href="./paginas/gatos.html">Camitas</a></li>
+                        <li><a href="./paginas/gatos.html">Peluquería</a></li>
+                        <li><a href="./paginas/gatos.html">Veterinaria</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav__lista" href="paginas/ayuda.html">Ayuda</a>
+                    <ul>
+                        <li><a href="./paginas/ayuda.html">Sobre PetLand</a></li>
+                        <li><a href="./paginas/ayuda.html">Preguntas frecuentes</a></li>
+                        <li><a href="./paginas/ayuda.html">Contacto</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav__lista" href="paginas/sucursales.html">Sucursales</a></li>
+                <li>
+                    <a class="nav__lista nav__lista--close" href="#"><i class="fa-solid fa-xmark"></i>
+                    </a>
+                </li>
+            </ul>
+            <h3 class="nav__cuenta">
+                <a href="paginas/cuenta.html">Ingresar/Crear cuenta</a>
+            </h3>
+
+            <div class="nav__carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <a href="paginas/cuenta.html" class="nav__user">
+                <i class="fa-solid fa-user-large"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <img class="banner animate__animated animate__fadeInLeft" src="./imagenes/banner-uno.png" alt="banner">
+        </section>
+        <section>
+            <div class="promociones">
+                <div class="promociones__hijo">
+                    <i class="fa-solid fa-credit-card promociones__icono"></i>
+                    <span class="promociones__texto">Ver todas las tarjetas / promociones</span>
+                </div>
+
+                <div class="promociones__hijo">
+                    <i class="fa-regular fa-money-bill-1 promociones__icono"></i>
+                    <span class="promociones__texto">Pagá con efectivo</span>
+                </div>
+
+                <div class="promociones__hijo promociones__opiniones">
+                    <i class="fa-regular fa-comments promociones__icono"></i>
+                    <span class="promociones__texto">Leer opiniones</span>
+                </div>
+
+                <div class="promociones__hijo">
+                    <img class="delivery" src="./imagenes/delivery.jpg" alt="delivery">
+                    <span class="promociones__texto--1">Formas de entrega</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="alineado">
+                <i class="fa-solid fa-fire alineado__hijo"></i>
+                <h2 class="alineado__hijo">Más vendidos</h2>
+                <h2 class="alineado__hijo"><a href="./paginas/gatos.html">Gatos</a></h2>
+                <h2 class="alineado__hijo"><a href="./paginas/perros.html">Perros</a></h2>
+                <h2 class="alineado__hijo">Hasta 70% OFF</h2>
+            </div>
+            <div class="flex">
+                <div class="flex__contenedor">
+                    <img class="flex__imagen" src="./imagenes/dog-pro.jpg" alt="dog pro">
+                    <p class="flex__texto">Dog Pro</p>
+                    <span class="flex__texto">$8.000</span>
+                    <button class="flex__boton">Añadir al carrito</button>
+                </div>
+
+                <div class="flex__contenedor contenedor-mobile">
+                    <img class="flex__imagen" src="./imagenes/pedigree.jpg" alt="pedigree">
+                    <p class="flex__texto">Pedigree</p>
+                    <span class="flex__texto">$6.600</span>
+                    <button class="flex__boton">Añadir al carrito</button>
+                </div>
+
+                <div class="flex__contenedor contenedor-mobile">
+                    <img class="flex__imagen" src="./imagenes/royal-canin.png" alt="royal canin">
+                    <p class="flex__texto">Royal Canin</p>
+                    <span class="flex__texto">$4.800</span>
+                    <button class="flex__boton">Añadir al carrito</button>
+                </div>
+                <div class="flex__contenedor contenedor-mobile">
+                    <img class="flex__imagen" src="./imagenes/excellent.webp" alt="excellent">
+                    <p class="flex__texto">Excellent</p>
+                    <span class="flex__texto">$10.500</span>
+                    <button class="flex__boton">Añadir al carrito</button>
+                </div>
+                <div class="flex__contenedor">
+                    <img class="flex__imagen--1" src="./imagenes/royal-canin-fit.jpg" alt="royal canin fit">
+                    <p class="flex__texto">Royal Canin Fit</p>
+                    <span class="flex__texto">$9.000</span>
+                    <button class="flex__boton">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="alineado">
+                <h2 class="compra__titulo">¿Cómo comprar?</h2>
+            </div>
+
+            <div class="compra">
+                <div class="compra__hijo">
+                    <i class="fa-solid fa-bowl-food compra__icono"></i>
+                    <span>1.Seleccioná tu producto</span>
+                </div>
+                <div class="compra__hijo">
+                    <i class="fa-regular fa-clock compra__icono"></i>
+                    <span>2.Elegí el día y horario</span>
+                </div>
+                <div class="compra__hijo">
+                    <img class="compra__casa" src="./imagenes/casa.png" alt="casa">
+                    <span>3.Recibilo en tu casa</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="form">
+                <div class="form__titulo">
+                    <h2>¡Quiero recibir ofertas!</h2>
+                </div>
+
+                <div class="form__checkbox">
+                    <label for="perros">Perros</label>
+                    <input type="checkbox" name="mascota" id="perros">
+
+                    <label for="gatos">Gatos</label>
+                    <input type="checkbox" name="mascota" id="gatos">
+                </div>
+
+                <form class="form__email">
+                    <div>
+                        <input class="form__input" type="email" id="correo" name="correo" placeholder="Email">
+                        <button class="form__button">Recibir ofertas</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="opiniones">
+                <h2 class="opiniones__titulo">Opiniones de nuestros clientes</h2>
+                <div class="opiniones__alineado">
+                    <div class="opiniones__cuadro">
+                        <img class="opiniones__imagen" src="./imagenes/maria.jpg" alt="maria">
+                        <h3 class="opiniones__nombre">María Inés González</h3>
+                        <div class="opiniones__estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="opiniones__msj">Son maravillosos! Calidad, rapidez y excelente at. Al cliente!!!</p>
+                        <span class="opiniones__fecha">2 días atrás</span>
+                    </div>
+                    <div class="opiniones__cuadro">
+                        <img class="opiniones__imagen" src="./imagenes/nadia.jpg" alt="nadia">
+                        <h3 class="opiniones__nombre">Nadia Higa</h3>
+                        <div class="opiniones__estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class="opiniones__msj">Unos genios, segunda vez que pido, te atienden super bien y llega en
+                            el
+                            día! </p>
+                        <span class="opiniones__fecha">1 semana atrás</span>
+                    </div>
+                    <div class="opiniones__cuadro">
+                        <img class="opiniones__imagen" src="./imagenes/matias.jpg" alt="matias">
+                        <h3 class="opiniones__nombre">Matías Noya</h3>
+                        <div class="opiniones__estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="opiniones__msj">Es mi primer pedido.. Y fue excelente...El rango de horario de entrega
+                            es muy bueno... Comprar
+                            sin perder tiempo y encima te lo traen al domicilio q pidas.. Es genial. </p>
+                        <span class="opiniones__fecha">1 semana atrás</span>
+                    </div>
+                    <div class="opiniones__cuadro">
+                        <img class="opiniones__imagen" src="./imagenes/gladys.jpg" alt="gladys">
+                        <h3 class="opiniones__nombre">Gladys Villanueva</h3>
+                        <div class="opiniones__estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="opiniones__msj">Fue mi primer pedido, conclusión: Rápido y confiable. Lo llevaron a la
+                            puerta de mi casa en el horario indicado. Excelente todo. </p>
+                        <span class="opiniones__fecha">2 semanas atrás</span>
+                    </div>
+                    <div class="opiniones__cuadro">
+                        <img class="opiniones__imagen" src="./imagenes/vale.jpg" alt="vale">
+                        <h3 class="opiniones__nombre">Vale Valls</h3>
+                        <div class="opiniones__estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class="opiniones__msj">Muy buena atención, excelente el servicio de entrega, super
+                            recomendable</p>
+                        <span class="opiniones__fecha">3 semanas atrás</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer__padre">
+                <div class="footer__grupo">
+                    <img class="footer__logo" src="./imagenes/petland-logo.png" alt="PetLand Logotipo">
+                    <div class="footer__iconos">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </div>
+
+                <div class="footer__grupo footer__grupo--1">
+                    <h3>Nosotros</h3>
+                    <div>
+                        <a class="footer__enlace" href="./paginas/ayuda.html">Sobre PetLand</a>
+                        <a class="footer__enlace" href="./paginas/ayuda.html">Preguntas frecuentes</a>
+                        <a class="footer__enlace" href="./paginas/ayuda.html">Legales</a>
+                    </div>
+                </div>
+
+                <div class="footer__grupo footer__grupo--1">
+                    <h3>Productos</h3>
+                    <div>
+                        <a class="footer__enlace" href="./paginas/gatos.html">Alimento balanceado</a>
+                        <a class="footer__enlace" href="./paginas/gatos.html">Juguetes</a>
+                        <a class="footer__enlace" href="./paginas/gatos.html">Camitas</a>
+                    </div>
+                </div>
+
+                <div class="footer__grupo footer__grupo--1">
+                    <h3>Servicios</h3>
+                    <div>
+                        <a class="footer__enlace" href="./paginas/gatos.html">Peluquería</a>
+                        <a class="footer__enlace" href="./paginas/gatos.html">Veterinaria</a>
+                    </div>
+                </div>
+
+                <div class="nav__menu--1">
+                    <details>
+                        <summary>Nosotros</summary>
+                        <a class="enlace" href="./paginas/ayuda.html">Sobre PetLand</a>
+                        <a class="enlace" href="./paginas/ayuda.html">Preguntas frecuentes</a>
+                        <a class="enlace" href="./paginas/ayuda.html">Legales</a>
+                    </details>
+
+                    <details>
+                        <summary>Productos</summary>
+                        <a class="enlace" href="#">Alimento balanceado</a>
+                        <a class="enlace" href="#">Juguetes</a>
+                        <a class="enlace" href="#">Camitas</a>
+                    </details>
+
+                    <details>
+                        <summary>Servicios</summary>
+                        <a class="enlace" href="#">Peluquería</a>
+                        <a class="enlace" href="#">Veterinaria</a>
+                    </details>
+                </div>
+
+                <div class="footer__grupo footer__grupo--2">
+                    <h3>Contacto</h3>
+                    <p class="footer__enlace">Atención telefónica: 0810-220-1502</p>
+                    <p class="footer__enlace">Atención Whatsapp: +54-911-6802-6324</p>
+                    <p class="footer__enlace">Lunes a Sábados de 9 a 21hs</p>
+                    <p class="footer__enlace">Domingos de 10 a 20hs</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

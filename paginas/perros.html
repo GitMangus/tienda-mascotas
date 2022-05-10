@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <title>Perros</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a class="nav__logo" href="../index.html"><img class="nav__logo" src="../imagenes/petland-logo.png"
+                    alt="PetLand Logotipo"></a>
+            <input class="nav__input" type="text" placeholder="Buscar productos">
+
+            <a href="#menu" class="nav__menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <ul class="nav__menu" id="menu">
+                <li><a class="nav__lista" href="perros.html">Perros</a>
+                    <ul>
+                        <li><a href="perros.html">Alimento balanceado</a></li>
+                        <li><a href="perros.html">Juguetes</a></li>
+                        <li><a href="perros.html">Camitas</a></li>
+                        <li><a href="perros.html">Peluquería</a></li>
+                        <li><a href="perros.html">Veterinaria</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav__lista" href="gatos.html">Gatos</a>
+                    <ul>
+                        <li><a href="gatos.html">Alimento balanceado</a></li>
+                        <li><a href="gatos.html">Juguetes</a></li>
+                        <li><a href="gatos.html">Camitas</a></li>
+                        <li><a href="gatos.html">Peluquería</a></li>
+                        <li><a href="gatos.html">Veterinaria</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav__lista" href="ayuda.html">Ayuda</a>
+                    <ul>
+                        <li><a href="ayuda.html">Sobre PetLand</a></li>
+                        <li><a href="ayuda.html">Preguntas frecuentes</a></li>
+                        <li><a href="ayuda.html">Contacto</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav__lista" href="sucursales.html">Sucursales</a></li>
+                <li>
+                    <a class="nav__lista nav__lista--close" href="#"><i class="fa-solid fa-xmark"></i>
+                    </a>
+                </li>
+            </ul>
+            <h3 class="nav__cuenta">
+                <a href="cuenta.html">Ingresar/Crear cuenta</a>
+            </h3>
+
+            <div class="nav__carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <a href="cuenta.html" class="nav__user">
+                <i class="fa-solid fa-user-large"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="padding--top">
+                <h2 class="titulos">¡OFERTAS DEL MES!</h2>
+            </div>
+            <div class="flex">
+                <div class="flex__contenedor contenedor-mobile">
+                    <img src="../imagenes/dogchow-perro.jpg" alt="dogchow alimento" class="flex__imagen">
+                    <p class="flex__texto">Dog Chow</p>
+                    <p class="flex__texto">$7.500</p>
+                    <button class="flex__boton">Comprar</button>
+                </div>
+                <div class="flex__contenedor contenedor-mobile">
+                    <img src="../imagenes/pedigree.jpg" alt="pedigree alimento" class="flex__imagen">
+                    <p class="flex__texto">Pedigree</p>
+                    <p class="flex__texto">$6.000</p>
+                    <button class="flex__boton">Comprar</button>
+                </div>
+                <div class="flex__contenedor">
+                    <img src="../imagenes/raza-perro.png" alt="raza alimento" class="flex__imagen">
+                    <p class="flex__texto">Raza</p>
+                    <p class="flex__texto">$4.500</p>
+                    <button class="flex__boton">Comprar</button>
+                </div>
+                <div class="flex__contenedor contenedor-mobile">
+                    <img src="../imagenes/rosco-perro.jpg" alt="rosco alimento" class="flex__imagen">
+                    <p class="flex__texto">Rosco</p>
+                    <p class="flex__texto">$4.000</p>
+                    <button class="flex__boton">Comprar</button>
+                </div>
+                <div class="flex__contenedor">
+                    <img src="../imagenes/royal-perro.jpg" alt="royal alimento" class="flex__imagen">
+                    <p class="flex__texto">Royal Canin</p>
+                    <p class="flex__texto">$5.500</p>
+                    <button class="flex__boton">Comprar</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="titulos">SELECCIONÁ TU MARCA</h2>
+            <div class="grids">
+                <div class="grids__hijo">
+                    <img class="grids__imagen" src="../imagenes/dogchow-logo.png" alt="dogchow logo" width="200"
+                        height="150">
+                </div>
+                <div class="grids__hijo">
+                    <img class="grids__imagen" src="../imagenes/pedigree-logo.png" alt="pedigree logo" width="200"
+                        height="150">
+                </div>
+                <div class="grids__hijo">
+                    <img class="grids__imagen" src="../imagenes/royalcanin-logo.png" alt="royal canin logo" width="200"
+                        height="150">
+                </div>
+                <div class="grids__hijo">
+                    <img class="grids__imagen" src="../imagenes/proplan-logo.jpg" alt="pro plan logo" width="200"
+                        height="150">
+                </div>
+                <div class="grids__hijo">
+                    <img class="grids__imagen" src="../imagenes/monami.jpg" alt="monami canin logo" width="200"
+                        height="150">
+                </div>
+                <div class="grids__hijo">
+                    <img class="grids__imagen" src="../imagenes/old-prince.png" alt="old prince logo" width="200"
+                        height="150">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="titulos">JUGUETES</h2>
+            <div class="flex">
+                <div class="contenedor contenedor-mobile">
+                    <img src="../imagenes/juguete-perro.jpg" alt="peluches" width="300" height="200">
+                    <p class="flex__texto">PELUCHE</p>
+                    <p class="flex__texto">Juguetes para perros de peluche</p>
+                    <p class="flex__texto">$860</p>
+                    <button class="flex__boton">Comprar</button>
+                </div>
+                <div class="contenedor contenedor-mobile">
+                    <img src="../imagenes/juguete-perro-2.webp" alt="hueso de goma" width="300" height="200">
+                    <p class="flex__texto">HUESITOS</p>
+                    <p class="flex__texto">Hueso de goma - Varios colores</p>
+                    <p class="flex__texto">$500</p>
+                    <button class="flex__boton">Comprar</button>
+                </div>
+                <div class="contenedor">
+                    <img class="camita-juguete" src="../imagenes/juguete-perro-3.jpg" alt="nudos" width="300"
+                        height="200">
+                    <p class="flex__texto">PELOTA DE SOGA</p>
+                    <p class="flex__texto">Pelotas de juguete para perro de soga</p>
+                    <p class="flex__texto">$1.300</p>
+                    <button class="flex__boton">Comprar</button>
+                </div>
+                <div class="contenedor contenedor-mobile">
+                    <img src="../imagenes/juguete-perro-4.webp" alt="pelota" width="300" height="200">
+                    <p class="flex__texto">KONG TREAT BALL</p>
+                    <p class="flex__texto">Pelota dispensador alimento</p>
+                    <p class="flex__texto">$500</p>
+                    <button class="flex__boton">Comprar</button>
+                </div>
+                <div class="contenedor contenedor-mobile">
+                    <img src="../imagenes/juguete-perro-5.jpg" alt="sogas" width="300" height="200">
+                    <p class="flex__texto">MIX JUGUETES</p>
+                    <p class="flex__texto">Juguetes variados - Sogas y peluches</p>
+                    <p class="flex__texto">$2.500</p>
+                    <button class="flex__boton">Comprar</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="titulos">CAMITAS</h2>
+            <div class="flex">
+                <div class="contenedor contenedor-mobile">
+                    <img src="../imagenes/cama-perro.jpg" alt="cama beige" width="300" height="200">
+                    <p class="flex__texto">CAMA MATTRES</p>
+                    <p class="flex__texto">
+                        *Mullido y confortable.
+                        *Piso antideslizante.
+                        *Lavable.
+                        *Medidas: Largo: 48 cm. / Ancho: 38 cm. / Alto: 23 cm..</p>
+                    <p class="flex__texto">$9.500</p>
+                    <button class="flex__boton">Comprar</button>
+                </div>
+                <div class="contenedor contenedor-mobile">
+                    <img src="../imagenes/cama-perro-2.jpg" alt="cama rosa" width="300" height="200">
+                    <p class="flex__texto">CAMA CUDDLE</p>
+                    <p class="flex__texto">Para perros chicos.
+                        *Mullido y confortable.
+                        *Piso antideslizante.
+                        *Lavable.
+                        *Medidas: Largo: 60 cm. / Ancho: 51 cm. / Alto: 23 cm.</p>
+                    <p class="flex__texto">$8.600</p>
+                    <button class="flex__boton">Comprar</button>
+                </div>
+                <div class="contenedor contenedor-mobile">
+                    <img src="../imagenes/cama-perro-3.webp" alt="cama gris" width="300" height="200">
+                    <p class="flex__texto">CAMA CUCHA</p>
+                    <p class="flex__texto">Para perros chicos.
+                        *Mullido y confortable.
+                        *Piso antideslizante.
+                        *Lavable.
+                        *Medidas: Largo: 40 cm. / Ancho: 36 cm. / Alto: 13 cm.</p>
+                    <p class="flex__texto">$7.500</p>
+                    <button class="flex__boton">Comprar</button>
+                </div>
+                <div class="contenedor contenedor-mobile">
+                    <img src="../imagenes/cama-perro-4.jpg" alt="cama azul" width="300" height="200">
+                    <p class="flex__texto">CAMA CUCHA JUNIOR</p>
+                    <p class="flex__texto">Sofisticada cucha.
+                        *Confortable.
+                        *Lavable.
+                        *Medidas: Largo: 45 cm. / Ancho: 36 cm. / Alto: 15 cm.
+                    </p>
+                    <p class="flex__texto">$10.000</p>
+                    <button class="flex__boton">Comprar</button>
+                </div>
+                <div class="contenedor">
+                    <img class="camita-juguete" src="../imagenes/cama-perro-5.jpg" alt="colchoneta" width="300"
+                        height="200">
+                    <p class="flex__texto">COLCHONETA MARDES</p>
+                    <p class="flex__texto">*Mullido y confortable.
+                        *Piso antideslizante.
+                        *Lavable medidas: Largo: 73 / Ancho: 51 cm. / Alto: 7,6 cm.</p>
+                    <p class="flex__texto">$5.500</p>
+                    <button class="flex__boton">Comprar</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="flex2">
+                <div class="servicios">
+                    <h2 class="servicios__titulo">PELUQUERÍA CANINA</h2>
+                    <p class="servicios__separacion">El cuidado del pelo de tu mascota es esencial para mantenerla linda
+                        y saludable. En PetLand
+                        ofrecemos
+                        baños, cortes y peinados que combinan estos dos aspectos fundamentales para el bienestar de tu
+                        mascota.</p>
+                    <img class="servicios__imagen" src="../imagenes/peluqueria-canina.jpg" alt="peluquería" width="300"
+                        height="200">
+                    <div class="servicios__separacion">
+                        <details>
+                            <summary>CORTE Y BAÑO COMPLETO</summary>
+                            <p>Incluye baño con shampoo natural, secado, corte a máquina y/o tijera, peinado, limpieza
+                                de
+                                oídos
+                                y corte de uñas.</p>
+                        </details>
+                        <details>
+                            <summary>BAÑO HIPOALERGÉNICO</summary>
+                            <p>Pensado especialmente para mascotas con piel delicada. Incluye baño con shampoo
+                                hipoalergénico,
+                                secado y peinado.</p>
+                        </details>
+                        <details>
+                            <summary>LIMPIEZA DE LAGRIMALES</summary>
+                            <p>Limpia la oxidación que se produce en los pelos alrededor de los lagrimales de
+                                determinadas
+                                razas.</p>
+                        </details>
+                        <details>
+                            <summary>LIMPIEZA DE OÍDOS</summary>
+                            <p>Previene infecciones en los oídos y mantiene la extraordinaria capacidad auditiva que
+                                distingue a
+                                los perros.</p>
+                        </details>
+                        <details>
+                            <summary>CORTE DE UÑAS</summary>
+                            <p>Previene heridas e infecciones por rotura de uñas y mantiene suaves las patitas de tu
+                                mascota.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+                <div class="servicios">
+                    <h2 class="servicios__titulo">CLÍNICA VETERINARIA</h2>
+                    <p class="servicios__separacion">Pensados para la comodidad del paciente y del cliente, nuestros
+                        consultorios cumplen con los más
+                        altos estándares de calidad para la atención de tu mascota en todas nuestras clínicas
+                        veterinarias.
+                    </p>
+                    <img class="servicios__imagen" src="../imagenes/veterinaria-canina.jpg" alt="veterinaria"
+                        width="300" height="200">
+                    <div class="servicios__separacion">
+                        <details>
+                            <summary>INTERNACIONES</summary>
+                            <p>Salas de Internación Diurna con espacios individualizados para monitoreo y cuidado de
+                                pacientes.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>RAYOS X</summary>
+                            <p>Servicio de radiografías realizados con equipos de última generación.</p>
+                        </details>
+                        <details>
+                            <summary>LABORATORIO</summary>
+                            <p>Estudios de laboratorio en 24hs en todas nuestras sucursales.</p>
+                        </details>
+                        <details>
+                            <summary>ECOGRAFÍAS</summary>
+                            <p>Servicio de ecografías con equipo móvil para diagnósticos expeditivos.</p>
+                        </details>
+                        <details>
+                            <summary>CASTRACIONES</summary>
+                            <p>Castraciones de machos y hembras caninos.</p>
+                        </details>
+                        <details>
+                            <summary>CIRUGÍAS</summary>
+                            <p>Cirugías de baja y alta complejidad, realizadas en nuestros quirófanos.</p>
+                        </details>
+                        <details>
+                            <summary>CARDIOLOGÍA</summary>
+                            <p>Servicio de electrocardiograma y diagnóstico cardiológico.</p>
+                        </details>
+                        <details>
+                            <summary>PLANES NUTRICIONALES</summary>
+                            <p>Diseño de planes alimenticios para pacientes con obesidad, diabetes, alergias, problemas
+                                renales
+                                y otros.</p>
+                        </details>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer__padre">
+                <div class="footer__grupo">
+                    <img class="footer__logo" src="../imagenes/petland-logo.png" alt="PetLand Logotipo">
+                    <div class="footer__iconos">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </div>
+
+                <div class="footer__grupo footer__grupo--1">
+                    <h3>Nosotros</h3>
+                    <div>
+                        <a class="footer__enlace" href="ayuda.html">Sobre PetLand</a>
+                        <a class="footer__enlace" href="ayuda.html">Preguntas frecuentes</a>
+                        <a class="footer__enlace" href="ayuda.html">Legales</a>
+                    </div>
+                </div>
+
+                <div class="footer__grupo footer__grupo--1">
+                    <h3>Productos</h3>
+                    <div>
+                        <a class="footer__enlace" href="gatos.html">Alimento balanceado</a>
+                        <a class="footer__enlace" href="gatos.html">Juguetes</a>
+                        <a class="footer__enlace" href="gatos.html">Camitas</a>
+                    </div>
+                </div>
+
+                <div class="footer__grupo footer__grupo--1">
+                    <h3>Servicios</h3>
+                    <div>
+                        <a class="footer__enlace" href="gatos.html">Peluquería</a>
+                        <a class="footer__enlace" href="gatos.html">Veterinaria</a>
+                    </div>
+                </div>
+                <div class="nav__menu--1">
+                    <details>
+                        <summary>Nosotros</summary>
+                        <a class="enlace" href="ayuda.html">Sobre PetLand</a>
+                        <a class="enlace" href="ayuda.html">Preguntas frecuentes</a>
+                        <a class="enlace" href="ayuda.html">Legales</a>
+                    </details>
+
+                    <details>
+                        <summary>Productos</summary>
+                        <a class="enlace" href="#">Alimento balanceado</a>
+                        <a class="enlace" href="#">Juguetes</a>
+                        <a class="enlace" href="#">Camitas</a>
+                    </details>
+
+                    <details>
+                        <summary>Servicios</summary>
+                        <a class="enlace" href="#">Peluquería</a>
+                        <a class="enlace" href="#">Veterinaria</a>
+                    </details>
+                </div>
+                <div class="footer__grupo footer__grupo--2">
+                    <h3>Contacto</h3>
+                    <p class="footer__enlace">Atención telefónica: 0810-220-1502</p>
+                    <p class="footer__enlace">Atención Whatsapp: +54-911-6802-6324</p>
+                    <p class="footer__enlace">Lunes a Sábados de 9 a 21hs</p>
+                    <p class="footer__enlace">Domingos de 10 a 20hs</p>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
