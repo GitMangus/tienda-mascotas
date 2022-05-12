@@ -6,6 +6,7 @@
 
 body {
     font-family: 'PT Sans', sans-serif;
+    color: black;
 }
 
 a {
@@ -60,6 +61,8 @@ a {
 .nav__cuenta {
     grid-area: cuenta;
     justify-self: end;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .nav__carrito {
@@ -104,45 +107,26 @@ ul li:hover ul {
 
 .banner {
     width: 100%;
-    height: 800px;
+    height: 700px;
     padding-top: 190px;
-    animation-name: fadeInLeft;
-    animation-duration: 2s;
 }
 
 .promociones {
     width: 100%;
     height: 15vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.promociones__hijo {
-    padding: 1rem;
-    display: block;
-    text-align: center;
+    padding: 2rem;
 }
 
 .promociones__icono {
     font-size: 40px;
+    display: block;
+    text-align: center;
 }
 
 .promociones__texto {
     display: block;
     margin-top: 1rem;
     text-align: center;
-}
-
-.promociones__texto--1 {
-    display: block;
-}
-
-.delivery {
-    width: 100px;
-    height: 60px;
-    display: block;
-    margin: auto;
 }
 
 .alineado {
@@ -152,6 +136,8 @@ ul li:hover ul {
 .alineado__hijo {
     display: inline;
     margin-left: 50px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .flex {
@@ -193,37 +179,51 @@ ul li:hover ul {
     margin: 1rem 0 1rem 0;
 }
 
+.flex__precio {
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    margin: 1rem 0 1rem 0;
+    font-size: 20px;
+}
+
 .flex__boton {
     display: block;
     margin: auto;
+    border-radius: 8px;
+    border-radius: 5px;
+    padding: 0.3rem;
+    background-color: #a0a8a7;
+    color: white; 
+}
+
+.flex__boton:hover{
+    background-color: rgb(26, 20, 20);
 }
 
 .compra {
-    padding: 1rem;
+    padding: 2rem;
     width: 100%;
-    height: 20vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.compra__titulo {
-    margin-left: 50px;
-}
-
-.compra__hijo {
-    padding: 1rem;
-    width: 300px;
-    text-align: center;
+    height: 15vh;
 }
 
 .compra__icono {
     font-size: 50px;
+    display: block;
+    text-align: center;
 }
 
 .compra__casa {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+
+.compra__texto {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 .form {
@@ -233,10 +233,6 @@ ul li:hover ul {
     padding: 1rem;
     display: flex;
     align-items: center;
-}
-
-.form__titulo {
-    margin-left: 40px;
 }
 
 .form__checkbox {
@@ -249,23 +245,30 @@ ul li:hover ul {
 
 .form__input {
     width: 400px;
-    margin-right: 40px;
+    margin-right: 40px;    
+}
+
+.form__button{
+    border-radius: 5px;
+    padding: 0.3rem;
+    background-color: #a0a8a7;
+    color: white; 
+}
+
+.form__button:hover{
+    background-color: rgb(26, 20, 20);
 }
 
 .opiniones {
     width: 100%;
-    height: 65vh;
+    height: 60vh;
 }
 
 .opiniones__titulo {
     text-align: center;
     padding-top: 2rem;
-}
-
-.opiniones__alineado {
-    display: flex;
-    justify-content: space-around;
-    margin: 2rem;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .opiniones__cuadro {
@@ -275,7 +278,12 @@ ul li:hover ul {
     border-radius: 0.5rem;
     padding: 1rem 1rem 1rem 1rem;
     text-align: center;
-    display: block;
+    margin: 2rem 2.5rem;
+}
+
+.opiniones__nombre {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .opiniones__imagen {
@@ -418,40 +426,56 @@ ul li:hover ul {
 .ayuda {
     background-color: rgb(240, 240, 240);
     padding-top: 200px;
-}
-
-.ayuda__container {
-    height: 500px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: rgb(240, 240, 240);
+    height: 80vh;
 }
 
 .ayuda__titulo {
     text-align: center;
     padding-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .ayuda__texto {
     text-align: left;
-    width: 700px;
+    width: 600px;
     height: 300px;
     line-height: 1.6;
+    margin-top: 4rem;
+}
+
+.ayuda__imagen {
+    margin-top: 2rem;
+    width: 450px;
+    height: 350px;
 }
 
 .preguntas-frecuentes {
     text-align: center;
-    background-color: #fcc757;
-    padding: 2rem 0;
     color: rgb(49, 49, 49);
+    min-height: 65vh;
+}
+
+.preguntas-frecuentes__titulo {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 2rem;
+}
+
+.accordion-item {
+    background-color: #fcc757;
 }
 
 .legales {
     background-color: rgb(240, 240, 240);
     padding: 2rem 5rem;
+    font-size: 14px;
+}
+
+.legales__titulo{
+    font-size: 16px;
+    font-weight: 700;
 }
 
 /*Main Cuenta*/
@@ -460,10 +484,31 @@ ul li:hover ul {
     border: 0.5rem solid rgb(240, 240, 240);
     padding: 0.5rem;
     width: 400px;
-    height: 400px;
+    height: 470px;
     text-align: center;
     line-height: 2.5;
     margin: auto;
+}
+
+.btn-primary {
+    background-color: rgba(58, 87, 147, 255);
+    border-color: rgba(58, 87, 147, 255);
+    font-size: 14px;
+}
+
+.facebook {
+    margin-right: 0.5rem;
+    font-size: 18px;
+}
+
+.cuenta__titulo {
+    font-size: 20px;
+    margin: 1rem 0;
+}
+
+.cuenta__enlace {
+    line-height: 1.5;
+    margin-top: 1rem;
 }
 
 /*Main Gatos y perros*/

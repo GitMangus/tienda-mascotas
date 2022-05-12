@@ -5,15 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
         integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./css/style.css" />
+
     <title>PetLand PetShop</title>
 </head>
 
@@ -75,31 +83,49 @@
 
     <main>
         <section>
-            <img class="banner animate__animated animate__fadeInLeft" src="./imagenes/banner-uno.png" alt="banner">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./imagenes/banner-uno.png" class="d-block w-100 banner" alt="banner-uno">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenes/banner-dos.png" class="d-block w-100 banner" alt="banner-dos">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
-        <section>
-            <div class="promociones">
-                <div class="promociones__hijo">
-                    <i class="fa-solid fa-credit-card promociones__icono"></i>
-                    <span class="promociones__texto">Ver todas las tarjetas / promociones</span>
-                </div>
 
-                <div class="promociones__hijo">
-                    <i class="fa-regular fa-money-bill-1 promociones__icono"></i>
-                    <span class="promociones__texto">Pagá con efectivo</span>
-                </div>
-
-                <div class="promociones__hijo promociones__opiniones">
-                    <i class="fa-regular fa-comments promociones__icono"></i>
-                    <span class="promociones__texto">Leer opiniones</span>
-                </div>
-
-                <div class="promociones__hijo">
-                    <img class="delivery" src="./imagenes/delivery.jpg" alt="delivery">
-                    <span class="promociones__texto--1">Formas de entrega</span>
+        <section class="promociones">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4 col-md-3">
+                        <i class="fa-solid fa-credit-card promociones__icono"></i>
+                        <span class="promociones__texto">Ver todas las tarjetas / promociones</span>
+                    </div>
+                    <div class="col-xs-4 col-md-3">
+                        <i class="fa-regular fa-money-bill-1 promociones__icono"></i>
+                        <span class="promociones__texto">Pagá con efectivo</span>
+                    </div>
+                    <div class="col-xs-4 col-md-3">
+                        <i class="fa-regular fa-comments promociones__icono"></i>
+                        <span class="promociones__texto">Leer opiniones</span>
+                    </div>
+                    <div class="col-xs-4 col-md-3">
+                        <i class="fa-solid fa-truck promociones__icono"></i>
+                        <span class="promociones__texto">Formas de entrega</span>
+                    </div>
                 </div>
             </div>
         </section>
+
         <section>
             <div class="alineado">
                 <i class="fa-solid fa-fire alineado__hijo"></i>
@@ -112,61 +138,67 @@
                 <div class="flex__contenedor">
                     <img class="flex__imagen" src="./imagenes/dog-pro.jpg" alt="dog pro">
                     <p class="flex__texto">Dog Pro</p>
-                    <span class="flex__texto">$8.000</span>
+                    <span class="flex__precio">$8.000</span>
                     <button class="flex__boton">Añadir al carrito</button>
                 </div>
 
                 <div class="flex__contenedor contenedor-mobile">
                     <img class="flex__imagen" src="./imagenes/pedigree.jpg" alt="pedigree">
                     <p class="flex__texto">Pedigree</p>
-                    <span class="flex__texto">$6.600</span>
+                    <span class="flex__precio">$6.600</span>
                     <button class="flex__boton">Añadir al carrito</button>
                 </div>
 
                 <div class="flex__contenedor contenedor-mobile">
                     <img class="flex__imagen" src="./imagenes/royal-canin.png" alt="royal canin">
                     <p class="flex__texto">Royal Canin</p>
-                    <span class="flex__texto">$4.800</span>
+                    <span class="flex__precio">$4.800</span>
                     <button class="flex__boton">Añadir al carrito</button>
                 </div>
                 <div class="flex__contenedor contenedor-mobile">
                     <img class="flex__imagen" src="./imagenes/excellent.webp" alt="excellent">
                     <p class="flex__texto">Excellent</p>
-                    <span class="flex__texto">$10.500</span>
+                    <span class="flex__precio">$10.500</span>
                     <button class="flex__boton">Añadir al carrito</button>
                 </div>
                 <div class="flex__contenedor">
                     <img class="flex__imagen--1" src="./imagenes/royal-canin-fit.jpg" alt="royal canin fit">
                     <p class="flex__texto">Royal Canin Fit</p>
-                    <span class="flex__texto">$9.000</span>
+                    <span class="flex__precio">$9.000</span>
                     <button class="flex__boton">Añadir al carrito</button>
                 </div>
             </div>
         </section>
+
         <section>
             <div class="alineado">
-                <h2 class="compra__titulo">¿Cómo comprar?</h2>
+                <h2 class="alineado__hijo">¿Cómo comprar?</h2>
+            </div>
+            <div class="compra">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-4 col-md-4">
+                            <i class="fa-solid fa-bowl-food compra__icono"></i>
+                            <span class="compra__texto">1. Seleccioná tu producto</span>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                            <i class="fa-regular fa-clock compra__icono"></i>
+                            <span class="compra__texto">2. Elegí el día y horario</span>
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                            <img class="compra__casa" src="./imagenes/casa.png" alt="casa">
+                            <span class="compra__texto">3. Recibilo en tu casa</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="compra">
-                <div class="compra__hijo">
-                    <i class="fa-solid fa-bowl-food compra__icono"></i>
-                    <span>1.Seleccioná tu producto</span>
-                </div>
-                <div class="compra__hijo">
-                    <i class="fa-regular fa-clock compra__icono"></i>
-                    <span>2.Elegí el día y horario</span>
-                </div>
-                <div class="compra__hijo">
-                    <img class="compra__casa" src="./imagenes/casa.png" alt="casa">
-                    <span>3.Recibilo en tu casa</span>
-                </div>
-            </div>
         </section>
+
         <section>
             <div class="form">
-                <div class="form__titulo">
-                    <h2>¡Quiero recibir ofertas!</h2>
+                <div>
+                    <h2 class="alineado__hijo">¡Quiero recibir ofertas!</h2>
                 </div>
 
                 <div class="form__checkbox">
@@ -185,11 +217,14 @@
                 </form>
             </div>
         </section>
-        <section>
-            <div class="opiniones">
-                <h2 class="opiniones__titulo">Opiniones de nuestros clientes</h2>
-                <div class="opiniones__alineado">
-                    <div class="opiniones__cuadro">
+
+        <section class="opiniones">
+            <div class="container">
+                <div>
+                    <h2 class="opiniones__titulo">Opiniones de nuestros clientes</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 opiniones__cuadro">
                         <img class="opiniones__imagen" src="./imagenes/maria.jpg" alt="maria">
                         <h3 class="opiniones__nombre">María Inés González</h3>
                         <div class="opiniones__estrellas">
@@ -202,7 +237,7 @@
                         <p class="opiniones__msj">Son maravillosos! Calidad, rapidez y excelente at. Al cliente!!!</p>
                         <span class="opiniones__fecha">2 días atrás</span>
                     </div>
-                    <div class="opiniones__cuadro">
+                    <div class="col-md-3 opiniones__cuadro">
                         <img class="opiniones__imagen" src="./imagenes/nadia.jpg" alt="nadia">
                         <h3 class="opiniones__nombre">Nadia Higa</h3>
                         <div class="opiniones__estrellas">
@@ -213,11 +248,10 @@
                             <i class="fa-regular fa-star"></i>
                         </div>
                         <p class="opiniones__msj">Unos genios, segunda vez que pido, te atienden super bien y llega en
-                            el
-                            día! </p>
+                            el día! </p>
                         <span class="opiniones__fecha">1 semana atrás</span>
                     </div>
-                    <div class="opiniones__cuadro">
+                    <div class="col-md-3 opiniones__cuadro">
                         <img class="opiniones__imagen" src="./imagenes/matias.jpg" alt="matias">
                         <h3 class="opiniones__nombre">Matías Noya</h3>
                         <div class="opiniones__estrellas">
@@ -228,25 +262,11 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <p class="opiniones__msj">Es mi primer pedido.. Y fue excelente...El rango de horario de entrega
-                            es muy bueno... Comprar
-                            sin perder tiempo y encima te lo traen al domicilio q pidas.. Es genial. </p>
+                            es muy bueno... Comprar sin perder tiempo y encima te lo traen al domicilio q pidas.. Es
+                            genial. </p>
                         <span class="opiniones__fecha">1 semana atrás</span>
                     </div>
-                    <div class="opiniones__cuadro">
-                        <img class="opiniones__imagen" src="./imagenes/gladys.jpg" alt="gladys">
-                        <h3 class="opiniones__nombre">Gladys Villanueva</h3>
-                        <div class="opiniones__estrellas">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="opiniones__msj">Fue mi primer pedido, conclusión: Rápido y confiable. Lo llevaron a la
-                            puerta de mi casa en el horario indicado. Excelente todo. </p>
-                        <span class="opiniones__fecha">2 semanas atrás</span>
-                    </div>
-                    <div class="opiniones__cuadro">
+                    <div class="col-md-3 opiniones__cuadro">
                         <img class="opiniones__imagen" src="./imagenes/vale.jpg" alt="vale">
                         <h3 class="opiniones__nombre">Vale Valls</h3>
                         <div class="opiniones__estrellas">
@@ -262,7 +282,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
 
@@ -337,7 +356,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
