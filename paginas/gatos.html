@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
         integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/style.css" />
 
     <title>Gatos</title>
@@ -80,168 +83,194 @@
             <div class="padding--top">
                 <h2 class="titulos">¡OFERTAS DEL MES!</h2>
             </div>
-            <div class="flex">
-                <div class="flex__contenedor contenedor-mobile">
-                    <img src="../imagenes/catpro.jpg" alt="catpro alimento" class="flex__imagen">
-                    <p class="flex__texto">Cat Pro</p>
-                    <p class="flex__texto">$6.300</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="flex__contenedor contenedor-mobile">
-                    <img src="../imagenes/excellent.webp" alt="excellent alimento" class="flex__imagen">
-                    <p class="flex__texto">Excellent</p>
-                    <p class="flex__texto">$10.500</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="flex__contenedor contenedor-mobile">
-                    <img src="../imagenes/purina-gato.jpg" alt="purina alimento" class="flex__imagen">
-                    <p class="flex__texto">Purina Cat Chow</p>
-                    <p class="flex__texto">$8.700</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="flex__contenedor">
-                    <img src="../imagenes/royal-gato.png" alt="royal alimento" class="flex__imagen">
-                    <p class="flex__texto">Royal Canin</p>
-                    <p class="flex__texto">$6.200</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="flex__contenedor">
-                    <img src="../imagenes/whiskas-gato.png" alt="whiskas alimento" class="flex__imagen">
-                    <p class="flex__texto">Whiskas</p>
-                    <p class="flex__texto">$6.900</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2 class="titulos">SELECCIONÁ TU MARCA</h2>
-            <div class="grids">
-                <div class="grids__hijo">
-                    <img class="grids__imagen" src="../imagenes/catchow-logo.webp" alt="catchow logo" width="200"
-                        height="150">
-                </div>
-                <div class="grids__hijo">
-                    <img class="grids__imagen" src="../imagenes/excellent-logo.png" alt="excellent logo" width="200"
-                        height="150">
-                </div>
-                <div class="grids__hijo">
-                    <img class="grids__imagen" src="../imagenes/vitalcan-logo.png" alt="vitalcan logo" width="200"
-                        height="150">
-                </div>
-                <div class="grids__hijo">
-                    <img class="grids__imagen" src="../imagenes/Whiskas-logo.png" alt="whiskas logo" width="200"
-                        height="150">
-                </div>
-                <div class="grids__hijo">
-                    <img class="grids__imagen" src="../imagenes/eukanuba.png" alt="eukanuba logo" width="200"
-                        height="150">
-                </div>
-                <div class="grids__hijo">
-                    <img class="grids__imagen" src="../imagenes/gati.png" alt="gati logo" width="200" height="150">
+
+            <div class="container-fluid flex">
+                <div class="row">
+                    <div class="col-6 col-md-3 flex__contenedor">
+                        <img src="../imagenes/catpro.jpg" alt="catpro alimento" class="flex__imagen--1">
+                        <p class="flex__texto">Cat Pro</p>
+                        <p class="flex__precio">$6.300</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 flex__contenedor">
+                        <img src="../imagenes/excellent.webp" alt="excellent alimento" class="flex__imagen">
+                        <p class="flex__texto">Excellent</p>
+                        <p class="flex__precio">$10.500</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 flex__contenedor">
+                        <img src="../imagenes/purina-gato.jpg" alt="purina alimento" class="flex__imagen">
+                        <p class="flex__texto">Purina Cat Chow</p>
+                        <p class="flex__precio">$8.700</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 flex__contenedor">
+                        <img src="../imagenes/royal-gato.png" alt="royal alimento" class="flex__imagen--1">
+                        <p class="flex__texto">Royal Canin</p>
+                        <p class="flex__precio">$6.200</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 flex__contenedor">
+                        <img src="../imagenes/whiskas-gato.png" alt="whiskas alimento" class="flex__imagen">
+                        <p class="flex__texto">Whiskas</p>
+                        <p class="flex__precio">$6.900</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
                 </div>
             </div>
         </section>
+
         <section>
-            <h2 class="titulos">JUGUETES</h2>
-            <div class="flex">
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/juguete-gato.jpg" alt="pelotitas" width="300" height="200">
-                    <p class="flex__texto">PELOTITAS Y RATITAS</p>
-                    <p class="flex__texto">Pelotitas con cascabel y ratitas de peluche</p>
-                    <p class="flex__texto">$700</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/juguete-gato-2.jpg" alt="cannitas" width="300" height="200">
-                    <p class="flex__texto">CAÑITAS</p>
-                    <p class="flex__texto">Cañitas de pescar con peluches</p>
-                    <p class="flex__texto">$870</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/juguete-gato-3.jpg" alt="rascador" width="300" height="200">
-                    <p class="flex__texto">MINI RASCADOR</p>
-                    <p class="flex__texto">Rascador pequeño de 25cm de alto</p>
-                    <p class="flex__texto">$6.800</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="contenedor">
-                    <img class="camita-juguete" src="../imagenes/juguete-gato-4.jpg" alt="plumas" width="300"
-                        height="200">
-                    <p class="flex__texto">JUGUETE INTERACTIVO</p>
-                    <p class="flex__texto">Juguete con plumas</p>
-                    <p class="flex__texto">$2.600</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/juguete-gato-5.webp" alt="ratitas" width="300" height="200">
-                    <p class="flex__texto">TÚNEL Y RATITAS</p>
-                    <p class="flex__texto">Túnel para gatos y ratitas de peluche</p>
-                    <p class="flex__texto">$3.500</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
+            <div>
+                <h2 class="titulos">SELECCIONÁ TU MARCA</h2>
             </div>
 
-        </section>
-        <section>
-            <h2 class="titulos">CAMITAS</h2>
-            <div class="flex">
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/cama-gato-1.jpg" alt="carpa" width="300" height="250">
-                    <p class="flex__texto">CAMA INDIA</p>
-                    <p class="flex__texto">
-                        Carpa de lienzo prelavado de algodon y
-                        colchon de gabardina estampada/lona.
-                        Medida: Small: 50x50x70cm
-                    </p>
-                    <p class="flex__texto">$8.350</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/cama-gato-2.jpeg" alt="rascador alfombra" width="300" height="250">
-                    <p class="flex__texto">RASCADOR AQCUA</p>
-                    <p class="flex__texto">Material: Cuerda de Sisal + tablero de partículas + felpa corta
-                        Color: Verde agua.
-                        Tamaño: 50x30x88cm.
-                        Peso: 6 kgs.
-                    </p>
-                    <p class="flex__texto">$15.600</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/cama-gato-3.jpg" alt="rascador madera" width="300" height="250">
-                    <p class="flex__texto">RASCADOR FIONA</p>
-                    <p class="flex__texto">
-                        Tablas de densidad.
-                        Cojín suave y áreas para rascar hechas de felpudo mediano.
-                        Base: 55,5x56cm.
-                        Altura: 81,5cm.
-                        60,5x56x83 cm </p>
-                    <p class="flex__texto">$20.900</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/cama-gato-4.jpg" alt="cama conejo" width="300" height="250">
-                    <p class="flex__texto">CAMA CEREZA</p>
-                    <p class="flex__texto">Camita lavable de felpa. Parte inferior antideslizante y resistente al agua.
-                        Medida: 45x45x50cm </p>
-                    <p class="flex__texto">$5.700</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="contenedor">
-                    <img class="camita-juguete gato" src="../imagenes/cama-gato-5.webp" alt="luna madera" width="300"
-                        height="250">
-                    <p class="flex__texto">CAMA LUNA</p>
-                    <p class="flex__texto">Perca flotante para gato con forma. Material: madera de pino.
-                        Simple y fácil de montar.
-                        Medida: 75x30x60cm.
-                    </p>
-                    <p class="flex__texto">$8.400</p>
-                    <button class="flex__boton">Comprar</button>
+            <div class="container flex">
+                <div class="row">
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/catchow-logo.webp" alt="catchow logo" width="200"
+                                height="150"></a>
+                    </div>
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/excellent-logo.png" alt="excellent logo" width="200"
+                                height="150"></a>
+                    </div>
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/vitalcan-logo.png" alt="vitalcan logo" width="200"
+                                height="150"></a>
+                    </div>
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/Whiskas-logo.png" alt="whiskas logo" width="200"
+                                height="150"></a>
+                    </div>
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/eukanuba.png" alt="eukanuba logo" width="200"
+                                height="150"></a>
+                    </div>
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/gati.png" alt="gati logo" width="200" height="150"></a>
+                    </div>
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/agility.png" alt="gati logo" width="200" height="150"></a>
+                    </div>
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/sanicat.jpg" alt="gati logo" width="200" height="150"></a>
+                    </div>
                 </div>
             </div>
-
         </section>
+
+        <section>
+            <div>
+                <h2 class="titulos">JUGUETES</h2>
+            </div>
+
+            <div class="container-fluid juguetes">
+                <div class="row">
+                    <div class="col-6 col-md-3 contenedor">
+                        <img class="juguetes__imagen" src="../imagenes/juguete-gato.jpg" alt="pelotitas">
+                        <p class="flex__texto">PELOTITAS Y RATITAS</p>
+                        <p class="flex__texto">Pelotitas con cascabel y ratitas de peluche</p>
+                        <p class="flex__precio">$700</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor">
+                        <img class="juguetes__imagen" src="../imagenes/juguete-gato-2.jpg" alt="cannitas">
+                        <p class="flex__texto">CAÑITAS</p>
+                        <p class="flex__texto">Cañitas de pescar con peluches</p>
+                        <p class="flex__precio">$870</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor">
+                        <img class="juguetes__imagen" src="../imagenes/juguete-gato-3.jpg" alt="rascador">
+                        <p class="flex__texto">MINI RASCADOR</p>
+                        <p class="flex__texto">Rascador pequeño de 25cm de alto</p>
+                        <p class="flex__precio">$6.800</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor">
+                        <img class="juguetes__imagen" src="../imagenes/juguete-gato-4.jpg" alt="plumas">
+                        <p class="flex__texto">JUGUETE INTERACTIVO</p>
+                        <p class="flex__texto">Juguete con plumas</p>
+                        <p class="flex__precio">$2.600</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor">
+                        <img class="juguetes__imagen" src="../imagenes/juguete-gato-5.webp" alt="ratitas">
+                        <p class="flex__texto">TÚNEL Y RATITAS</p>
+                        <p class="flex__texto">Túnel para gatos y ratitas de peluche</p>
+                        <p class="flex__precio">$3.500</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2 class="titulos">CAMITAS</h2>
+            </div>
+
+            <div class="container-fluid juguetes">
+                <div class="row">
+                    <div class="col-6 col-md-3 contenedor--1">
+                        <img class="camas__imagen" src="../imagenes/cama-gato-1.jpg" alt="carpa">
+                        <p class="flex__texto">CAMA INDIA</p>
+                        <p class="flex__texto">
+                            Carpa de lienzo prelavado de algodon y
+                            colchon de gabardina estampada/lona.
+                            Medida: Small: 50x50x70cm
+                        </p>
+                        <p class="flex__precio">$8.350</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor--1">
+                        <img class="camas__imagen" src="../imagenes/cama-gato-2.jpeg" alt="rascador alfombra">
+                        <p class="flex__texto">RASCADOR AQCUA</p>
+                        <p class="flex__texto">Material: Cuerda de Sisal + tablero de partículas + felpa corta
+                            Color: Verde agua.
+                            Tamaño: 50x30x88cm.
+                            Peso: 6 kgs.
+                        </p>
+                        <p class="flex__precio">$15.600</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor--1">
+                        <img class="camas__imagen" src="../imagenes/cama-gato-3.jpg" alt="rascador madera">
+                        <p class="flex__texto">RASCADOR FIONA</p>
+                        <p class="flex__texto">
+                            Tablas de densidad.
+                            Cojín suave y áreas para rascar hechas de felpudo mediano.
+                            Base: 55,5x56cm.
+                            Altura: 81,5cm.
+                            60,5x56x83 cm </p>
+                        <p class="flex__precio">$20.900</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor--1">
+                        <img class="camas__imagen" src="../imagenes/cama-gato-4.jpg" alt="cama conejo">
+                        <p class="flex__texto">CAMA CEREZA</p>
+                        <p class="flex__texto">Camita lavable de felpa. Parte inferior antideslizante y resistente al
+                            agua.
+                            Medida: 45x45x50cm </p>
+                        <p class="flex__precio">$5.700</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor--1">
+                        <img class="camas__imagen" src="../imagenes/cama-gato-5.webp" alt="luna madera">
+                        <p class="flex__texto">CAMA LUNA</p>
+                        <p class="flex__texto">Perca flotante para gato con forma. Material: madera de pino.
+                            Simple y fácil de montar.
+                            Medida: 75x30x60cm.
+                        </p>
+                        <p class="flex__precio">$8.400</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <section>
             <div class="flex2">
                 <div class="servicios">
@@ -336,6 +365,7 @@
             </div>
         </section>
     </main>
+
     <footer>
         <div class="footer">
             <div class="footer__padre">
@@ -406,6 +436,10 @@
 
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

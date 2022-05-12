@@ -15,8 +15,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
         integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/style.css" />
-    
+
     <title>Perros</title>
 </head>
 
@@ -80,168 +83,197 @@
             <div class="padding--top">
                 <h2 class="titulos">¡OFERTAS DEL MES!</h2>
             </div>
-            <div class="flex">
-                <div class="flex__contenedor contenedor-mobile">
-                    <img src="../imagenes/dogchow-perro.jpg" alt="dogchow alimento" class="flex__imagen">
-                    <p class="flex__texto">Dog Chow</p>
-                    <p class="flex__texto">$7.500</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="flex__contenedor contenedor-mobile">
-                    <img src="../imagenes/pedigree.jpg" alt="pedigree alimento" class="flex__imagen">
-                    <p class="flex__texto">Pedigree</p>
-                    <p class="flex__texto">$6.000</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="flex__contenedor">
-                    <img src="../imagenes/raza-perro.png" alt="raza alimento" class="flex__imagen">
-                    <p class="flex__texto">Raza</p>
-                    <p class="flex__texto">$4.500</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="flex__contenedor contenedor-mobile">
-                    <img src="../imagenes/rosco-perro.jpg" alt="rosco alimento" class="flex__imagen">
-                    <p class="flex__texto">Rosco</p>
-                    <p class="flex__texto">$4.000</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="flex__contenedor">
-                    <img src="../imagenes/royal-perro.jpg" alt="royal alimento" class="flex__imagen">
-                    <p class="flex__texto">Royal Canin</p>
-                    <p class="flex__texto">$5.500</p>
-                    <button class="flex__boton">Comprar</button>
+
+            <div class="container-fluid flex">
+                <div class="row">
+                    <div class="col-6 col-md-3 flex__contenedor">
+                        <img src="../imagenes/dogchow-perro.jpg" alt="dogchow alimento" class="flex__imagen">
+                        <p class="flex__texto">Dog Chow</p>
+                        <p class="flex__precio">$7.500</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 flex__contenedor">
+                        <img src="../imagenes/pedigree.jpg" alt="pedigree alimento" class="flex__imagen">
+                        <p class="flex__texto">Pedigree</p>
+                        <p class="flex__precio">$6.000</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 flex__contenedor">
+                        <img src="../imagenes/raza-perro.png" alt="raza alimento" class="flex__imagen">
+                        <p class="flex__texto">Raza</p>
+                        <p class="flex__precio">$4.500</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 flex__contenedor">
+                        <img src="../imagenes/royal-perro.jpg" alt="royal alimento" class="flex__imagen">
+                        <p class="flex__texto">Royal Canin</p>
+                        <p class="flex__precio">$5.500</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 flex__contenedor">
+                        <img src="../imagenes/rosco-perro.jpg" alt="royal alimento" class="flex__imagen">
+                        <p class="flex__texto">Rosco</p>
+                        <p class="flex__precio">$4.000</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
                 </div>
             </div>
         </section>
+
         <section>
-            <h2 class="titulos">SELECCIONÁ TU MARCA</h2>
-            <div class="grids">
-                <div class="grids__hijo">
-                    <img class="grids__imagen" src="../imagenes/dogchow-logo.png" alt="dogchow logo" width="200"
-                        height="150">
-                </div>
-                <div class="grids__hijo">
-                    <img class="grids__imagen" src="../imagenes/pedigree-logo.png" alt="pedigree logo" width="200"
-                        height="150">
-                </div>
-                <div class="grids__hijo">
-                    <img class="grids__imagen" src="../imagenes/royalcanin-logo.png" alt="royal canin logo" width="200"
-                        height="150">
-                </div>
-                <div class="grids__hijo">
-                    <img class="grids__imagen" src="../imagenes/proplan-logo.jpg" alt="pro plan logo" width="200"
-                        height="150">
-                </div>
-                <div class="grids__hijo">
-                    <img class="grids__imagen" src="../imagenes/monami.jpg" alt="monami canin logo" width="200"
-                        height="150">
-                </div>
-                <div class="grids__hijo">
-                    <img class="grids__imagen" src="../imagenes/old-prince.png" alt="old prince logo" width="200"
-                        height="150">
+            <div>
+                <h2 class="titulos">SELECCIONÁ TU MARCA</h2>
+            </div>
+
+            <div class="container flex">
+                <div class="row">
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/dogchow-logo.png" alt="dogchow logo" width="200"
+                                height="150"></a>
+                    </div>
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/pedigree-logo.png" alt="pedigree logo" width="200"
+                                height="150"></a>
+                    </div>
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/royalcanin-logo.png" alt="royal canin logo" width="200"
+                                height="150"></a>
+                    </div>
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/proplan-logo.jpg" alt="pro plan logo" width="200"
+                                height="150"></a>
+                    </div>
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/old-prince.png" alt="old prince logo" width="200"
+                                height="150"></a>
+                    </div>
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/monami.jpg" alt="monami canin logo" width="200"
+                                height="150"></a>
+                    </div>
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/raza.png" alt="monami canin logo" width="200"
+                                height="150"></a>
+                    </div>
+                    <div class="col-6 col-md-3 marca">
+                        <a href="#"><img src="../imagenes/vitalcan-logo.png" alt="monami canin logo" width="200"
+                                height="150"></a>
+                    </div>
                 </div>
             </div>
         </section>
+
         <section>
-            <h2 class="titulos">JUGUETES</h2>
-            <div class="flex">
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/juguete-perro.jpg" alt="peluches" width="300" height="200">
-                    <p class="flex__texto">PELUCHE</p>
-                    <p class="flex__texto">Juguetes para perros de peluche</p>
-                    <p class="flex__texto">$860</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/juguete-perro-2.webp" alt="hueso de goma" width="300" height="200">
-                    <p class="flex__texto">HUESITOS</p>
-                    <p class="flex__texto">Hueso de goma - Varios colores</p>
-                    <p class="flex__texto">$500</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="contenedor">
-                    <img class="camita-juguete" src="../imagenes/juguete-perro-3.jpg" alt="nudos" width="300"
-                        height="200">
-                    <p class="flex__texto">PELOTA DE SOGA</p>
-                    <p class="flex__texto">Pelotas de juguete para perro de soga</p>
-                    <p class="flex__texto">$1.300</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/juguete-perro-4.webp" alt="pelota" width="300" height="200">
-                    <p class="flex__texto">KONG TREAT BALL</p>
-                    <p class="flex__texto">Pelota dispensador alimento</p>
-                    <p class="flex__texto">$500</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/juguete-perro-5.jpg" alt="sogas" width="300" height="200">
-                    <p class="flex__texto">MIX JUGUETES</p>
-                    <p class="flex__texto">Juguetes variados - Sogas y peluches</p>
-                    <p class="flex__texto">$2.500</p>
-                    <button class="flex__boton">Comprar</button>
+            <div>
+                <h2 class="titulos">JUGUETES</h2>
+            </div>
+
+            <div class="container-fluid juguetes">
+                <div class="row">
+                    <div class="col-6 col-md-3 contenedor">
+                        <img class="juguetes__imagen" src="../imagenes/juguete-perro.jpg" alt="peluches">
+                        <p class="flex__texto">PELUCHE</p>
+                        <p class="flex__texto">Juguetes para perros de peluche</p>
+                        <p class="flex__precio">$860</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor">
+                        <img class="juguetes__imagen" src="../imagenes/juguete-perro-2.webp" alt="hueso de goma">
+                        <p class="flex__texto">HUESITOS</p>
+                        <p class="flex__texto">Hueso de goma - Varios colores</p>
+                        <p class="flex__precio">$500</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor">
+                        <img class="juguetes__imagen" src="../imagenes/juguete-perro-3.jpg" alt="nudos">
+                        <p class="flex__texto">PELOTA DE SOGA</p>
+                        <p class="flex__texto">Pelotas de juguete para perro de soga</p>
+                        <p class="flex__precio">$1.300</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor">
+                        <img class="juguetes__imagen" src="../imagenes/juguete-perro-4.webp" alt="pelota">
+                        <p class="flex__texto">KONG TREAT BALL</p>
+                        <p class="flex__texto">Pelota dispensador alimento</p>
+                        <p class="flex__precio">$500</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor">
+                        <img class="juguetes__imagen" src="../imagenes/juguete-perro-5.jpg" alt="sogas">
+                        <p class="flex__texto">MIX JUGUETES</p>
+                        <p class="flex__texto">Juguetes variados - Sogas y peluches</p>
+                        <p class="flex__precio">$2.500</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
                 </div>
             </div>
         </section>
+
         <section>
-            <h2 class="titulos">CAMITAS</h2>
-            <div class="flex">
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/cama-perro.jpg" alt="cama beige" width="300" height="200">
-                    <p class="flex__texto">CAMA MATTRES</p>
-                    <p class="flex__texto">
-                        *Mullido y confortable.
-                        *Piso antideslizante.
-                        *Lavable.
-                        *Medidas: Largo: 48 cm. / Ancho: 38 cm. / Alto: 23 cm..</p>
-                    <p class="flex__texto">$9.500</p>
-                    <button class="flex__boton">Comprar</button>
+            <div>
+                <h2 class="titulos">CAMITAS</h2>
+            </div>
+
+            <div class="container-fluid juguetes">
+                <div class="row">
+                    <div class="col-6 col-md-3 contenedor--1">
+                        <img class="camas__imagen" src="../imagenes/cama-perro.jpg" alt="cama beige">
+                        <p class="flex__texto">CAMA MATTRES</p>
+                        <p class="flex__texto">
+                            *Mullido y confortable.
+                            *Piso antideslizante.
+                            *Lavable.
+                            *Medidas: Largo: 48 cm. / Ancho: 38 cm. / Alto: 23 cm..</p>
+                        <p class="flex__precio">$9.500</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor--1">
+                        <img class="camas__imagen" src="../imagenes/cama-perro-2.jpg" alt="cama rosa">
+                        <p class="flex__texto">CAMA CUDDLE</p>
+                        <p class="flex__texto">Para perros chicos.
+                            *Mullido y confortable.
+                            *Piso antideslizante.
+                            *Lavable.
+                            *Medidas: Largo: 60 cm. / Ancho: 51 cm. / Alto: 23 cm.</p>
+                        <p class="flex__precio">$8.600</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor--1">
+                        <img class="camas__imagen" src="../imagenes/cama-perro-3.webp" alt="cama gris">
+                        <p class="flex__texto">CAMA CUCHA</p>
+                        <p class="flex__texto">Para perros chicos.
+                            *Mullido y confortable.
+                            *Piso antideslizante.
+                            *Lavable.
+                            *Medidas: Largo: 40 cm. / Ancho: 36 cm. / Alto: 13 cm.</p>
+                        <p class="flex__precio">$7.500</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor--1">
+                        <img class="camas__imagen" src="../imagenes/cama-perro-4.jpg" alt="cama azul">
+                        <p class="flex__texto">CAMA CUCHA JUNIOR</p>
+                        <p class="flex__texto">Sofisticada cucha.
+                            *Confortable.
+                            *Lavable.
+                            *Medidas: Largo: 45 cm. / Ancho: 36 cm. / Alto: 15 cm.
+                        </p>
+                        <p class="flex__precio">$10.000</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
+                    <div class="col-6 col-md-3 contenedor--1">
+                        <img class="camas__imagen" src="../imagenes/cama-perro-5.jpg" alt="colchoneta">
+                        <p class="flex__texto">COLCHONETA MARDES</p>
+                        <p class="flex__texto">*Mullido y confortable.
+                            *Piso antideslizante.
+                            *Lavable medidas: Largo: 73 / Ancho: 51 cm. / Alto: 7,6 cm.</p>
+                        <p class="flex__precio">$5.500</p>
+                        <button class="flex__boton">Comprar</button>
+                    </div>
                 </div>
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/cama-perro-2.jpg" alt="cama rosa" width="300" height="200">
-                    <p class="flex__texto">CAMA CUDDLE</p>
-                    <p class="flex__texto">Para perros chicos.
-                        *Mullido y confortable.
-                        *Piso antideslizante.
-                        *Lavable.
-                        *Medidas: Largo: 60 cm. / Ancho: 51 cm. / Alto: 23 cm.</p>
-                    <p class="flex__texto">$8.600</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/cama-perro-3.webp" alt="cama gris" width="300" height="200">
-                    <p class="flex__texto">CAMA CUCHA</p>
-                    <p class="flex__texto">Para perros chicos.
-                        *Mullido y confortable.
-                        *Piso antideslizante.
-                        *Lavable.
-                        *Medidas: Largo: 40 cm. / Ancho: 36 cm. / Alto: 13 cm.</p>
-                    <p class="flex__texto">$7.500</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="contenedor contenedor-mobile">
-                    <img src="../imagenes/cama-perro-4.jpg" alt="cama azul" width="300" height="200">
-                    <p class="flex__texto">CAMA CUCHA JUNIOR</p>
-                    <p class="flex__texto">Sofisticada cucha.
-                        *Confortable.
-                        *Lavable.
-                        *Medidas: Largo: 45 cm. / Ancho: 36 cm. / Alto: 15 cm.
-                    </p>
-                    <p class="flex__texto">$10.000</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
-                <div class="contenedor">
-                    <img class="camita-juguete" src="../imagenes/cama-perro-5.jpg" alt="colchoneta" width="300"
-                        height="200">
-                    <p class="flex__texto">COLCHONETA MARDES</p>
-                    <p class="flex__texto">*Mullido y confortable.
-                        *Piso antideslizante.
-                        *Lavable medidas: Largo: 73 / Ancho: 51 cm. / Alto: 7,6 cm.</p>
-                    <p class="flex__texto">$5.500</p>
-                    <button class="flex__boton">Comprar</button>
-                </div>
+
             </div>
         </section>
+
         <section>
             <div class="flex2">
                 <div class="servicios">
@@ -334,11 +366,12 @@
                                 y otros.</p>
                         </details>
                     </div>
-
                 </div>
             </div>
         </section>
+
     </main>
+
     <footer>
         <div class="footer">
             <div class="footer__padre">
@@ -409,6 +442,10 @@
 
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
