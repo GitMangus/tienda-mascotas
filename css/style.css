@@ -9,6 +9,10 @@ body {
     color: black;
 }
 
+main {
+    min-height: 100vh;
+}
+
 a {
     text-decoration: none;
     color: rgb(44, 44, 44);
@@ -16,15 +20,9 @@ a {
 
 /* Header Index */
 
-.nav {
+.header {
     background-color: #fcc757;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 150px 40px;
-    grid-template-areas:
-        "logo  logo  input  input input  cuenta  cuenta carrito ."
-        ".   .    menu   menu  menu   menu    menu   menu .";
-    align-items: center;
+    padding-top: 1rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -32,47 +30,66 @@ a {
     z-index: 100;
 }
 
-.nav__logo {
-    width: 200px;
-    height: 150px;
-    grid-area: logo;
-    justify-self: flex-end;
+.header__logo {
+    width: 150px;
+    height: 130px; 
 }
 
-.nav__menu {
-    display: flex;
-    grid-area: menu;
+.input-group{
+    width: 400px;
+    height: 30px;
+    align-self: center;
 }
 
-.nav__menu-bar {
-    display: none;
-}
-
-.nav__user {
-    display: none;
-}
-
-.nav__input {
-    grid-area: input;
-    width: 350px;
-    justify-self: center;
-}
-
-.nav__cuenta {
-    grid-area: cuenta;
-    justify-self: end;
+.header__cuenta {
     font-size: 20px;
     font-weight: bold;
 }
 
-.nav__carrito {
-    grid-area: carrito;
-    justify-self: center;
-    font-size: 30px;
+.header__compra {
+    background-color: rgba(185, 185, 185, 0.4);
+    border-radius: 30px;
+    width: 140px;
+    padding: 0.5rem;
 }
 
-.nav__lista--close {
+.header__carrito{
+    font-size: 20px;
+}
+
+.header__precio{
+    font-size: 22px;
+}
+
+.header__user {
     display: none;
+}
+
+.header__open {
+    display: none;
+}
+
+.nav {
+    background-color: rgb(243, 188, 38);
+    width: 100%;
+}
+
+.nav__lista {
+    height: 3vh;
+}
+
+.nav__item {
+    margin-left: 60px;
+    margin-right: 5px;
+}
+
+.nav__item--close {
+    display: none;
+}
+
+.nav__location {
+    font-size: 20px;
+    margin-left: 5px;
 }
 
 ul {
@@ -85,7 +102,7 @@ li {
     width: 25%;
     position: relative;
     font-size: 1rem;
-    padding-top: 15px;
+    padding-top: 12px;
     padding-bottom: 12px;
 }
 
@@ -100,7 +117,7 @@ ul ul li {
 
 ul li:hover ul {
     display: block;
-    background-color: #fcc757;
+    background-color: rgb(243, 188, 38);
 }
 
 /* Main */
@@ -309,6 +326,17 @@ ul li:hover ul {
     color: rgb(94, 94, 94);
 }
 
+.whatsapp{
+    position: fixed;
+    z-index: 10;
+    bottom: 50px;
+    right: 70px;
+}
+
+.whatsapp__imagen{
+    width: 70px;
+}
+
 /* Footer */
 
 .footer {
@@ -462,7 +490,11 @@ ul li:hover ul {
 
 /*Main Cuenta*/
 
-.cuenta {
+.cuenta{
+    padding-top: 250px;
+}
+
+.cuenta__formulario {
     border: 0.5rem solid rgb(240, 240, 240);
     padding: 0.5rem;
     width: 400px;
@@ -594,6 +626,14 @@ ul li:hover ul {
     width: 100%;
     height: 200px;
 }
+
+
+@media screen and (max-width: 1023px) {}
+
+
+
+
+
 
 @media screen and (max-width: 600px) {
     body {
@@ -925,13 +965,13 @@ ul li:hover ul {
         box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
         transition: all 0.5s;
     }
-        
+
     .juguetes {
         width: 100%;
         min-height: 50vh;
         padding: 0.5rem;
     }
-    
+
     .juguetes__imagen {
         height: 90px;
     }
@@ -941,14 +981,14 @@ ul li:hover ul {
         min-height: 55vh;
         padding: 2rem;
     }
-    
+
     .contenedor--1 {
         width: 220px;
         min-height: 260px;
         padding: 1rem;
         margin: 1rem;
-    }   
-    
+    }
+
     .camas__imagen {
         height: 100px;
     }
