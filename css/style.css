@@ -36,7 +36,7 @@ a {
 }
 
 .input-group {
-    width: 400px;
+    width: 380px;
     height: 30px;
     align-self: center;
 }
@@ -48,9 +48,9 @@ a {
 
 .header__compra {
     background-color: rgba(185, 185, 185, 0.4);
-    border-radius: 30px;
-    width: 140px;
-    padding: 0.5rem;
+    border-radius: 20px;
+    width: 130px;
+    padding-top: 0.3rem;
 }
 
 .header__carrito {
@@ -58,7 +58,7 @@ a {
 }
 
 .header__precio {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .header__user {
@@ -524,7 +524,7 @@ ul li:hover ul {
 /*Main Gatos y perros*/
 
 .padding--top {
-    padding-top: 180px;
+    padding-top: 170px;
 }
 
 .flex {
@@ -639,14 +639,16 @@ ul li:hover ul {
     }
 
     .header__cuenta {
-        font-size: 16px;
+        font-size: 18px;
+        text-align: center;
     }
 
     .header__compra {
         background-color: rgba(185, 185, 185, 0.4);
-        border-radius: 30px;
-        width: 120px;
-        padding: 0.1rem;
+        border-radius: 20px;
+        width: 100px;
+        padding-top: 0.2rem;
+        padding-right: 0.1rem;
     }
 
     .header__carrito {
@@ -654,14 +656,14 @@ ul li:hover ul {
     }
 
     .header__precio {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     /* Main */
 
     .banner {
         height: 500px;
-        padding-top: 170px;
+        padding-top: 140px;
     }
 
     .promociones {
