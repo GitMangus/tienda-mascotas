@@ -22,7 +22,7 @@ a {
 
 .header {
     background-color: #fcc757;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -31,11 +31,11 @@ a {
 }
 
 .header__logo {
-    width: 150px;
-    height: 130px; 
+    width: 160px;
+    height: 130px;
 }
 
-.input-group{
+.input-group {
     width: 400px;
     height: 30px;
     align-self: center;
@@ -53,11 +53,11 @@ a {
     padding: 0.5rem;
 }
 
-.header__carrito{
+.header__carrito {
     font-size: 20px;
 }
 
-.header__precio{
+.header__precio {
     font-size: 22px;
 }
 
@@ -125,7 +125,7 @@ ul li:hover ul {
 .banner {
     width: 100%;
     height: 700px;
-    padding-top: 190px;
+    padding-top: 170px;
 }
 
 .promociones {
@@ -181,12 +181,20 @@ ul li:hover ul {
 
 .flex__imagen {
     width: 100%;
-    height: 270px;
+    height: 260px;
 }
 
 .flex__imagen--1 {
     width: 170px;
     height: 270px;
+    display: block;
+    margin: auto;
+}
+
+.flex__imagen--2 {
+    width: 90%;
+    height: 260px;
+    padding-top: 1rem;
     display: block;
     margin: auto;
 }
@@ -246,20 +254,25 @@ ul li:hover ul {
 
 .form {
     background-color: rgba(227, 238, 240, 255);
-    width: 100%;
-    min-height: 14vh;
-    padding: 1rem;
+    min-height: 8vh;
+    padding-top: 1rem;
+}
+
+.form__titulo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.form__contenedor {
+    margin-left: 2.5rem;
 }
 
 .form__input {
     width: 400px;
-    margin-right: 40px;
-    margin-left: 50px;
 }
 
 .form__checkbox {
     padding: 0.4rem;
-    margin-left: 2rem;
 }
 
 .form__button {
@@ -271,11 +284,6 @@ ul li:hover ul {
 
 .form__button:hover {
     background-color: rgb(26, 20, 20);
-}
-
-.container__form {
-    margin: 0;
-    padding: 1rem 0;
 }
 
 .opiniones {
@@ -326,14 +334,14 @@ ul li:hover ul {
     color: rgb(94, 94, 94);
 }
 
-.whatsapp{
+.whatsapp {
     position: fixed;
     z-index: 10;
     bottom: 50px;
     right: 70px;
 }
 
-.whatsapp__imagen{
+.whatsapp__imagen {
     width: 70px;
 }
 
@@ -341,25 +349,7 @@ ul li:hover ul {
 
 .footer {
     background-color: #fcc757;
-    width: 100%;
-    min-height: 45vh;
-}
-
-.footer__padre {
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer__grupo {
-    width: 200px;
-    height: 200px;
-    margin: 1.5rem;
-}
-
-.footer__grupo--1 {
-    width: 200px;
-    height: 200px;
-    margin: 1.5rem;
+    padding: 1rem;
 }
 
 .footer__logo {
@@ -369,7 +359,12 @@ ul li:hover ul {
 
 .footer__iconos {
     font-size: 30px;
-    text-align: center;
+    padding-left: 3rem;
+}
+
+.footer__titulo {
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .footer__enlace {
@@ -439,6 +434,7 @@ ul li:hover ul {
 .ayuda__titulo {
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 30px;
     font-size: 25px;
     font-weight: bold;
 }
@@ -490,7 +486,7 @@ ul li:hover ul {
 
 /*Main Cuenta*/
 
-.cuenta{
+.cuenta {
     padding-top: 250px;
 }
 
@@ -528,7 +524,7 @@ ul li:hover ul {
 /*Main Gatos y perros*/
 
 .padding--top {
-    padding-top: 190px;
+    padding-top: 180px;
 }
 
 .flex {
@@ -563,10 +559,6 @@ ul li:hover ul {
     margin: 1rem;
 }
 
-.accordion-item--1 {
-    background-color: #ffffff;
-}
-
 .titulos {
     padding: 1rem;
     background-color: aliceblue;
@@ -599,8 +591,8 @@ ul li:hover ul {
 
 .juguetes {
     width: 100%;
-    min-height: 55vh;
-    padding: 2rem;
+    min-height: 30vh;
+    padding: 1rem;
 }
 
 .juguetes__imagen {
@@ -627,13 +619,271 @@ ul li:hover ul {
     height: 200px;
 }
 
+.camas__imagen--1 {
+    width: 90%;
+    height: 200px;
+    padding-left: 1.6rem;
+}
 
-@media screen and (max-width: 1023px) {}
 
+@media screen and (max-width: 1023px) {
+    /*Header*/
 
+    .header__logo{
+        width: 120px;
+        height: 100px;
+    }
 
+    .input-group {
+      max-width: 200px;
+    }
 
+    .header__cuenta {
+        font-size: 16px;
+    }
 
+    .header__compra {
+        background-color: rgba(185, 185, 185, 0.4);
+        border-radius: 30px;
+        width: 120px;
+        padding: 0.1rem;
+    }
+
+    .header__carrito {
+        font-size: 18px;
+    }
+
+    .header__precio {
+        font-size: 18px;
+    }
+
+    /* Main */
+
+    .banner {
+        height: 500px;
+        padding-top: 170px;
+    }
+
+    .promociones {
+        min-height: 15vh;
+        padding: 1rem;
+    }
+
+    .promociones__icono {
+        font-size: 30px;
+    }
+
+    .alineado__hijo {
+        margin-left: 40px;
+        font-size: 20px;
+    }
+
+    .flex {
+        min-height: 30vh;
+    }
+
+    .flex__contenedor {
+        width: 220px;
+        height: 410px;
+        padding: 0.5rem;
+        margin: 1rem;
+    }
+
+    .flex__imagen {
+        height: 230px;
+    }
+
+    .flex__imagen--1 {
+        width: 140px;
+        height: 230px;
+    }
+
+    .compra {
+        padding: 1rem;
+        min-height: 13vh;
+    }
+
+    .compra__icono {
+        font-size: 40px;
+    }
+
+    .compra__casa {
+        width: 40px;
+        height: 40px;
+    }
+
+    .form {
+        min-height: 8vh;
+        padding-top: 1rem;
+    }
+
+    .form__titulo {
+        font-size: 20px;
+    }
+
+    .form__input {
+        width: 250px;
+    }
+
+    .opiniones {
+        min-height: 40vh;
+    }
+
+    .opiniones__titulo {
+        font-size: 20px;
+    }
+
+    .opiniones__cuadro {
+        width: 230px;
+        min-height: 150px;
+        border: 0.2rem solid rgb(207, 205, 205);
+        border-radius: 0.5rem;
+        padding: 1rem 1rem 1rem 1rem;
+        text-align: center;
+        margin: 2rem 2.5rem;
+    }
+
+    .opiniones__nombre {
+        font-size: 16px;
+    }
+
+    .whatsapp {
+        bottom: 30px;
+        right: 25px;
+    }
+
+    .whatsapp__imagen {
+        width: 50px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 1rem 4rem 0 2rem;
+    }
+
+    .footer__logo {
+        width: 160px;
+        height: 130px;
+    }
+
+    .footer__iconos {
+        font-size: 20px;
+        padding-left: 3rem;
+    }
+
+    .footer__titulo {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    /* Main Sucursales*/
+
+    .sucursales {
+        padding-top: 150px;
+        padding-bottom: 80px;
+        padding-left: 80px;
+        padding-right: 80px;
+        min-height: 15vh;
+    }
+
+    .sucursales__titulo {
+        font-size: 20px;
+    }
+
+    .sucursales__subtitulo {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .sucursales__dire {
+        font-size: 14px;
+    }
+
+    /*Main Ayuda*/
+
+    .ayuda {
+        padding-top: 150px;
+        padding-bottom: 60px;
+        min-height: 95vh;
+        width: 100%;
+    }
+
+    .ayuda__titulo {
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .preguntas-frecuentes__titulo {
+        font-size: 20px;
+    }
+
+    /*Main Gatos y perros*/
+
+    .padding--top {
+        padding-top: 170px;
+    }
+
+    .flex {
+        padding: 1rem;
+        min-height: 100px;
+        width: 100%;
+    }
+
+    .servicios__titulo {
+        font-size: 20px;
+    }
+
+    .titulos {
+        font-size: 20px;
+    }
+
+    .marca {
+        padding: 0.5rem;
+    }
+
+    .marca__imagen {
+        width: 150px;
+        height: 100px;
+    }
+
+    .contenedor {
+        width: 320px;
+        height: 400px;
+    }
+
+    .juguetes {
+        min-height: 30vh;
+        padding: 0.5rem;
+    }
+
+    .juguetes__imagen {
+        width: 100%;
+        height: 160px;
+    }
+
+    .contenedor--1 {
+        width: 340px;
+        min-height: 450px;
+        padding: 1rem;
+    }
+
+    .camas__imagen {
+        height: 180px;
+    }
+
+    .camas__imagen--1 {
+        width: 90%;
+        height: 200px;
+        padding-left: 1.6rem;
+    }
+
+    .flex__imagen--2 {
+        height: 240px;
+    }
+}
 
 @media screen and (max-width: 600px) {
     body {
@@ -642,36 +892,93 @@ ul li:hover ul {
 
     /*Header */
 
+    .header__logo {
+        width: 110px;
+        height: 90px;
+    }
+
+    .input-group {
+        width: 250px;
+        height: 15px;
+    }
+
+    .header__cuenta {
+        display: none;
+    }
+
+    .header__compra {
+        background-color: rgba(185, 185, 185, 0.4);
+        border-radius: 30px;
+        width: 140px;
+        padding: 0.5rem;
+    }
+
+    .header__carrito {
+        font-size: 20px;
+    }
+
+    .header__precio {
+        font-size: 22px;
+    }
+
+    .header__user {
+        display: block;
+        font-size: 20px;
+    }
+
+    .header__open {
+        display: block;
+    }
+
     .nav {
-        background-color: #fcc757;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 100px 40px;
-        grid-template-areas:
-            "menu-bar    menu-bar logo    user    carrito  ."
-            "input       input    input   input   input    input";
-        align-items: center;
+        background-color: rgb(243, 188, 38);
         width: 100%;
     }
 
-    .nav__menu-bar {
-        display: block;
-        font-size: 20px;
-        grid-area: menu-bar;
-        justify-self: center;
+    .nav__lista {
+        height: 3vh;
     }
 
-    .nav__logo {
-        width: 130px;
-        height: 100px;
-        grid-area: logo;
+    .nav__item {
+        margin-left: 60px;
+        margin-right: 5px;
     }
 
-    .nav__user {
-        display: block;
-        grid-area: user;
-        justify-self: end;
+    .nav__item--close {
+        display: none;
+    }
+
+    .nav__location {
         font-size: 20px;
+        margin-left: 5px;
+    }
+
+    ul {
+        list-style: none;
+        font-size: 0;
+    }
+
+    li {
+        display: inline-block;
+        width: 25%;
+        position: relative;
+        font-size: 1rem;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    ul ul {
+        position: absolute;
+        display: none;
+    }
+
+    ul ul li {
+        display: block;
+    }
+
+    ul li:hover ul {
+        display: block;
+        background-color: rgb(243, 188, 38);
     }
 
     .nav__menu {
@@ -682,15 +989,9 @@ ul li:hover ul {
         display: none;
     }
 
-    .nav__carrito {
-        grid-area: carrito;
-        font-size: 20px;
-    }
 
-    .nav__input {
-        grid-area: input;
-        width: 300px;
-    }
+
+
 
     #menu {
         display: block;
