@@ -30,22 +30,19 @@
         <div class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-3 col-md-3 d-flex align-items-center">
+                    <div class="col-4 col-sm-3 col-md-3 d-flex align-items-center">
                         <a href="index.html">
                             <img class="header__logo" src="./imagenes/petland-logo.png" alt="logotipo petland"
                                 width="200" height="150">
                         </a>
-                        <a href="#menu" class="header__open">
-                            <i class="fa-solid fa-bars"></i>
-                        </a>
                     </div>
-                    <div class="col-12 col-sm-3 col-md-3 input-group">
+                    <div class="col-3 col-sm-3 col-md-3 input-group">
                         <input type="text" class="form-control" placeholder="Buscar productos"
                             aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
                                 class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
-                    <div class="col-12 col-sm-1 col-md-3 d-flex align-items-center justify-content-end">
+                    <div class="col-2 col-sm-1 col-md-3 d-flex align-items-center justify-content-end">
                         <h3 class="header__cuenta">
                             <a href="paginas/cuenta.html">Ingresar / Crear cuenta</a>
                         </h3>
@@ -53,7 +50,7 @@
                             <i class="fa-solid fa-user-large"></i>
                         </a>
                     </div>
-                    <div class="col-12 col-sm-3 col-md-2 d-flex align-items-center justify-content-end">
+                    <div class="col-2 col-sm-3 col-md-2 d-flex align-items-center justify-content-end">
                         <div class="header__compra">
                             <button type="button" class="btn position-relative">
                                 <i class="fa-solid fa-cart-shopping header__carrito"></i>
@@ -65,16 +62,33 @@
                             <span class="header__precio">$ 0,00</span>
                         </div>
                     </div>
+                    <div class="col-2 col-sm-4 d-flex align-items-center justify-content-end">
+                        <div>
+                            <a href="#menu" class="header__open">
+                                <i class="fa-solid fa-bars"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 input-group-2">
+                        <input type="text" class="form-control" placeholder="Buscar productos"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
                 </div>
             </div>
 
-            <nav class="nav">
+            <nav class="nav" id="menu">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12">
-                            <ul class="nav__lista" id="menu">
+                            <ul class="nav__lista">
                                 <li><a class="nav__item" href="paginas/perros.html">Perros <i
-                                            class="fa-solid fa-angle-down"></i></a>
+                                            class="fa-solid fa-angle-down nav__icono"></i></a>
                                     <ul>
                                         <li><a href="./paginas/perros.html">Alimento balanceado</a></li>
                                         <li><a href="./paginas/perros.html">Juguetes</a></li>
@@ -84,7 +98,7 @@
                                     </ul>
                                 </li>
                                 <li><a class="nav__item" href="paginas/gatos.html">Gatos <i
-                                            class="fa-solid fa-angle-down"></i></a>
+                                            class="fa-solid fa-angle-down nav__icono"></i></a>
                                     <ul>
                                         <li><a href="./paginas/gatos.html">Alimento balanceado</a></li>
                                         <li><a href="./paginas/gatos.html">Juguetes</a></li>
@@ -94,7 +108,7 @@
                                     </ul>
                                 </li>
                                 <li><a class="nav__item" href="paginas/ayuda.html">Ayuda <i
-                                            class="fa-solid fa-angle-down"></i></a>
+                                            class="fa-solid fa-angle-down nav__icono"></i></a>
                                     <ul>
                                         <li><a href="./paginas/ayuda.html">Sobre PetLand</a></li>
                                         <li><a href="./paginas/ayuda.html">Preguntas frecuentes</a></li>
@@ -376,7 +390,7 @@
                             <i class="fa-brands fa-whatsapp"></i>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6">
+                    <div class="col-6 col-sm-6 footer__contacto">
                         <h3 class="footer__titulo">Contacto</h3>
                         <p class="footer__enlace">Atención telefónica: 0810-220-1502</p>
                         <p class="footer__enlace">Atención Whatsapp: +54-911-6802-6324</p>
@@ -387,30 +401,30 @@
             </div>
             <div class="container footer__details">
                 <div class="row">
-                    <div class="col-4 col-sm-4">
+                    <div class="col-12 col-sm-4">
                         <details>
-                            <summary>
-                                <h3 class="footer__titulo">Nosotros</h3>
+                            <summary class="footer__titulo">
+                                Nosotros
                             </summary>
                             <a class="footer__enlace" href="./paginas/ayuda.html">Sobre PetLand</a>
                             <a class="footer__enlace" href="./paginas/ayuda.html">Preguntas frecuentes</a>
                             <a class="footer__enlace" href="./paginas/ayuda.html">Legales</a>
                         </details>
                     </div>
-                    <div class="col-4 col-sm-4">
+                    <div class="col-12 col-sm-4">
                         <details>
-                            <summary>
-                                <h3 class="footer__titulo">Productos</h3>
+                            <summary class="footer__titulo">
+                                Productos
                             </summary>
                             <a class="footer__enlace" href="./paginas/gatos.html">Alimento balanceado</a>
                             <a class="footer__enlace" href="./paginas/gatos.html">Juguetes</a>
                             <a class="footer__enlace" href="./paginas/gatos.html">Camitas</a>
                         </details>
                     </div>
-                    <div class="col-4 col-sm-4">
+                    <div class="col-12 col-sm-4">
                         <details>
-                            <summary>
-                                <h3 class="footer__titulo">Servicios</h3>
+                            <summary class="footer__titulo">
+                                Servicios
                             </summary>
                             <a class="footer__enlace" href="./paginas/gatos.html">Peluquería</a>
                             <a class="footer__enlace" href="./paginas/gatos.html">Veterinaria</a>
