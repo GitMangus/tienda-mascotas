@@ -24,92 +24,95 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-3 col-md-3 d-flex align-items-center">
-          <a href="../index.html">
-            <img class="header__logo" src="../imagenes/petland-logo.png" alt="logotipo petland" width="200"
-              height="150">
-          </a>
-          <a href="#menu" class="header__open">
-            <i class="fa-solid fa-bars"></i>
-          </a>
+  <header>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-3 col-md-3 d-flex align-items-center">
+                    <a href="../index.html">
+                        <img class="header__logo" src="../imagenes/petland-logo.png" alt="logotipo petland"
+                            width="200" height="150">
+                    </a>
+                    <a href="#menu" class="header__open">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-3 col-md-3 input-group">
+                    <input type="text" class="form-control" placeholder="Buscar productos"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="col-12 col-sm-1 col-md-3 d-flex align-items-center justify-content-end">
+                    <h3 class="header__cuenta">
+                        <a href="cuenta.html">Ingresar / Crear cuenta</a>
+                    </h3>
+                    <a class="header__user" href="cuenta.html">
+                        <i class="fa-solid fa-user-large"></i>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-3 col-md-2 d-flex align-items-center justify-content-end">
+                    <div class="header__compra">
+                        <button type="button" class="btn position-relative">
+                            <i class="fa-solid fa-cart-shopping header__carrito"></i>
+                            <span
+                                class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger">
+                                0
+                            </span>
+                        </button>
+                        <span class="header__precio">$ 0,00</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-12 col-md-6 input-group">
-          <input type="text" class="form-control" placeholder="Buscar productos" aria-label="Recipient's username"
-            aria-describedby="button-addon2">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
-              class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-        <div class="col-3 col-md-3 d-flex align-items-center justify-content-end">
-          <h3 class="header__cuenta">
-            <a href="cuenta.html">Ingresar / Crear cuenta</a>
-          </h3>
-          <a class="header__user" href="cuenta.html">
-            <i class="fa-solid fa-user-large"></i>
-          </a>
-        </div>
-        <div class="col-3 col-md-2 d-flex align-items-center justify-content-end">
-          <div class="header__compra">
-            <button type="button" class="btn position-relative">
-              <i class="fa-solid fa-cart-shopping header__carrito"></i>
-              <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger">
-                0
-              </span>
-            </button>
-            <span class="header__precio">$ 0,00</span>
-          </div>
-        </div>
-      </div>
+
+        <nav class="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12">
+                        <ul class="nav__lista" id="menu">
+                            <li><a class="nav__item" href="perros.html">Perros <i
+                                        class="fa-solid fa-angle-down"></i></a>
+                                <ul>
+                                    <li><a href="perros.html">Alimento balanceado</a></li>
+                                    <li><a href="perros.html">Juguetes</a></li>
+                                    <li><a href="perros.html">Camitas</a></li>
+                                    <li><a href="perros.html">Peluquería</a></li>
+                                    <li><a href="perros.html">Veterinaria</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav__item" href="gatos.html">Gatos <i
+                                        class="fa-solid fa-angle-down"></i></a>
+                                <ul>
+                                    <li><a href="gatos.html">Alimento balanceado</a></li>
+                                    <li><a href="gatos.html">Juguetes</a></li>
+                                    <li><a href="gatos.html">Camitas</a></li>
+                                    <li><a href="gatos.html">Peluquería</a></li>
+                                    <li><a href="gatos.html">Veterinaria</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav__item" href="ayuda.html">Ayuda <i
+                                        class="fa-solid fa-angle-down"></i></a>
+                                <ul>
+                                    <li><a href="ayuda.html">Sobre PetLand</a></li>
+                                    <li><a href="ayuda.html">Preguntas frecuentes</a></li>
+                                    <li><a href="ayuda.html">Contacto</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav__item" href="sucursales.html">Sucursales <i
+                                        class="fa-solid fa-location-dot nav__location"></i></a>
+                            </li>
+                            <li>
+                                <a class="nav__item nav__item--close" href="#"><i class="fa-solid fa-xmark"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
-
-    <nav class="nav">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-12">
-            <ul class="nav__lista" id="menu">
-              <li><a class="nav__item" href="perros.html">Perros <i class="fa-solid fa-angle-down"></i></a>
-
-                <ul>
-                  <li><a href="perros.html">Alimento balanceado</a></li>
-                  <li><a href="perros.html">Juguetes</a></li>
-                  <li><a href="perros.html">Camitas</a></li>
-                  <li><a href="perros.html">Peluquería</a></li>
-                  <li><a href="perros.html">Veterinaria</a></li>
-                </ul>
-              </li>
-              <li><a class="nav__item" href="gatos.html">Gatos <i class="fa-solid fa-angle-down"></i></a>
-
-                <ul>
-                  <li><a href="gatos.html">Alimento balanceado</a></li>
-                  <li><a href="gatos.html">Juguetes</a></li>
-                  <li><a href="gatos.html">Camitas</a></li>
-                  <li><a href="gatos.html">Peluquería</a></li>
-                  <li><a href="/gatos.html">Veterinaria</a></li>
-                </ul>
-              </li>
-              <li><a class="nav__item" href="ayuda.html">Ayuda <i class="fa-solid fa-angle-down"></i></a>
-
-                <ul>
-                  <li><a href="ayuda.html">Sobre PetLand</a></li>
-                  <li><a href="ayuda.html">Preguntas frecuentes</a></li>
-                  <li><a href="ayuda.html">Contacto</a></li>
-                </ul>
-              </li>
-              <li><a class="nav__item" href="sucursales.html">Sucursales <i
-                    class="fa-solid fa-location-dot nav__location"></i></a>
-              </li>
-              <li>
-                <a class="nav__item nav__item--close" href="#"><i class="fa-solid fa-xmark"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+</header>
   <main>
     <section class="ayuda">
       <div class="container">
@@ -118,7 +121,7 @@
         </div>
 
         <div class="row ayuda__contenedor">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-12 col-xl-6">
             <p class="ayuda__texto"> PetLand es la primera y única cadena de tiendas del país especializada en productos
               y
               servicios
@@ -138,7 +141,7 @@
 
               PetLand, el lugar feliz de tu mascota. </p>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-12 col-xl-6">
             <img class="ayuda__imagen" src="../imagenes/petland-lugar.jpg" alt="sucursal PetLand">
           </div>
         </div>

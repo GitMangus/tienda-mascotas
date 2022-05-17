@@ -373,9 +373,10 @@ ul li:hover ul {
     margin: 1rem 0 1rem 0;
 }
 
-.nav__menu--1 {
+.footer__dos{
     display: none;
 }
+
 
 /* Main Sucursales*/
 
@@ -419,7 +420,6 @@ ul li:hover ul {
     font-weight: 700;
     margin: 1rem 0;
 }
-
 
 /*Main Ayuda*/
 
@@ -625,8 +625,12 @@ ul li:hover ul {
     padding-left: 1.6rem;
 }
 
+@media screen and (max-width: 1200px) {
 
-@media screen and (max-width: 1023px) {
+    body{
+        font-size: 14px;;
+    }
+    
     /*Header*/
 
     .header__logo{
@@ -715,7 +719,7 @@ ul li:hover ul {
     }
 
     .form {
-        min-height: 8vh;
+        min-height: 10vh;
         padding-top: 1rem;
     }
 
@@ -779,6 +783,10 @@ ul li:hover ul {
         font-weight: bold;
     }
 
+    .footer__dos{
+        display: none;
+    }
+
     /* Main Sucursales*/
 
     .sucursales {
@@ -793,6 +801,11 @@ ul li:hover ul {
         font-size: 20px;
     }
 
+    .sucursales__localidades {
+        padding-left: 0;
+        margin-top: 3rem;
+    }
+
     .sucursales__subtitulo {
         font-size: 16px;
         font-weight: bold;
@@ -805,7 +818,7 @@ ul li:hover ul {
     /*Main Ayuda*/
 
     .ayuda {
-        padding-top: 150px;
+        padding-top: 120px;
         padding-bottom: 60px;
         min-height: 95vh;
         width: 100%;
@@ -814,8 +827,23 @@ ul li:hover ul {
     .ayuda__titulo {
         text-align: center;
         padding-top: 70px;
-        padding-bottom: 10px;
+        padding-bottom: 0;
         font-size: 20px;
+    }
+    
+    .ayuda__texto {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .ayuda__contenedor{
+        display: flex;
+    }
+    .ayuda__imagen{
+        width: 500px;
+        margin: auto;
+        display: flex;
+        align-items: center;
     }
 
     .preguntas-frecuentes__titulo {
@@ -825,7 +853,7 @@ ul li:hover ul {
     /*Main Gatos y perros*/
 
     .padding--top {
-        padding-top: 170px;
+        padding-top: 145px;
     }
 
     .flex {
@@ -887,6 +915,141 @@ ul li:hover ul {
     }
 }
 
+@media screen and (max-width: 768px){
+   
+ /*Header */
+
+ .header__logo {
+    width: 110px;
+    height: 90px;
+}
+
+.input-group {
+    width: 250px;
+    height: 15px;
+    padding-bottom: 2rem;
+}
+
+.header__cuenta {
+    display: none;
+}
+
+.header__compra {
+    width: 160px;
+    padding: 0.2rem;
+}
+
+.header__carrito {
+    font-size: 18px;
+}
+
+.header__precio {
+    font-size: 18px;
+}
+
+.header__user {
+    display: block;
+    font-size: 20px;
+}
+
+.header__open {
+    display: none;
+}
+
+.nav__lista {
+    height: 3vh;
+}
+
+.nav__item {
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+.nav__item--close {
+    display: none;
+}
+
+.nav__location {
+    font-size: 18px;
+}
+
+/*Main*/
+
+.banner {
+    height: 350px;
+    padding-top: 130px;
+}
+
+.promociones__icono {
+    font-size: 20px;
+}
+
+.form{
+    padding: 0.5rem;
+}
+.form__input {
+    width: 200px;
+}
+
+.opiniones__cuadro {
+    width: 190px;
+    min-height: 150px;
+    border: 0.2rem solid rgb(207, 205, 205);
+    border-radius: 0.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    margin: 2rem 2.5rem;
+}
+
+/* Footer */
+
+.footer {
+    padding: 2rem;
+}
+
+.footer__logo {
+    width: 140px;
+    height: 110px;
+}
+
+.footer__iconos {
+    font-size: 20px;
+    padding-left: 2.2rem;
+}
+
+.footer__titulo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer__uno{
+    display: none;
+}
+
+.footer__dos{
+    display: block;
+}
+
+.footer__details{
+    font-size: 14px;
+}
+
+  /*Main Gatos y perros*/
+
+  .padding--top {
+    padding-top: 130px;
+}
+
+.marca__imagen {
+    width: 110px;
+    height: 80px;
+}
+
+
+
+
+}
+
 @media screen and (max-width: 600px) {
     body {
         font-size: 12px;
@@ -939,6 +1102,7 @@ ul li:hover ul {
 
     .nav__lista {
         height: 3vh;
+        color: rgb(255, 255, 255);
     }
 
     .nav__item {
@@ -983,18 +1147,6 @@ ul li:hover ul {
         background-color: rgb(243, 188, 38);
     }
 
-    .nav__menu {
-        display: none;
-    }
-
-    .nav__cuenta {
-        display: none;
-    }
-
-
-
-
-
     #menu {
         display: block;
         background-color: rgba(0, 0, 0, 0.8);
@@ -1012,18 +1164,11 @@ ul li:hover ul {
         gap: 1rem;
     }
 
-    .nav__lista {
-        color: rgb(255, 255, 255);
-    }
-
     #menu:target {
         right: 0;
     }
 
-    .nav__lista--close {
-        display: block;
-    }
-
+    
     /* Main */
 
     .banner {
@@ -1152,20 +1297,7 @@ ul li:hover ul {
         text-align: center;
     }
 
-    .nav__menu--1 {
-        display: flex;
-        flex-direction: column;
-        font-size: 14px;
-        align-self: center;
-    }
-
-    .footer__grupo--2 {
-        width: 300px;
-        line-height: 1;
-        align-self: flex-start;
-    }
-
-    .enlace {
+    .footer__enlace {
         display: flex;
         flex-direction: column;
     }
