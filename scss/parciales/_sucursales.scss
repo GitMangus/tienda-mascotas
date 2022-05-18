@@ -1,0 +1,40 @@
+.sucursales {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    min-height: 20vh;
+    background-color: rgb(240, 240, 240);
+
+    &__titulo {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    &__parrafo {
+        text-align: center;
+        margin: 2rem 0 4rem 0;
+    }
+
+    &__localidades {
+        padding-left: 5rem;
+        margin-top: 1rem;
+    }
+
+    &__mapa {
+        max-height: 450px;
+    }
+
+    &__subtitulo {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__dire {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 1rem 0;
+    }
+}

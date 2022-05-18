@@ -1,0 +1,223 @@
+.banner {
+    width: 100%;
+    height: 700px;
+    padding-top: 170px;
+}
+
+.promociones {
+    width: 100%;
+    min-height: 15vh;
+    padding: 2rem;
+
+    &__icono {
+        font-size: 40px;
+        display: block;
+        text-align: center;
+    }
+
+    &__texto {
+        display: block;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+.alineado {
+    background-color: rgba(227, 238, 240, 255);
+
+    &__hijo {
+        display: inline;
+        margin-left: 50px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+.flex {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__contenedor {
+        border: 0.2rem solid rgb(207, 205, 205);
+        width: 290px;
+        height: 450px;
+        padding: 0.5rem;
+        margin: 1rem;
+        box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
+        transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+    }
+
+    &__imagen {
+        width: 100%;
+        height: 260px;
+
+        &--1 {
+            width: 170px;
+            height: 270px;
+            display: block;
+            margin: auto;
+        }
+    
+        &--2 {
+            width: 90%;
+            height: 260px;
+            padding-top: 1rem;
+            display: block;
+            margin: auto;
+        }
+    }
+ 
+    &__texto {
+        text-align: center;
+        display: block;
+        margin: 1rem 0 1rem 0;
+    }
+
+    &__precio {
+        font-weight: 400;
+        text-align: center;
+        display: block;
+        margin: 1rem 0 1rem 0;
+        font-size: 20px;
+    }
+
+    &__boton {
+        display: block;
+        margin: auto;
+        border-radius: 8px;
+        border-radius: 5px;
+        padding: 0.3rem;
+        background-color: #a0a8a7;
+        color: white;
+
+        &:hover {
+            background-color: rgb(26, 20, 20);
+        }
+    }
+}
+
+.compra {
+    padding: 2rem;
+    width: 100%;
+    min-height: 15vh;
+
+    &__icono {
+        font-size: 50px;
+        display: block;
+        text-align: center;
+    }
+
+    &__casa {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: auto;
+    }
+
+    &__texto {
+        display: block;
+        margin-top: 1rem;
+        text-align: center;
+    }    
+}
+
+.form {
+    background-color: rgba(227, 238, 240, 255);
+    min-height: 8vh;
+    padding-top: 1rem;
+
+    &__titulo {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    &__contenedor {
+        margin-left: 2.5rem;
+    }
+
+    &__input {
+        width: 400px;
+    }
+
+    &__checkbox {
+        padding: 0.4rem;
+    }
+
+    &__button {
+        border-radius: 5px;
+        padding: 0.3rem;
+        background-color: #a0a8a7;
+        color: white;
+
+        &:hover {
+            background-color: rgb(26, 20, 20);
+        }
+    }
+}
+
+.opiniones {
+    width: 100%;
+    min-height: 60vh;
+
+    &__titulo {
+        text-align: center;
+        padding-top: 2rem;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    &__cuadro {
+        width: 250px;
+        min-height: 350px;
+        border: 0.2rem solid rgb(207, 205, 205);
+        border-radius: 0.5rem;
+        padding: 1rem 1rem 1rem 1rem;
+        text-align: center;
+        margin: 2rem 2.5rem;
+    }
+
+    &__nombre {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    &__imagen {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin: 1rem 0 1rem 0;
+        border-radius: 10rem;
+    }
+
+    &__estrellas {
+        margin: 1rem 0 1rem 0;
+    }
+
+    &__msj {
+        margin: 1rem 0 1rem 0;
+    }
+
+    &__fecha {
+        font-size: 13px;
+        color: rgb(94, 94, 94);
+    }
+}
+
+.whatsapp {
+    position: fixed;
+    z-index: 10;
+    bottom: 50px;
+    right: 70px;
+
+    &__imagen {
+        width: 70px;
+    }
+}
+

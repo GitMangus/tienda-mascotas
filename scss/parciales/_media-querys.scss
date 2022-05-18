@@ -1,0 +1,830 @@
+@media screen and (max-width: 1200px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    /*Header*/
+
+    .header__logo {
+        width: 120px;
+        height: 100px;
+    }
+
+    .input-group {
+        max-width: 200px;
+    }
+
+    .header__cuenta {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .header__compra {
+        background-color: rgba(185, 185, 185, 0.4);
+        border-radius: 20px;
+        width: 100px;
+        padding-top: 0.2rem;
+        padding-right: 0.1rem;
+    }
+
+    .header__carrito {
+        font-size: 18px;
+    }
+
+    .header__precio {
+        font-size: 16px;
+    }
+
+    /* Main */
+
+    .banner {
+        height: 500px;
+        padding-top: 140px;
+    }
+
+    .promociones {
+        min-height: 15vh;
+        padding: 1rem;
+
+        &__icono {
+            font-size: 30px;
+        }
+    }
+
+
+    .alineado__hijo {
+        margin-left: 40px;
+        font-size: 20px;
+    }
+
+    .flex {
+        min-height: 30vh;
+
+        &__contenedor {
+            width: 220px;
+            height: 410px;
+            padding: 0.5rem;
+            margin: 1rem;
+        }
+
+        &__imagen {
+            height: 230px;
+
+            &--1 {
+                width: 140px;
+                height: 230px;
+            }
+        }
+    }
+
+    .compra {
+        padding: 1rem;
+        min-height: 13vh;
+
+        &__icono {
+            font-size: 40px;
+        }
+
+        &__casa {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .form {
+        min-height: 10vh;
+        padding-top: 1rem;
+
+        &__titulo {
+            font-size: 20px;
+        }
+
+        &__input {
+            width: 250px;
+        }
+    }
+
+    .opiniones {
+        min-height: 40vh;
+
+        &__titulo {
+            font-size: 20px;
+        }
+
+        &__cuadro {
+            width: 230px;
+            min-height: 150px;
+            border: 0.2rem solid rgb(207, 205, 205);
+            border-radius: 0.5rem;
+            padding: 1rem 1rem 1rem 1rem;
+            text-align: center;
+            margin: 2rem 2.5rem;
+        }
+
+        &__nombre {
+            font-size: 16px;
+        }
+    }
+
+    .whatsapp {
+        bottom: 30px;
+        right: 25px;
+
+        &__imagen {
+            width: 50px;
+        }
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 1rem 4rem 0 2rem;
+
+        &__logo {
+            width: 160px;
+            height: 130px;
+        }
+
+        &__iconos {
+            font-size: 20px;
+            padding-left: 3rem;
+        }
+
+        &__titulo {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        &__dos {
+            display: none;
+        }
+    }
+
+    /* Main Sucursales*/
+
+    .sucursales {
+        padding-top: 150px;
+        padding-bottom: 80px;
+        padding-left: 80px;
+        padding-right: 80px;
+        min-height: 15vh;
+
+        &__titulo {
+            font-size: 20px;
+        }
+
+        &__localidades {
+            padding-left: 0;
+            margin-top: 3rem;
+        }
+
+        &__subtitulo {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        &__dire {
+            font-size: 14px;
+        }
+    }
+
+    /*Main Ayuda*/
+
+    .ayuda {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        min-height: 95vh;
+        width: 100%;
+
+        &__titulo {
+            text-align: center;
+            padding-top: 70px;
+            padding-bottom: 0;
+            font-size: 20px;
+        }
+
+        &__texto {
+            text-align: center;
+            max-width: 100%;
+        }
+
+        &__contenedor {
+            display: flex;
+        }
+
+        &__imagen {
+            width: 500px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .preguntas-frecuentes__titulo {
+        font-size: 20px;
+    }
+
+    /*Main Gatos y perros*/
+
+    .padding--top {
+        padding-top: 145px;
+    }
+
+    .flex {
+        padding: 1rem;
+        min-height: 100px;
+        width: 100%;
+    }
+
+    .servicios__titulo {
+        font-size: 20px;
+    }
+
+    .titulos {
+        font-size: 20px;
+    }
+
+    .marca {
+        padding: 0.5rem;
+
+        &__imagen {
+            width: 150px;
+            height: 100px;
+        }
+    }
+
+    .contenedor {
+        width: 320px;
+        height: 400px;
+    }
+
+    .juguetes {
+        min-height: 30vh;
+        padding: 0.5rem;
+
+        &__imagen {
+            width: 100%;
+            height: 160px;
+        }
+    }
+
+    .contenedor--1 {
+        width: 340px;
+        min-height: 450px;
+        padding: 1rem;
+    }
+
+    .camas__imagen {
+        height: 180px;
+    }
+
+    .camas__imagen--1 {
+        width: 90%;
+        height: 200px;
+        padding-left: 1.6rem;
+    }
+
+    .flex__imagen--2 {
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /*Header */
+
+    .header__logo {
+        width: 110px;
+        height: 90px;
+    }
+
+    .input-group {
+        width: 250px;
+        height: 15px;
+        padding-bottom: 2rem;
+    }
+
+    .header__cuenta {
+        display: none;
+    }
+
+    .header__compra {
+        width: 160px;
+        padding: 0.2rem;
+    }
+
+    .header__carrito {
+        font-size: 18px;
+    }
+
+    .header__precio {
+        font-size: 18px;
+    }
+
+    .header__user {
+        display: block;
+        font-size: 20px;
+    }
+
+    .header__open {
+        display: none;
+    }
+
+    .nav__lista {
+        height: 3vh;
+    }
+
+    .nav__item {
+        margin-left: 10px;
+        margin-right: 2px;
+
+        &--close {
+            display: none;
+        }
+    }
+
+    .nav__location {
+        font-size: 18px;
+    }
+
+    /*Main*/
+
+    .banner {
+        height: 350px;
+        padding-top: 130px;
+    }
+
+    .promociones__icono {
+        font-size: 20px;
+    }
+
+    .form {
+        padding: 0.5rem;
+
+        &__input {
+            width: 200px;
+        }
+    }
+
+    .opiniones__cuadro {
+        width: 190px;
+        min-height: 150px;
+        border: 0.2rem solid rgb(207, 205, 205);
+        border-radius: 0.5rem;
+        padding: 1rem 1rem 1rem 1rem;
+        text-align: center;
+        margin: 2rem 2.5rem;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 2rem;
+
+        &__logo {
+            width: 140px;
+            height: 110px;
+        }
+
+        &__iconos {
+            font-size: 20px;
+            padding-left: 2.2rem;
+        }
+
+        &__titulo {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        &__uno {
+            display: none;
+        }
+
+        &__dos {
+            display: block;
+        }
+
+        &__contacto {
+            margin-bottom: 2rem;
+        }
+    }
+
+    /*Main Gatos y perros*/
+
+    .padding--top {
+        padding-top: 130px;
+    }
+
+    .marca__imagen {
+        width: 110px;
+        height: 80px;
+    }
+
+    .servicios__imagen {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    /*Header */
+
+    .header__logo {
+        width: 100px;
+        height: 80px;
+    }
+
+    .header__open {
+        display: block;
+        font-size: 22px;
+    }
+
+    .input-group {
+        display: none;
+    }
+
+    .input-group-2 {
+        display: block;
+        display: flex;
+        padding: 0.5rem;
+        margin: 0 auto;
+        height: 3rem;
+    }
+
+    .header__cuenta {
+        display: none;
+    }
+
+    .header__compra {
+        width: 60px;
+        padding: 0.2rem;
+    }
+
+    .header__carrito {
+        font-size: 18px;
+    }
+
+    .header__precio {
+        display: none;
+    }
+
+    .header__user {
+        display: block;
+        font-size: 20px;
+    }
+
+    #menu {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 80%;
+        height: 150vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 100;
+        transition: left 1s;
+
+        &:target {
+            left: 0;
+        }
+    }
+
+    .nav__lista {
+        display: flex;
+        flex-direction: column;
+        height: 200%;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav__icono {
+        display: none;
+    }
+
+    .nav__location {
+        display: none;
+    }
+
+    .nav__item {
+        color: white;
+        font-weight: bold;
+
+        &--close {
+            display: block;
+        }
+    }
+
+    /* Main */
+
+    .banner {
+        width: 100%;
+        height: 300px;
+        padding-top: 130px;
+    }
+
+    .promociones {
+        min-height: 15vh;
+        padding: 1rem;
+
+        &__icono {
+            font-size: 20px;
+        }
+    }
+
+    .alineado {
+        padding: 0.3rem;
+
+        &__hijo {
+            margin-left: 10px;
+            font-size: 16px;
+        }
+    }
+
+    .flex {
+        min-height: 30vh;
+
+        &__contenedor {
+            border: 0.2rem solid rgb(207, 205, 205);
+            width: 150px;
+            height: 250px;
+            padding: 0.5rem;
+            margin: 1rem;
+            box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
+            transition: all 0.5s;
+        }
+
+        &__imagen {
+            height: 130px;
+
+            &--1 {
+                width: 80px;
+                height: 130px;
+            }
+        }
+
+        &x__texto {
+            margin: 0.5rem 0;
+        }
+
+        &__precio {
+            margin: 0.5rem 0;
+            font-size: 14px;
+        }
+    }
+
+    .compra {
+        min-height: 10vh;
+
+        &__icono {
+            font-size: 20px;
+        }
+
+        &__casa {
+            width: 20px;
+            height: 20px;
+        }
+
+        &__texto {
+            margin: 1rem 0;
+        }
+    }
+
+    .opiniones {
+        display: none;
+    }
+
+    .form {
+        padding: 3px;
+        min-height: 12vh;
+
+        &__input {
+            max-width: 200px;
+            margin: 0.5rem 0 0.5rem 0.1rem;
+        }
+
+        &__titulo {
+            font-size: 16px;
+        }
+
+        &__checkbox {
+            padding: 0;
+            margin: 0.8rem 0 0.5rem 1rem;
+        }
+
+        &__contenedor {
+            padding: 0.2rem;
+            margin-left: 0.5rem;
+        }
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 2rem;
+        padding-bottom: 4rem;
+
+        &__logo {
+            width: 100px;
+            height: 80px;
+        }
+
+        &__iconos {
+            font-size: 16px;
+            padding-left: 1.5rem;
+        }
+
+        &__titulo {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        &__uno {
+            display: none;
+        }
+
+        &__dos {
+            display: block;
+        }
+
+        &__contacto {
+            margin-bottom: 0;
+        }
+    }
+
+    .whatsapp {
+        position: fixed;
+        bottom: 60px;
+        right: 60px;
+
+        &__imagen {
+            width: 40px;
+        }
+    }
+
+    /*Main Ayuda*/
+
+    .ayuda {
+        padding-top: 8rem;
+
+        &__titulo {
+            padding-top: 2rem;
+        }
+
+        &__container {
+            height: fit-content;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__texto {
+            width: 100%;
+            height: fit-content;
+        }
+
+        &__imagen {
+            width: 100%;
+            min-height: 100px;
+            margin-top: 1rem;
+        }
+    }
+
+    /*Main Cuenta*/
+
+    .cuenta {
+        padding-top: 180px;
+
+        &__formulario {
+            height: 400px;
+            border: 0.5rem solid rgb(240, 240, 240);
+            padding: 0.5rem;
+            width: 300px;
+        }
+
+        &__titulo {
+            font-size: 18px;
+        }
+
+        &__enlace {
+            line-height: 1;
+            margin-top: 0.5rem;
+        }
+
+        &__input {
+            width: 100%;
+        }
+    }
+
+    .btn-primary {
+        font-size: 12px;
+    }
+
+    /* Main Sucursales*/
+
+    .sucursales {
+        padding-top: 7rem;
+        padding-bottom: 2rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        min-height: 15vh;
+
+        &__titulo {
+            font-size: 18px;
+        }
+
+        &__parrafo {
+            margin: 2rem 0;
+        }
+
+        &__localidades {
+            padding-left: 0;
+            margin-top: 1rem;
+        }
+
+        &__mapa {
+            height: 250px;
+        }
+
+        &__subtitulo {
+            font-size: 15px;
+        }
+
+        &__dire {
+            font-size: 12px;
+        }
+    }
+
+    /*Main Perros y gatos*/
+
+    .titulos {
+        font-size: 15px;
+    }
+
+    .padding--top {
+        padding-top: 8rem;
+    }
+
+    .flex__imagen--2 {
+        height: 130px;
+    }
+
+    .marca__imagen {
+        width: 100px;
+        height: 80px;        
+    }
+
+    .contenedor {
+        width: 220px;
+        height: 260px;
+        padding: 1rem;
+        margin: 1rem;
+        border: 0.2rem solid rgb(207, 205, 205);
+        box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
+        transition: all 0.5s;
+
+        &--1 {
+        width: 220px;
+        min-height: 260px;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    }
+
+    .juguetes {
+        width: 100%;
+        min-height: 55vh;
+        padding: 2rem;
+
+        &__imagen {
+            height: 90px;
+        }
+    }
+ 
+    .camas__imagen {
+        height: 100px;
+
+        &--1 {
+            height: 120px;
+        }
+    } 
+
+    .flex2 {
+        padding: 1rem;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .servicios {
+        width: 100%;
+
+        &__imagen {
+            width: 90%;
+        }
+    }
+}

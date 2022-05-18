@@ -1,0 +1,37 @@
+.cuenta {
+    padding-top: 250px;
+
+    &__formulario {
+        border: 0.5rem solid rgb(240, 240, 240);
+        padding: 0.5rem;
+        width: 400px;
+        height: 470px;
+        text-align: center;
+        line-height: 2.5;
+        margin: auto;
+    }
+
+    &__titulo {
+        font-size: 20px;
+        margin: 1rem 0;
+    }
+
+    &__enlace {
+        line-height: 1.5;
+        margin-top: 1rem;
+    }
+}
+
+.btn-primary {
+    background-color: rgba(58, 87, 147, 255);
+    border-color: rgba(58, 87, 147, 255);
+    font-size: 14px;
+}
+
+.facebook {
+    margin-right: 0.5rem;
+    font-size: 18px;
+}
+
+
+

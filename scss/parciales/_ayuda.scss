@@ -1,0 +1,61 @@
+.ayuda {
+    background-color: rgb(240, 240, 240);
+    padding-top: 200px;
+    padding-bottom: 60px;
+    min-height: 95vh;
+    width: 100%;
+
+    &__titulo {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    &__contenedor {
+        margin: 2rem;
+    }
+
+    &__texto {
+        text-align: left;
+        max-width: 600px;
+        min-height: 300px;
+        line-height: 1.6;
+        padding: 1rem;
+    }
+
+    &__imagen {
+        max-width: 100%;
+        min-height: 350px;
+    }
+}
+
+.preguntas-frecuentes {
+    text-align: center;
+    color: rgb(49, 49, 49);
+    min-height: 65vh;
+
+    &__titulo {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 2rem;
+    }
+}
+
+.accordion-item {
+    background-color: $color-principal;
+}
+
+.legales {
+    background-color: rgb(240, 240, 240);
+    padding: 2rem 5rem;
+    font-size: 14px;
+
+    &__titulo {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+

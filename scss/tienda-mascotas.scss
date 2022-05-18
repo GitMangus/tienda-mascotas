@@ -1,0 +1,14 @@
+/*Este es mi archivo principal de SAS*/
+/*Importando todos los parciales de mis estilos*/
+/*Es importante el orden de importación*/
+
+@import "parciales/_variables.scss";
+@import "parciales/_reseteo.scss";
+@import "parciales/_header.scss";
+@import "parciales/_index.scss";
+@import "parciales/_footer.scss";
+@import "parciales/_sucursales.scss";
+@import "parciales/_ayuda.scss";
+@import "parciales/_cuenta.scss";
+@import "parciales/_gatos-perros.scss";
+@import "parciales/_media-querys.scss";

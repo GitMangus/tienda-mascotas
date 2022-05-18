@@ -1,0 +1,103 @@
+.header {
+    background-color: $color-principal;
+    padding-top: 0.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+    &__logo {
+        width: 160px;
+        height: 130px;
+    }
+
+    &__cuenta {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__compra {
+        background-color: rgba(185, 185, 185, 0.4);
+        border-radius: 20px;
+        width: 130px;
+        padding-top: 0.3rem;
+    }
+
+    &__carrito {
+        font-size: 20px;
+    }
+
+    &__precio {
+        font-size: 20px;
+    }
+
+    &__user {
+        display: none;
+    }
+
+    &__open {
+        display: none;
+    }
+}
+
+.input-group {
+    width: 380px;
+    height: 30px;
+    align-self: center;
+}
+
+.input-group-2 {
+    display: none;
+}
+
+.nav {
+    background-color: rgb(243, 188, 38);
+    width: 100%;
+
+    &__lista {
+        height: 3vh;
+    }
+
+    &__item {
+        margin-left: 60px;
+        margin-right: 5px;
+
+        &--close {
+            display: none;
+        }
+    }
+
+    &__location {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+}
+
+ul {
+    list-style: none;
+    font-size: 0;
+}
+
+li {
+    display: inline-block;
+    width: 25%;
+    position: static;
+    font-size: 1rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+    background-color: rgb(243, 188, 38);
+}
