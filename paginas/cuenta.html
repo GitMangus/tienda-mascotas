@@ -28,22 +28,19 @@
         <div class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-3 col-md-3 d-flex align-items-center">
+                    <div class="col-4 col-sm-3 col-md-3 d-flex align-items-center">
                         <a href="../index.html">
                             <img class="header__logo" src="../imagenes/petland-logo.png" alt="logotipo petland"
                                 width="200" height="150">
                         </a>
-                        <a href="#menu" class="header__open">
-                            <i class="fa-solid fa-bars"></i>
-                        </a>
                     </div>
-                    <div class="col-12 col-sm-3 col-md-3 input-group">
+                    <div class="col-3 col-sm-3 col-md-3 input-group">
                         <input type="text" class="form-control" placeholder="Buscar productos"
                             aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
                                 class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
-                    <div class="col-12 col-sm-1 col-md-3 d-flex align-items-center justify-content-end">
+                    <div class="col-2 col-sm-1 col-md-3 d-flex align-items-center justify-content-end">
                         <h3 class="header__cuenta">
                             <a href="cuenta.html">Ingresar / Crear cuenta</a>
                         </h3>
@@ -51,7 +48,7 @@
                             <i class="fa-solid fa-user-large"></i>
                         </a>
                     </div>
-                    <div class="col-12 col-sm-3 col-md-2 d-flex align-items-center justify-content-end">
+                    <div class="col-2 col-sm-3 col-md-2 d-flex align-items-center justify-content-end">
                         <div class="header__compra">
                             <button type="button" class="btn position-relative">
                                 <i class="fa-solid fa-cart-shopping header__carrito"></i>
@@ -63,16 +60,33 @@
                             <span class="header__precio">$ 0,00</span>
                         </div>
                     </div>
+                    <div class="col-2 col-sm-4 d-flex align-items-center justify-content-end">
+                        <div>
+                            <a href="#menu" class="header__open">
+                                <i class="fa-solid fa-bars"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 input-group-2">
+                        <input type="text" class="form-control" placeholder="Buscar productos"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
                 </div>
             </div>
 
-            <nav class="nav">
+            <nav class="nav" id="menu">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12">
-                            <ul class="nav__lista" id="menu">
+                            <ul class="nav__lista">
                                 <li><a class="nav__item" href="perros.html">Perros <i
-                                            class="fa-solid fa-angle-down"></i></a>
+                                            class="fa-solid fa-angle-down nav__icono"></i></a>
                                     <ul>
                                         <li><a href="perros.html">Alimento balanceado</a></li>
                                         <li><a href="perros.html">Juguetes</a></li>
@@ -82,7 +96,7 @@
                                     </ul>
                                 </li>
                                 <li><a class="nav__item" href="gatos.html">Gatos <i
-                                            class="fa-solid fa-angle-down"></i></a>
+                                            class="fa-solid fa-angle-down nav__icono"></i></a>
                                     <ul>
                                         <li><a href="gatos.html">Alimento balanceado</a></li>
                                         <li><a href="gatos.html">Juguetes</a></li>
@@ -92,7 +106,7 @@
                                     </ul>
                                 </li>
                                 <li><a class="nav__item" href="ayuda.html">Ayuda <i
-                                            class="fa-solid fa-angle-down"></i></a>
+                                            class="fa-solid fa-angle-down nav__icono"></i></a>
                                     <ul>
                                         <li><a href="ayuda.html">Sobre PetLand</a></li>
                                         <li><a href="ayuda.html">Preguntas frecuentes</a></li>
@@ -122,11 +136,11 @@
                 <button class="btn btn-primary">
                     <i class="fa-brands fa-facebook-square facebook"></i>Iniciar sesión con Facebook</button>
                 <p>o</p>
-                <div class="mb-3">
+                <div class="mb-3 cuenta__input">
                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
                         aria-describedby="emailHelp">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 cuenta__input">
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
                 </div>
                 <button type="submit" class="btn btn-secondary">Ingresar</button>
