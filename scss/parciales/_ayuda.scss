@@ -40,12 +40,18 @@
         text-align: center;
         font-size: 25px;
         font-weight: bold;
-        margin: 2rem;
+        padding: 3rem;
     }
 }
 
 .accordion-item {
     background-color: $color-principal;
+    border: 0;
+}
+
+.accordion-button{
+    width: 25%;
+    margin: 0 auto;
 }
 
 .legales {

@@ -1,6 +1,6 @@
 .footer {
     background-color: $color-principal;
-    padding: 1rem;
+    padding: 2rem;
 
     &__logo {
         width: 200px;
@@ -13,7 +13,7 @@
     }
 
     &__titulo {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
     }
 
@@ -26,4 +26,30 @@
     &__dos {
         display: none;
     }
+}
+
+/*Mapa Footer*/
+
+$redes: (
+instagram:#c50dbf,
+facebook:#075cb1,
+twitter: #70b1f3,
+font-size:30px,
+padding-left:0.5rem
+);
+
+.footer__instagram{
+    color:map-get($redes, instagram);
+    font-size:map-get($redes, tfuente);
+}
+
+.footer__facebook{
+    color:map-get($redes, facebook);
+    font-size:map-get($redes, tfuente);
+    padding-left:map-get($redes, padding-left);
+}
+
+.footer__twitter{
+    color:map-get($redes, twitter);
+    font-size:map-get($redes, tfuente);
 }

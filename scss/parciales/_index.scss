@@ -33,13 +33,20 @@
     }
 }
 
+/*Mixin Index*/
+
+@mixin generarFlex ($direction, $eje-principal, $eje-secundario){
+    display:flex;
+    flex-direction:$direction;
+    justify-content:$eje-principal;
+    align-items:$eje-secundario;
+}
+
 .flex {
+    @include generarFlex (row, space-around, center);
     width: 100%;
     min-height: 60vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+   
     &__contenedor {
         border: 0.2rem solid rgb(207, 205, 205);
         width: 290px;
