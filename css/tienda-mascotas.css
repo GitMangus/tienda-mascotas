@@ -148,6 +148,10 @@ ul li:hover ul {
   padding: 2rem;
 }
 
+.promociones__grupo {
+  text-align: center;
+}
+
 .promociones__icono {
   font-size: 40px;
   display: block;
@@ -483,7 +487,7 @@ ul li:hover ul {
   text-align: center;
   color: #313131;
   min-height: 65vh;
-  padding: 2rem;
+  padding: 2rem 40rem 4rem;
 }
 
 .preguntas-frecuentes__titulo {
@@ -630,6 +634,45 @@ ul li:hover ul {
 
 .contenedor--1 {
   height: 470px;
+}
+
+.contacto {
+  padding-top: 250px;
+  padding-bottom: 20px;
+}
+
+.contacto__titulo {
+  margin-bottom: 2rem;
+}
+
+.contacto__imagen {
+  width: 500px;
+  height: 500px;
+  border-radius: 100px;
+  border: 0.5rem solid black;
+}
+
+.contacto__grupo {
+  text-align: center;
+}
+
+.contacto__label {
+  margin: 0.5rem 0;
+  font-size: 14px;
+}
+
+.contacto__opcional {
+  font-size: 14px;
+  color: gray;
+}
+
+.contacto__form {
+  margin: 2rem 0;
+}
+
+.contacto__descripcion {
+  font-size: 12px;
+  color: gray;
 }
 
 @media screen and (max-width: 1200px) {

@@ -162,21 +162,171 @@
         <section class="promociones">
             <div class="container">
                 <div class="row">
-                    <div class="col-3  col-md-3">
-                        <i class="fa-solid fa-credit-card promociones__icono"></i>
-                        <span class="promociones__texto">Ver todas las tarjetas / promociones</span>
+                    <div class="col-3 col-md-3 promociones__grupo">
+                        <!-- Button trigger modal -->
+                        <div class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fa-solid fa-credit-card promociones__icono"></i>
+                            <span class="promociones__texto">Ver todas las tarjetas / promociones</span>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="exampleModalLabel">Medios de pago</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h5>Mercado Pago</h5>
+
+                                        <p>Elegí esta opción para pagar con tarjeta de crédito o débito y acceder a
+                                            las
+                                            promociones de PetLand. Los descuentos bancarios no serán aplicados.</p>
+
+                                        <h5>Promociones bancarias</h5>
+
+                                        <p>Elegí esta opción para pagar con tarjeta de crédito y acceder a los
+                                            descuentos
+                                            bancarios. El reintegro se verá reflejado en tu resumen de tarjeta. Las
+                                            promociones generales de PetLand no serán aplicadas.</p>
+                                        <i class="fa-brands fa-cc-visa"></i>
+                                        <i class="fa-brands fa-cc-mastercard"></i>
+                                        <i class="fa-brands fa-cc-amex"></i>
+
+                                        <h5>Promociones Exclusivas PetLand</h5>
+
+                                        <p>Lunes y miércoles 20%OFF.</p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-3 col-md-3">
-                        <i class="fa-regular fa-money-bill-1 promociones__icono"></i>
-                        <span class="promociones__texto">Pagá con efectivo</span>
+
+                    <div class="col-3 col-md-3 promociones__grupo">
+                        <!-- Button trigger modal -->
+                        <div class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            <i class="fa-regular fa-money-bill-1 promociones__icono"></i>
+                            <span class="promociones__texto">Pagá con efectivo</span>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="exampleModalLabel">Pago en efectivo</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Podés realizar tu pago con Mercado Pago o en cualquier sucursal de Rapipago o
+                                            Pago fácil.</p>
+                                        <p>Además, en el último paso de la compra podés elegir la opción de pago en
+                                            "efectivo" para pagarlo cuando lo recibís en tu domicilio.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-3 col-md-3">
-                        <i class="fa-regular fa-comments promociones__icono"></i>
-                        <span class="promociones__texto">Leer opiniones</span>
+                    <div class="col-3 col-md-3 promociones__grupo">
+                        <a href="#opiniones">
+                            <div class="btn">
+                                <i class="fa-regular fa-comments promociones__icono"></i>
+                                <span class="promociones__texto">Leer opiniones</span>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-3 col-md-3">
-                        <i class="fa-solid fa-truck promociones__icono"></i>
-                        <span class="promociones__texto">Formas de entrega</span>
+                    <div class="col-3 col-md-3 promociones__grupo">
+                        <!-- Button trigger modal -->
+                        <div class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <i class="fa-solid fa-truck promociones__icono"></i>
+                            <span class="promociones__texto">Formas de entrega</span>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="exampleModalLabel">Formas de Entrega</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div>
+                                            <p>
+                                                Ahorrá tiempo y dinero haciendo tu compra en PetLand. Pedí desde la
+                                                comodidad de tu casa y elegí la forma de entrega que más te convenga
+                                                para
+                                                recibir los productos para tu mascota.
+                                            </p>
+                                            <p>
+                                                ¿Preferís quedarte en casa? Te enviamos tu pedido online a cualquier
+                                                parte
+                                                del país de manera fácil y rápida. Si vivís en CABA o GBA tenes envío
+                                                GRATIS
+                                                en compras superiores a $3.500. Si tenés ganas de salir, elegí tu
+                                                entrega
+                                                para retirar sin cargo en una de nuestras 10 sucursales.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-truck-fast"></i>
+                                            <h5>Envío Express</h5>
+                                            <p>
+                                                <strong>CABA y GBA:</strong> Envíos de Lunes a Sábado en 3 franjas
+                                                horarias.
+                                                Comprá de Lunes
+                                                a Viernes antes de las 13 hs y recibilo en el día.
+                                                <strong>Envío GRATIS para compras superiores a $3.500</strong>
+                                            </p>
+                                        </div>
+
+                                        <div>
+                                            <i class="fa-solid fa-truck"></i>
+                                            <h5>Envío 24hs</h5>
+                                            <p>
+                                                <strong>La Plata</strong>, Envíos de Lunes a Sábado. Comprá de Lunes a
+                                                Viernes antes de las
+                                                12 hs y recibilo al día siguiente.
+                                                <strong>Envío GRATIS para compras superiores a $3.500</strong>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-map-location-dot"></i>
+                                            <h5>Envíos al interior</h5>
+                                            <p>
+                                                Llegamos a todos los puntos del país. En el último paso de la compra vas
+                                                a poder ver el costo de envío según el código postal.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -273,7 +423,7 @@
             </div>
         </section>
 
-        <section class="opiniones">
+        <section class="opiniones" id="opiniones">
             <div class="container">
                 <div>
                     <h2 class="opiniones__titulo">Opiniones de nuestros clientes</h2>
