@@ -636,6 +636,11 @@ ul li:hover ul {
   height: 470px;
 }
 
+.productos {
+  padding-top: 220px;
+  text-align: center;
+}
+
 .contacto {
   padding-top: 250px;
   padding-bottom: 20px;
