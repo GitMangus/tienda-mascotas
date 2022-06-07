@@ -638,7 +638,29 @@ ul li:hover ul {
 
 .productos {
   padding-top: 220px;
+}
+
+.productos__titulo {
   text-align: center;
+}
+
+.productos__parrafo {
+  text-align: center;
+  margin: 2rem 0 4rem 0;
+}
+
+.productos__subtitulos {
+  color: #1d1f83;
+  font-weight: bold;
+}
+
+.productos__enlace {
+  font-size: 1rem;
+}
+
+.productos__enlace:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 .contacto {

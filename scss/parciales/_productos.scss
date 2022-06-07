@@ -1,5 +1,33 @@
-.productos{
+.productos {
     padding-top: 220px;
-    text-align: center;
-}
 
+    &__titulo {
+        text-align: center;
+    }
+
+    &__parrafo {
+        text-align: center;
+        margin: 2rem 0 4rem 0;
+    }
+
+    &__subtitulos {
+        color: rgb(29, 31, 131);
+        font-weight: bold;
+    }
+
+    &__lista {
+        
+    }
+
+    &__enlace {
+        font-size: 1rem;
+
+        &:hover {
+            text-decoration: underline;
+            color: black;
+        }
+    }
+
+
+
+}
