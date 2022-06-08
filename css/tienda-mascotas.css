@@ -32,6 +32,10 @@ section[id] {
   scroll-margin-top: 180px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .header {
   background-color: #fcc757;
   padding-top: 0.5rem;
@@ -236,7 +240,6 @@ ul li:hover ul {
 .flex__boton {
   display: block;
   margin: auto;
-  border-radius: 8px;
   border-radius: 5px;
   padding: 0.3rem;
   background-color: #a0a8a7;
@@ -649,18 +652,62 @@ ul li:hover ul {
   margin: 2rem 0 4rem 0;
 }
 
-.productos__subtitulos {
+.productos__subtitulo {
   color: #1d1f83;
   font-weight: bold;
 }
 
-.productos__enlace {
-  font-size: 1rem;
+.productos__ul {
+  display: flex;
+  flex-direction: column;
 }
 
-.productos__enlace:hover {
+.productos__lista {
+  font-size: 14px;
+  width: fit-content;
+}
+
+.productos__lista:hover {
   text-decoration: underline;
   color: black;
+  cursor: pointer;
+}
+
+.productos__separacion {
+  border-bottom: 0.1rem solid #cccccc;
+  margin-bottom: 0.8rem;
+}
+
+.productos ul {
+  padding-left: 0;
+}
+
+.productos .card__imagen {
+  width: 35%;
+  height: 50%;
+  margin: auto;
+  padding-top: 1rem;
+}
+
+.productos .card__titulo {
+  color: #666565;
+}
+
+.productos .card__texto {
+  font-size: 15px;
+}
+
+.productos .card__precio {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-size: 23px;
+  margin-bottom: 1rem;
+}
+
+.productos .card__boton {
+  margin-left: 50%;
+  translate: -50%;
 }
 
 .contacto {
