@@ -149,15 +149,20 @@
                         <div class="productos__separacion">
                             <h5 class="productos__subtitulo">Alimentos</h5>
                             <ul class="productos__ul">
-                                <a href="">
-                                    <li class="productos__lista">Alimentos secos</li>
-                                </a>
-                                <a href="">
-                                    <li class="productos__lista">Alimentos húmedos</li>
-                                </a>
-                                <a href="">
-                                    <li class="productos__lista">Alimentos para necesidades especiales</li>
-                                </a>
+                                <li class="productos__lista">
+                                    <a href="#" id="alimentoSeco">Alimentos secos
+                                        <span class="productos__cantidad">(30)</span></a>
+                                </li>
+
+                                <li class="productos__lista">
+                                    <a href="#" id="alimentoHumedo">Alimentos húmedos
+                                        <span class="productos__cantidad">(6)</span></a>
+                                </li>
+
+                                <li class="productos__lista">
+                                    <a href="#" id="alimentoEspecial">Alimentos para necesidades especiales
+                                        <span class="productos__cantidad">(6)</span></a>
+                                </li>
                             </ul>
                         </div>
 
@@ -267,17 +272,14 @@
                         </div>
                     </div>
 
-                    <div class="col-9">
-
+                    <div class="col-9" id="imagenes">
                         <div class="row row-cols-1 row-cols-md-3 g-4">
-
-                            <div class="col">
+                            <div class="col alimentoSeco">
                                 <div class="card h-100">
-                                    <img src="../imagenes/Agility/agilityPerro.png" class="card__imagen"
-                                        alt="agility">
+                                    <img src="../imagenes/Agility/agilityPerro.png" class="card__imagen" alt="agility">
                                     <div class="card-body">
                                         <h6 class="card__titulo">Agility</h6>
-                                        <p class="card__texto">Alimento Agility para perro adulto
+                                        <p class="card__texto">Alimento Agility para perro adulto talla mediana y grande
                                         </p>
                                         <span class="card__precio">$4.500</span>
                                         <a href="#" class="btn btn-primary card__boton">Comprar</a>
@@ -285,9 +287,10 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col alimentoSeco">
                                 <div class="card h-100">
-                                    <img src="../imagenes/Eukanuba/eukanubaPuppy.png" class="card__imagen" alt="eukanuba">
+                                    <img src="../imagenes/Eukanuba/eukanubaPuppy.png" class="card__imagen"
+                                        alt="eukanuba">
                                     <div class="card-body">
                                         <h6 class="card__titulo">Eukanuba</h6>
                                         <p class="card__texto">Alimento Eukanuba para perro cachorro Raza grande</p>
@@ -297,21 +300,22 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col alimentoSeco">
                                 <div class="card h-100">
                                     <img src="../imagenes/MonAmi/monamiFood.png" class="card__imagen" alt="monami">
                                     <div class="card-body">
                                         <h6 class="card__titulo">Mon Ami</h6>
-                                        <p class="card__texto">Alimento Mon Ami para gato adulto</p>
+                                        <p class="card__texto">Alimento Mon Ami para gato adulto de origen natural</p>
                                         <span class="card__precio">$3.700</span>
                                         <a href="#" class="btn btn-primary card__boton">Comprar</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col alimentoSeco">
                                 <div class="card h-100">
-                                    <img src="../imagenes/OldPrince/oldPrinceCerdo.png" class="card__imagen" alt="oldPrince">
+                                    <img src="../imagenes/OldPrince/oldPrinceCerdo.png" class="card__imagen"
+                                        alt="oldPrince">
                                     <div class="card-body">
                                         <h6 class="card__titulo">Old Prince</h6>
                                         <p class="card__texto">Alimento Old Prince para perro adulto sabor cerdo</p>
@@ -321,12 +325,13 @@
                                 </div>
                             </div>
 
-                            <div class="col">
+                            <div class="col alimentoSeco">
                                 <div class="card h-100">
-                                    <img src="../imagenes/Pedigree/pedigreeAdulto.jpg" class="card__imagen" alt="pedigree">
+                                    <img src="../imagenes/Pedigree/pedigreeAdulto.jpg" class="card__imagen"
+                                        alt="pedigree">
                                     <div class="card-body">
                                         <h6 class="card__titulo">Pedigree</h6>
-                                        <p class="card__texto">Alimento Pedigree para perro adulto</p>
+                                        <p class="card__texto">Alimento Pedigree para perro adulto sabor carne</p>
                                         <span class="card__precio">$4.000</span>
                                         <a href="#" class="btn btn-primary card__boton">Comprar</a>
                                     </div>
@@ -335,7 +340,8 @@
 
                             <div class="col">
                                 <div class="card h-100">
-                                    <img src="../imagenes/Purina/excellentKitten.png" class="card__imagen" alt="excellent">
+                                    <img src="../imagenes/Purina/excellentKitten.png" class="card__imagen"
+                                        alt="excellent">
                                     <div class="card-body">
                                         <h6 class="card__titulo">Excellent</h6>
                                         <p class="card__texto">Alimento Excellent Kitten sabor pollo y arroz</p>
@@ -347,15 +353,416 @@
 
                             <div class="col">
                                 <div class="card h-100">
-                                    <img src="../imagenes/" class="card__imagen" alt="excellent">
+                                    <img src="../imagenes/Raza/razaGato.jpg" class="card__imagen" alt="raza">
                                     <div class="card-body">
-                                        <h6 class="card__titulo">Excellent</h6>
-                                        <p class="card__texto">Alimento Excellent Kitten sabor pollo y arroz</p>
+                                        <h6 class="card__titulo">Raza</h6>
+                                        <p class="card__texto">Alimento Raza para gato adulto sabor pescado</p>
+                                        <span class="card__precio">$3.500</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Rosco/roscoGato.jpg" class="card__imagen" alt="rosco">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Rosco</h6>
+                                        <p class="card__texto">Alimento Rosco para gato adulto sabor pescado</p>
+                                        <span class="card__precio">$2.800</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Rosco/roscoPerro.png" class="card__imagen" alt="rosco">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Rosco</h6>
+                                        <p class="card__texto">Alimento Rosco para perro adulto sabor hígado, carne y
+                                            pollo</p>
+                                        <span class="card__precio">$2.800</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/RoyalCanin/royalBulldog.png" class="card__imagen"
+                                        alt="royalCanin">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Royal Canin</h6>
+                                        <p class="card__texto">Alimento Royal Canin para perro adulto raza Bulldog</p>
+                                        <span class="card__precio">$6.000</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/RoyalCanin/royalCachorro.png" class="card__imagen"
+                                        alt="royalCanin">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Royal Canin</h6>
+                                        <p class="card__texto">Alimento Royal Canin para perro cachorro Mini</p>
+                                        <span class="card__precio">$5.800</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Vitalcan/vitalcanGato.png" class="card__imagen"
+                                        alt="vitalCan">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Vital Can</h6>
+                                        <p class="card__texto">Alimento Vital Can Balanced para gato adulto</p>
+                                        <span class="card__precio">$7.600</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Vitalcan/vitalcanPerro.png" class="card__imagen"
+                                        alt="vitalCan">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Vital Can</h6>
+                                        <p class="card__texto">Alimento Vital Can Balanced para perro adulto</p>
+                                        <span class="card__precio">$6.900</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/VitalCrops/vitalCrops.png" class="card__imagen"
+                                        alt="vitalCrops">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Vital Crops</h6>
+                                        <p class="card__texto">Alimento balanceado Vital Crops para perro adulto</p>
+                                        <span class="card__precio">$7.500</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Whiskas/whiskas.jpg" class="card__imagen" alt="whiskas">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Whiskas</h6>
+                                        <p class="card__texto">Alimento Whiskas para gato adulto sabor pollo y leche</p>
                                         <span class="card__precio">$5.500</span>
                                         <a href="#" class="btn btn-primary card__boton">Comprar</a>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Eukanuba/eukanubaPeso.jpg" class="card__imagen"
+                                        alt="eukanuba">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Eukanuba</h6>
+                                        <p class="card__texto">Alimento Eukanuba Weight Control para perro raza pequeña
+                                            sabor pollo</p>
+                                        <span class="card__precio">$4.950</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Agility/agilityGato.png" class="card__imagen" alt="agility">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Agility</h6>
+                                        <p class="card__texto">Alimento Agility Urinary para gato adulto</p>
+                                        <span class="card__precio">$5.380</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/OldPrince/oldPrinceGato.png" class="card__imagen"
+                                        alt="oldPrince">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Old Prince</h6>
+                                        <p class="card__texto">Alimento Old Prince Urinary Care para gato adulto</p>
+                                        <span class="card__precio">$5.750</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/OldPrince/oldPrince.jpg" class="card__imagen" alt="oldPrince">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Old Prince</h6>
+                                        <p class="card__texto">Alimento Old Prince para perro adulto sabor cordero</p>
+                                        <span class="card__precio">$4.950</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Purina/purinaPerros.jpg" class="card__imagen" alt="excellent">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Excellent</h6>
+                                        <p class="card__texto">Alimento Excellent perro adulto sabor pollo y arroz</p>
+                                        <span class="card__precio">$5.950</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Raza/razaPerro.jpg" class="card__imagen" alt="raza">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Raza</h6>
+                                        <p class="card__texto">Alimento Raza para perro adulto sabor carne</p>
+                                        <span class="card__precio">$4.500</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/RoyalCanin/royalGato.png" class="card__imagen"
+                                        alt="royalCanin">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Royal Canin</h6>
+                                        <p class="card__texto">Alimento Royal Canin Feline Preference EXIGENT para gato
+                                            adulto</p>
+                                        <span class="card__precio">$6.500</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Vitalcan/vitalcanMobility.jpg" class="card__imagen"
+                                        alt="vitalCan">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Vital Can</h6>
+                                        <p class="card__texto">Alimento Vital Can Mobility Aid para perro adulto</p>
+                                        <span class="card__precio">$6.700</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/RoyalCanin/royalHipoalergenico.png" class="card__imagen"
+                                        alt="royalCanin">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Royal Canin</h6>
+                                        <p class="card__texto">Alimento Royal Canin Hypoallergenic para gato adulto</p>
+                                        <span class="card__precio">$7.500</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Vitalcan/vitalcanHipoalergenico.jpg" class="card__imagen"
+                                        alt="vitalCan">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Vital Can</h6>
+                                        <p class="card__texto">Alimento Vital Can Hypoallergenic Care para gato adulto
+                                        </p>
+                                        <span class="card__precio">$6.800</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Whiskas/whiskasHogareño.jpg" class="card__imagen"
+                                        alt="whiskas">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Whiskas</h6>
+                                        <p class="card__texto">Alimento Whiskas Hogareños Control de peso para gato</p>
+                                        <span class="card__precio">$4.500</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/MonAmi/monamiDental.png" class="card__imagen" alt="monami">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Mon Ami</h6>
+                                        <p class="card__texto">Snacks Mon Ami para perro Dental Clean con pollo fresco
+                                        </p>
+                                        <span class="card__precio">$1.300</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Vitalcan/vitalcanPuppy.png" class="card__imagen"
+                                        alt="vitalCan">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Vital Can</h6>
+                                        <p class="card__texto">Alimento Vital Can para perro cachorro razas pequeñas</p>
+                                        <span class="card__precio">$5.800</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/RoyalCanin/royalIndoor.jpg" class="card__imagen"
+                                        alt="royalCanin">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Royal Canin</h6>
+                                        <p class="card__texto">Alimento Royal Canin Home Life INDOOR para gato adulto
+                                        </p>
+                                        <span class="card__precio">$7.630</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/catpro.jpg" class="card__imagen" alt="vitalCrops">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Vital Crops</h6>
+                                        <p class="card__texto">Alimento Vital Crops CATPRO para gato adulto</p>
+                                        <span class="card__precio">$4.750</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col alimentoHumedo">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Agility/agilityHumedo.jpg" class="card__imagen" alt="agility">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Agility</h6>
+                                        <p class="card__texto">Lata Agility Wet Active Health para gatito sabor natural
+                                        </p>
+                                        <span class="card__precio">$200</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/MonAmi/monamiCarne.png" class="card__imagen" alt="monami">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Mon Ami</h6>
+                                        <p class="card__texto">Snacks Mon Ami para perro sabor carne fresca</p>
+                                        <span class="card__precio">$2.250</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Pedigree/pedigreeHumedo.png" class="card__imagen"
+                                        alt="pedigree">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Pedigree</h6>
+                                        <p class="card__texto">Bifecitos en salsa para perro adulto sabor pollo</p>
+                                        <span class="card__precio">$150</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/VitalCrops/vitalCropsLata.jpg" class="card__imagen"
+                                        alt="vitalCrops">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Vital Crops</h6>
+                                        <p class="card__texto">Lata Vital Crops para perro adulto sabor carne</p>
+                                        <span class="card__precio">$200</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Whiskas/whiskasKitten.jpg" class="card__imagen" alt="whiskas">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Whiskas</h6>
+                                        <p class="card__texto">Pouch en salsa Whiskas para gatito sabor carne</p>
+                                        <span class="card__precio">$135</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Whiskas/whiskasHumedo.png" class="card__imagen" alt="whiskas">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Whiskas</h6>
+                                        <p class="card__texto">Pouch en salsa Whiskas para gato adulto sabor pavo</p>
+                                        <span class="card__precio">$135</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Sanicat/sanicat.png" class="card__imagen" alt="purina">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Tidy Cats</h6>
+                                        <p class="card__texto">Piedras sanitarias Purina Tidy Cat para gato</p>
+                                        <span class="card__precio">$390</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../imagenes/Sanicat/sanicatKitten.jpg" class="card__imagen" alt="sanicat">
+                                    <div class="card-body">
+                                        <h6 class="card__titulo">Sanicat</h6>
+                                        <p class="card__texto">Piedras sanitarias Sanicat Evolution Kitten para gato</p>
+                                        <span class="card__precio">$350</span>
+                                        <a href="#" class="btn btn-primary card__boton">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
 
                         </div>
                     </div>

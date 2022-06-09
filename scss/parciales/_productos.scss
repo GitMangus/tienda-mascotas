@@ -1,8 +1,10 @@
 .productos {
     padding-top: 220px;
+    min-height: 100vh;
 
     &__titulo {
         text-align: center;
+        font-weight: bold;
     }
 
     &__parrafo {
@@ -32,6 +34,10 @@
         }
     }
 
+    &__cantidad {
+        color: gray;
+    }
+
     &__separacion {
         border-bottom: 0.1rem solid rgb(204, 204, 204);
         margin-bottom: 0.8rem;
@@ -42,7 +48,7 @@
     }
 
     .card {
-        
+
         &__imagen {
             width: 35%;
             height: 50%;
@@ -54,11 +60,11 @@
             color: rgb(102, 101, 101);
         }
 
-        &__texto{
+        &__texto {
             font-size: 15px;
         }
 
-        &__precio{
+        &__precio {
             display: block;
             text-align: center;
             font-weight: 500;
@@ -66,10 +72,13 @@
             margin-bottom: 1rem;
         }
 
-        &__boton{
+        &__boton {
             margin-left: 50%;
-            translate: -50%; 
+            translate: -50%;
         }
     }
+}
 
+#alimentoSeco:checked~#imagenes .alimentoHumedo {
+    display: none;
 }
