@@ -17,21 +17,33 @@
         font-weight: bold;
     }
 
-    &__ul {
+    &__contenedor {
+        display: flex;
+        flex-direction: row;
+        padding: 0 20rem;
+    }
+
+    &__label {
         display: flex;
         flex-direction: column;
+        border: 0.5rem solid black;
+        width: 30%;
     }
 
     &__lista {
         font-size: 14px;
         width: fit-content;
 
-
         &:hover {
             text-decoration: underline;
             color: black;
             cursor: pointer;
         }
+    }
+
+    &__cards {
+        border: 0.5rem solid black;
+        width: 70%;
     }
 
     &__cantidad {
@@ -43,11 +55,8 @@
         margin-bottom: 0.8rem;
     }
 
-    ul {
-        padding-left: 0;
-    }
-
     .card {
+        width: 250px;
 
         &__imagen {
             width: 35%;
@@ -79,11 +88,15 @@
     }
 }
 
+input[type="radio"] {
+    display: none;
+}
+
 
 /*Sistema de filtrado*/
 
-[value="seco"]:checked~.posts .post:not([data-category~="seco"]),
-[value="humedo"]:checked~.posts .post:not([data-category~="humedo"]),
-[value="especial"]:checked~.posts .post:not([data-category~="especial"]) {
+[value="seco"]:checked~.productos__cards .productos__card:not([data-category~="seco"]),
+[value="humedo"]:checked~.productos__cards .productos__card:not([data-category~="humedo"]),
+[value="especial"]:checked~.productos__cards .productos__card:not([data-category~="especial"]) {
     display: none;
 }

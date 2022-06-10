@@ -659,9 +659,17 @@ ul li:hover ul {
   font-weight: bold;
 }
 
-.productos__ul {
+.productos__contenedor {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20rem;
+}
+
+.productos__label {
   display: flex;
   flex-direction: column;
+  border: 0.5rem solid black;
+  width: 30%;
 }
 
 .productos__lista {
@@ -675,6 +683,11 @@ ul li:hover ul {
   cursor: pointer;
 }
 
+.productos__cards {
+  border: 0.5rem solid black;
+  width: 70%;
+}
+
 .productos__cantidad {
   color: gray;
 }
@@ -684,8 +697,8 @@ ul li:hover ul {
   margin-bottom: 0.8rem;
 }
 
-.productos ul {
-  padding-left: 0;
+.productos .card {
+  width: 250px;
 }
 
 .productos .card__imagen {
@@ -716,10 +729,14 @@ ul li:hover ul {
   translate: -50%;
 }
 
+input[type="radio"] {
+  display: none;
+}
+
 /*Sistema de filtrado*/
-[value="seco"]:checked ~ .posts .post:not([data-category~="seco"]),
-[value="humedo"]:checked ~ .posts .post:not([data-category~="humedo"]),
-[value="especial"]:checked ~ .posts .post:not([data-category~="especial"]) {
+[value="seco"]:checked ~ .productos__cards .productos__card:not([data-category~="seco"]),
+[value="humedo"]:checked ~ .productos__cards .productos__card:not([data-category~="humedo"]),
+[value="especial"]:checked ~ .productos__cards .productos__card:not([data-category~="especial"]) {
   display: none;
 }
 
