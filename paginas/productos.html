@@ -133,7 +133,7 @@
     </header>
 
     <main>
-        <section class="productos">
+        <!-- <section class="productos">
             <div>
                 <h2 class="productos__titulo">¡Encontrá los mejores productos para tu mejor amigo!</h2>
 
@@ -147,23 +147,24 @@
                 <div class="row">
                     <div class="col-3">
                         <div class="productos__separacion">
-                            <h5 class="productos__subtitulo">Alimentos</h5>
-                            <ul class="productos__ul">
-                                <li class="productos__lista">
-                                    <a href="#" id="alimentoSeco">Alimentos secos
-                                        <span class="productos__cantidad">(30)</span></a>
-                                </li>
+                            <input type="radio" id="todos" name="categories" value="todos">
+                            <input type="radio" id="alimentoSeco" name="categories" value="alimentoSeco">
+                            <input type="radio" id="alimentoHumedo" name="categories" value="alimentoHumedo">
+                            <input type="radio" id="alimentoEspecial" name="categories" value="alimentoEspecial">
 
-                                <li class="productos__lista">
-                                    <a href="#" id="alimentoHumedo">Alimentos húmedos
-                                        <span class="productos__cantidad">(6)</span></a>
-                                </li>
-
-                                <li class="productos__lista">
-                                    <a href="#" id="alimentoEspecial">Alimentos para necesidades especiales
-                                        <span class="productos__cantidad">(6)</span></a>
-                                </li>
-                            </ul>
+                            <div class="productos__ul">
+                                <label for="todos">Todos</label>
+                                <h5 class="productos__subtitulo">Alimentos</h5>
+                                <label for="alimentoSeco" class="productos__lista">Alimentos secos
+                                    <span class="productos__cantidad">(30)</span>
+                                </label>
+                                <label for="alimentoHumedo" class="productos__lista">Alimentos húmedos
+                                    <span class="productos__cantidad">(6)</span>
+                                </label>
+                                <label for="alimentoEspecial" class="productos__lista">Alimentos para necesidades especiales
+                                    <span class="productos__cantidad">(6)</span>
+                                </label>
+                            </div>
                         </div>
 
                         <div class="productos__separacion">
@@ -272,9 +273,9 @@
                         </div>
                     </div>
 
-                    <div class="col-9" id="imagenes">
+                    <div class="col-9 todosProductos">
                         <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <div class="col alimentoSeco">
+                            <div class="col cadaProducto" data-category="alimentoSeco">
                                 <div class="card h-100">
                                     <img src="../imagenes/Agility/agilityPerro.png" class="card__imagen" alt="agility">
                                     <div class="card-body">
@@ -287,7 +288,7 @@
                                 </div>
                             </div>
 
-                            <div class="col alimentoSeco">
+                            <div class="col" data-category="alimentoSeco">
                                 <div class="card h-100">
                                     <img src="../imagenes/Eukanuba/eukanubaPuppy.png" class="card__imagen"
                                         alt="eukanuba">
@@ -300,7 +301,7 @@
                                 </div>
                             </div>
 
-                            <div class="col alimentoSeco">
+                            <div class="col">
                                 <div class="card h-100">
                                     <img src="../imagenes/MonAmi/monamiFood.png" class="card__imagen" alt="monami">
                                     <div class="card-body">
@@ -312,7 +313,7 @@
                                 </div>
                             </div>
 
-                            <div class="col alimentoSeco">
+                            <div class="col">
                                 <div class="card h-100">
                                     <img src="../imagenes/OldPrince/oldPrinceCerdo.png" class="card__imagen"
                                         alt="oldPrince">
@@ -325,7 +326,7 @@
                                 </div>
                             </div>
 
-                            <div class="col alimentoSeco">
+                            <div class="col">
                                 <div class="card h-100">
                                     <img src="../imagenes/Pedigree/pedigreeAdulto.jpg" class="card__imagen"
                                         alt="pedigree">
@@ -768,7 +769,42 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+
+        <section>
+            <div class="productos">
+
+                <input type="radio" id="todos" name="categories" value="todos">
+                <input type="radio" id="seco" name="categories" value="seco">
+                <input type="radio" id="humedo" name="categories" value="humedo">
+                <input type="radio" id="especial" name="categories" value="especial">
+
+                <div class="container-category">
+                    <label for="todos">Todos</label>
+                    <label for="seco">Seco</label>
+                    <label for="humedo">Humedo</label>
+                    <label for="especial">Especial</label>
+                </div>
+
+                <div class="posts">
+                    <div class="post" data-category="seco">
+                        <img src="../imagenes/cama-gato-1.jpg" alt="" width="100" height="100">
+                    </div>
+                    <div class="post" data-category="humedo">
+                        <img src="../imagenes/cama-gato-1.jpg" alt="" width="100" height="100">
+                    </div>
+                    <div class="post" data-category="humedo">
+                        <img src="../imagenes/cama-gato-1.jpg" alt="" width="100" height="100">
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
         </section>
+
     </main>
 
     <footer class="footer">

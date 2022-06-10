@@ -79,6 +79,11 @@
     }
 }
 
-#alimentoSeco:checked~#imagenes .alimentoHumedo {
+
+/*Sistema de filtrado*/
+
+[value="seco"]:checked~.posts .post:not([data-category~="seco"]),
+[value="humedo"]:checked~.posts .post:not([data-category~="humedo"]),
+[value="especial"]:checked~.posts .post:not([data-category~="especial"]) {
     display: none;
 }
