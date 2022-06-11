@@ -640,7 +640,8 @@ ul li:hover ul {
 }
 
 .productos {
-  padding-top: 220px;
+  padding-top: 250px;
+  padding-bottom: 120px;
   min-height: 100vh;
 }
 
@@ -657,6 +658,9 @@ ul li:hover ul {
 .productos__subtitulo {
   color: #1d1f83;
   font-weight: bold;
+  margin: 1rem 0 0.5rem 0;
+  padding-top: 1rem;
+  border-top: 0.1rem solid #c5c5c5;
 }
 
 .productos__contenedor {
@@ -668,13 +672,25 @@ ul li:hover ul {
 .productos__label {
   display: flex;
   flex-direction: column;
-  border: 0.5rem solid black;
-  width: 30%;
+  width: 25%;
+}
+
+.productos__todos {
+  color: #1d1f83;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.productos__todos:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .productos__lista {
   font-size: 14px;
-  width: fit-content;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .productos__lista:hover {
@@ -684,8 +700,11 @@ ul li:hover ul {
 }
 
 .productos__cards {
-  border: 0.5rem solid black;
-  width: 70%;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
 }
 
 .productos__cantidad {
@@ -697,26 +716,35 @@ ul li:hover ul {
   margin-bottom: 0.8rem;
 }
 
-.productos .card {
+.card {
   width: 250px;
+  height: 40vh;
+  margin: 1rem;
 }
 
-.productos .card__imagen {
-  width: 35%;
+.card__imagen {
+  width: 40%;
   height: 50%;
   margin: auto;
   padding-top: 1rem;
 }
 
-.productos .card__titulo {
+.card__imagenes {
+  width: 80%;
+  height: 50%;
+  margin: auto;
+  padding-top: 1rem;
+}
+
+.card__titulo {
   color: #666565;
 }
 
-.productos .card__texto {
+.card__texto {
   font-size: 15px;
 }
 
-.productos .card__precio {
+.card__precio {
   display: block;
   text-align: center;
   font-weight: 500;
@@ -724,7 +752,7 @@ ul li:hover ul {
   margin-bottom: 1rem;
 }
 
-.productos .card__boton {
+.card__boton {
   margin-left: 50%;
   translate: -50%;
 }
@@ -734,9 +762,34 @@ input[type="radio"] {
 }
 
 /*Sistema de filtrado*/
-[value="seco"]:checked ~ .productos__cards .productos__card:not([data-category~="seco"]),
-[value="humedo"]:checked ~ .productos__cards .productos__card:not([data-category~="humedo"]),
-[value="especial"]:checked ~ .productos__cards .productos__card:not([data-category~="especial"]) {
+[value="seco"]:checked ~ .productos__cards .card:not([data-category~="seco"]),
+[value="humedo"]:checked ~ .productos__cards .card:not([data-category~="humedo"]),
+[value="especial"]:checked ~ .productos__cards .card:not([data-category~="especial"]),
+[value="camas"]:checked ~ .productos__cards .card:not([data-category~="camas"]),
+[value="comederos"]:checked ~ .productos__cards .card:not([data-category~="comederos"]),
+[value="ropa"]:checked ~ .productos__cards .card:not([data-category~="ropa"]),
+[value="juguetes"]:checked ~ .productos__cards .card:not([data-category~="juguetes"]),
+[value="shampoo"]:checked ~ .productos__cards .card:not([data-category~="shampoo"]),
+[value="antipulgas"]:checked ~ .productos__cards .card:not([data-category~="antipulgas"]),
+[value="antiparasitarios"]:checked ~ .productos__cards .card:not([data-category~="antiparasitarios"]),
+[value="medicamentos"]:checked ~ .productos__cards .card:not([data-category~="medicamentos"]),
+[value="agility"]:checked ~ .productos__cards .card:not([data-category~="agility"]),
+[value="eukanuba"]:checked ~ .productos__cards .card:not([data-category~="eukanuba"]),
+[value="monami"]:checked ~ .productos__cards .card:not([data-category~="monami"]),
+[value="prince"]:checked ~ .productos__cards .card:not([data-category~="prince"]),
+[value="pedigree"]:checked ~ .productos__cards .card:not([data-category~="pedigree"]),
+[value="purina"]:checked ~ .productos__cards .card:not([data-category~="purina"]),
+[value="raza"]:checked ~ .productos__cards .card:not([data-category~="raza"]),
+[value="rosco"]:checked ~ .productos__cards .card:not([data-category~="rosco"]),
+[value="royal"]:checked ~ .productos__cards .card:not([data-category~="royal"]),
+[value="sanicat"]:checked ~ .productos__cards .card:not([data-category~="sanicat"]),
+[value="vitalcan"]:checked ~ .productos__cards .card:not([data-category~="vitalcan"]),
+[value="vitalcrops"]:checked ~ .productos__cards .card:not([data-category~="vitalcrops"]),
+[value="whiskas"]:checked ~ .productos__cards .card:not([data-category~="whiskas"]),
+[value="chico"]:checked ~ .productos__cards .card:not([data-category~="chico"]),
+[value="grande"]:checked ~ .productos__cards .card:not([data-category~="grande"]),
+[value="cachorro"]:checked ~ .productos__cards .card:not([data-category~="cachorro"]),
+[value="adulto"]:checked ~ .productos__cards .card:not([data-category~="adulto"]) {
   display: none;
 }
 

@@ -1,5 +1,6 @@
 .productos {
-    padding-top: 220px;
+    padding-top: 250px;
+    padding-bottom: 120px;
     min-height: 100vh;
 
     &__titulo {
@@ -15,6 +16,9 @@
     &__subtitulo {
         color: rgb(29, 31, 131);
         font-weight: bold;
+        margin: 1rem 0 0.5rem 0;
+        padding-top: 1rem;
+        border-top: 0.1rem solid rgb(197, 197, 197);
     }
 
     &__contenedor {
@@ -26,13 +30,25 @@
     &__label {
         display: flex;
         flex-direction: column;
-        border: 0.5rem solid black;
-        width: 30%;
+        width: 25%;
+    }
+
+    &__todos {
+        color: rgb(29, 31, 131);
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 0.5rem;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
     }
 
     &__lista {
         font-size: 14px;
-        width: fit-content;
+        margin-bottom: 0.5rem;
+        margin-left: 0.5rem;
 
         &:hover {
             text-decoration: underline;
@@ -42,8 +58,11 @@
     }
 
     &__cards {
-        border: 0.5rem solid black;
-        width: 70%;
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
     }
 
     &__cantidad {
@@ -54,39 +73,49 @@
         border-bottom: 0.1rem solid rgb(204, 204, 204);
         margin-bottom: 0.8rem;
     }
+}
 
-    .card {
-        width: 250px;
+.card {
+    width: 250px;
+    height: 40vh;
+    margin: 1rem;
 
-        &__imagen {
-            width: 35%;
-            height: 50%;
-            margin: auto;
-            padding-top: 1rem;
-        }
+    &__imagen {
+        width: 40%;
+        height: 50%;
+        margin: auto;
+        padding-top: 1rem;
+    }
 
-        &__titulo {
-            color: rgb(102, 101, 101);
-        }
+    &__imagenes {
+        width: 80%;
+        height: 50%;
+        margin: auto;
+        padding-top: 1rem;
+    }
 
-        &__texto {
-            font-size: 15px;
-        }
+    &__titulo {
+        color: rgb(102, 101, 101);
+    }
 
-        &__precio {
-            display: block;
-            text-align: center;
-            font-weight: 500;
-            font-size: 23px;
-            margin-bottom: 1rem;
-        }
+    &__texto {
+        font-size: 15px;
+    }
 
-        &__boton {
-            margin-left: 50%;
-            translate: -50%;
-        }
+    &__precio {
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        font-size: 23px;
+        margin-bottom: 1rem;
+    }
+
+    &__boton {
+        margin-left: 50%;
+        translate: -50%;
     }
 }
+
 
 input[type="radio"] {
     display: none;
@@ -95,8 +124,33 @@ input[type="radio"] {
 
 /*Sistema de filtrado*/
 
-[value="seco"]:checked~.productos__cards .productos__card:not([data-category~="seco"]),
-[value="humedo"]:checked~.productos__cards .productos__card:not([data-category~="humedo"]),
-[value="especial"]:checked~.productos__cards .productos__card:not([data-category~="especial"]) {
+[value="seco"]:checked~.productos__cards .card:not([data-category~="seco"]),
+[value="humedo"]:checked~.productos__cards .card:not([data-category~="humedo"]),
+[value="especial"]:checked~.productos__cards .card:not([data-category~="especial"]),
+[value="camas"]:checked~.productos__cards .card:not([data-category~="camas"]),
+[value="comederos"]:checked~.productos__cards .card:not([data-category~="comederos"]),
+[value="ropa"]:checked~.productos__cards .card:not([data-category~="ropa"]),
+[value="juguetes"]:checked~.productos__cards .card:not([data-category~="juguetes"]),
+[value="shampoo"]:checked~.productos__cards .card:not([data-category~="shampoo"]),
+[value="antipulgas"]:checked~.productos__cards .card:not([data-category~="antipulgas"]),
+[value="antiparasitarios"]:checked~.productos__cards .card:not([data-category~="antiparasitarios"]),
+[value="medicamentos"]:checked~.productos__cards .card:not([data-category~="medicamentos"]),
+[value="agility"]:checked~.productos__cards .card:not([data-category~="agility"]),
+[value="eukanuba"]:checked~.productos__cards .card:not([data-category~="eukanuba"]),
+[value="monami"]:checked~.productos__cards .card:not([data-category~="monami"]),
+[value="prince"]:checked~.productos__cards .card:not([data-category~="prince"]),
+[value="pedigree"]:checked~.productos__cards .card:not([data-category~="pedigree"]),
+[value="purina"]:checked~.productos__cards .card:not([data-category~="purina"]),
+[value="raza"]:checked~.productos__cards .card:not([data-category~="raza"]),
+[value="rosco"]:checked~.productos__cards .card:not([data-category~="rosco"]),
+[value="royal"]:checked~.productos__cards .card:not([data-category~="royal"]),
+[value="sanicat"]:checked~.productos__cards .card:not([data-category~="sanicat"]),
+[value="vitalcan"]:checked~.productos__cards .card:not([data-category~="vitalcan"]),
+[value="vitalcrops"]:checked~.productos__cards .card:not([data-category~="vitalcrops"]),
+[value="whiskas"]:checked~.productos__cards .card:not([data-category~="whiskas"]),
+[value="chico"]:checked~.productos__cards .card:not([data-category~="chico"]),
+[value="grande"]:checked~.productos__cards .card:not([data-category~="grande"]),
+[value="cachorro"]:checked~.productos__cards .card:not([data-category~="cachorro"]),
+[value="adulto"]:checked~.productos__cards .card:not([data-category~="adulto"]) {
     display: none;
 }
