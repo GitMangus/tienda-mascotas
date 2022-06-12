@@ -3,9 +3,8 @@
 }
 
 .flex {
-    padding: 1rem;
-    min-height: 100px;
-    width: 100%;
+    min-height: 30vh;
+    margin: 3rem 0;
 }
 
 .flex2 {
@@ -14,24 +13,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-.servicios {
-    width: 50%;
-    min-height: 400px;
-    padding: 1rem;
-    text-align: center;
-    line-height: 1.6;
-
-    &__titulo {
-        background-color: rgb(240, 240, 240);
-        font-size: 25px;
-        font-weight: bold;
-    }
-
-    &__separacion {
-        margin: 1rem;
-    }
 }
 
 .titulos {
@@ -45,15 +26,17 @@
     padding: 1rem;
 
     &__imagen {
-        width: 200px;
-        height: 150px;
+        width: 150px;
+        height: 110px;
     }
 }
 
 .juguetes {
     width: 100%;
     min-height: 30vh;
-    padding: 1rem;
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: center;
 
     &__imagen {
         width: 100%;
@@ -72,11 +55,18 @@
     padding-left: 1.6rem;
 }
 
+.productos__enlace{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 3rem;
+}
+
 /*Extend Gatos-Perros*/
 
 .contenedor {
-    width: 340px;
-    height: 400px;
+    width: 300px;
+    min-height: 20vh;
     padding: 1rem;
     margin: 3rem 1rem;
     border: 0.2rem solid rgb(207, 205, 205);
@@ -88,7 +78,3 @@
     }
 }
 
-.contenedor--1 {
-    @extend .contenedor;
-    height: 470px;
-}

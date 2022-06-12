@@ -9,7 +9,7 @@
         content="Encontrá en PetLand las mejores ofertas en productos para mascotas. Comprá online y recibí el pedido en tu casa.">
     <meta name="keywords"
         content="mascotas, perros, gatos, veterinaria, peluquería, deivery, promociones, juguetes, camas, alimento, sucursales">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,125 +30,120 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 col-sm-3 col-md-3 d-flex align-items-center">
-                        <a href="index.html">
-                            <img class="header__logo" src="./imagenes/petland-logo.png" alt="logotipo petland"
-                                width="200" height="150">
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-3 d-flex align-items-center">
+                    <a href="index.html">
+                        <img class="header__logo" src="./imagenes/petland-logo.png" alt="logotipo petland" width="200"
+                            height="150">
+                    </a>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 input-group">
+                    <input type="text" class="form-control" placeholder="Buscar productos"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="col-2 col-sm-1 col-md-3 d-flex align-items-center justify-content-end">
+                    <h3 class="header__cuenta">
+                        <a href="paginas/cuenta.html">Ingresar / Crear cuenta</a>
+                    </h3>
+                    <a class="header__user" href="paginas/cuenta.html">
+                        <i class="fa-solid fa-user-large"></i>
+                    </a>
+                </div>
+                <div class="col-2 col-sm-3 col-md-2 d-flex align-items-center justify-content-end">
+                    <div class="header__compra">
+                        <button type="button" class="btn position-relative">
+                            <i class="fa-solid fa-cart-shopping header__carrito"></i>
+                            <span
+                                class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger">
+                                0
+                            </span>
+                        </button>
+                        <span class="header__precio">$ 0,00</span>
+                    </div>
+                </div>
+                <div class="col-2 col-sm-4 d-flex align-items-center justify-content-end">
+                    <div>
+                        <a href="#menu" class="header__open">
+                            <i class="fa-solid fa-bars"></i>
                         </a>
-                    </div>
-                    <div class="col-3 col-sm-3 col-md-3 input-group">
-                        <input type="text" class="form-control" placeholder="Buscar productos"
-                            aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
-                                class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                    <div class="col-2 col-sm-1 col-md-3 d-flex align-items-center justify-content-end">
-                        <h3 class="header__cuenta">
-                            <a href="paginas/cuenta.html">Ingresar / Crear cuenta</a>
-                        </h3>
-                        <a class="header__user" href="paginas/cuenta.html">
-                            <i class="fa-solid fa-user-large"></i>
-                        </a>
-                    </div>
-                    <div class="col-2 col-sm-3 col-md-2 d-flex align-items-center justify-content-end">
-                        <div class="header__compra">
-                            <button type="button" class="btn position-relative">
-                                <i class="fa-solid fa-cart-shopping header__carrito"></i>
-                                <span
-                                    class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger">
-                                    0
-                                </span>
-                            </button>
-                            <span class="header__precio">$ 0,00</span>
-                        </div>
-                    </div>
-                    <div class="col-2 col-sm-4 d-flex align-items-center justify-content-end">
-                        <div>
-                            <a href="#menu" class="header__open">
-                                <i class="fa-solid fa-bars"></i>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-8 input-group-2">
-                        <input type="text" class="form-control" placeholder="Buscar productos"
-                            aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
-                                class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <nav class="nav" id="menu">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12">
-                            <ul class="nav__lista">
-                                <li><a class="nav__item" href="paginas/perros.html">Perros <i
-                                            class="fa-solid fa-angle-down nav__icono"></i></a>
-                                    <ul>
-                                        <li><a href="./paginas/perros.html">Alimento balanceado</a></li>
-                                        <li><a href="./paginas/perros.html">Juguetes</a></li>
-                                        <li><a href="./paginas/perros.html">Camitas</a></li>
-                                        <li><a href="./paginas/perros.html">Peluquería</a></li>
-                                        <li><a href="./paginas/perros.html">Veterinaria</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="nav__item" href="paginas/gatos.html">Gatos <i
-                                            class="fa-solid fa-angle-down nav__icono"></i></a>
-                                    <ul>
-                                        <li><a href="./paginas/gatos.html">Alimento balanceado</a></li>
-                                        <li><a href="./paginas/gatos.html">Juguetes</a></li>
-                                        <li><a href="./paginas/gatos.html">Camitas</a></li>
-                                        <li><a href="./paginas/gatos.html">Peluquería</a></li>
-                                        <li><a href="./paginas/gatos.html">Veterinaria</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="nav__item" href="paginas/ayuda.html">Ayuda <i
-                                            class="fa-solid fa-angle-down nav__icono"></i></a>
-                                    <ul>
-                                        <li><a href="./paginas/ayuda.html">Sobre PetLand</a></li>
-                                        <li><a href="./paginas/ayuda.html">Preguntas frecuentes</a></li>
-                                        <li><a href="./paginas/ayuda.html">Legales</a></li>
-                                        <li><a href="./paginas/ayuda.html">Contacto</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="nav__item" href="paginas/sucursales.html">Sucursales <i
-                                            class="fa-solid fa-location-dot nav__location"></i></a>
-                                </li>
-                                <li>
-                                    <a class="nav__item nav__item--close" href="#"><i class="fa-solid fa-xmark"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
         </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-8 input-group-2">
+                    <input type="text" class="form-control" placeholder="Buscar productos"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav" id="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12">
+                        <ul class="nav__lista">
+                            <li><a class="nav__item" href="paginas/perros.html">Perros <i
+                                        class="fa-solid fa-angle-down nav__icono"></i></a>
+                                <ul>
+                                    <li><a href="./paginas/perros.html">Alimento balanceado</a></li>
+                                    <li><a href="./paginas/perros.html">Juguetes</a></li>
+                                    <li><a href="./paginas/perros.html">Camitas</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav__item" href="paginas/gatos.html">Gatos <i
+                                        class="fa-solid fa-angle-down nav__icono"></i></a>
+                                <ul>
+                                    <li><a href="./paginas/gatos.html">Alimento balanceado</a></li>
+                                    <li><a href="./paginas/gatos.html">Juguetes</a></li>
+                                    <li><a href="./paginas/gatos.html">Camitas</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav__item" href="paginas/ayuda.html">Ayuda <i
+                                        class="fa-solid fa-angle-down nav__icono"></i></a>
+                                <ul>
+                                    <li><a href="./paginas/ayuda.html">Sobre PetLand</a></li>
+                                    <li><a href="./paginas/ayuda.html">Preguntas frecuentes</a></li>
+                                    <li><a href="./paginas/ayuda.html">Legales</a></li>
+                                    <li><a href="./paginas/contacto.html">Contacto</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav__item" href="paginas/sucursales.html">Sucursales <i
+                                        class="fa-solid fa-location-dot nav__location"></i></a>
+                            </li>
+                            <li>
+                                <a class="nav__item nav__item--close" href="#"><i class="fa-solid fa-xmark"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
         <section>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./imagenes/bannerUno.png" class="d-block w-100 banner" alt="banner-un">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imagenes/bannerDos.png" class="d-block w-100 banner" alt="banner-dos">
-                  </div>
+                    <div class="carousel-item active">
+                        <img src="./imagenes/bannerUno.png" class="d-block w-100 banner" alt="banner-un">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/bannerDos.png" class="d-block w-100 banner" alt="banner-dos">
+                    </div>
                 </div>
-              </div>
+            </div>
         </section>
-        
+
         <section class="promociones">
             <div class="container">
                 <div class="row">
@@ -160,41 +155,43 @@
                         </div>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
+                        <div class="modal fade promociones__modal" id="exampleModal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="exampleModalLabel">Medios de pago</h4>
+                                        <h5 class="modal-title" id="exampleModalLabel">Medios de pago</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <h5>Mercado Pago</h5>
+                                        <h6 class="promociones__subtitulo">Mercado Pago</h6>
 
                                         <p>Elegí esta opción para pagar con tarjeta de crédito o débito y acceder a
                                             las
-                                            promociones de PetLand. Los descuentos bancarios no serán aplicados.</p>
+                                            promociones de PetLand. Los descuentos bancarios no serán aplicados.
+                                        </p>
 
-                                        <h5>Promociones bancarias</h5>
+                                        <h6 class="promociones__subtitulo">Promociones bancarias</h6>
 
                                         <p>Elegí esta opción para pagar con tarjeta de crédito y acceder a los
                                             descuentos
                                             bancarios. El reintegro se verá reflejado en tu resumen de tarjeta. Las
-                                            promociones generales de PetLand no serán aplicadas.</p>
+                                            promociones generales de PetLand no serán aplicadas.
+                                        </p>
+
+                                        <h6 class="promociones__subtitulo">Promociones Exclusivas PetLand</h6>
+
+                                        <p>Lunes y miércoles 20%OFF con las siguientes tarjetas:
+
+                                        </p>
                                         <i class="fa-brands fa-cc-visa"></i>
                                         <i class="fa-brands fa-cc-mastercard"></i>
                                         <i class="fa-brands fa-cc-amex"></i>
-
-                                        <h5>Promociones Exclusivas PetLand</h5>
-
-                                        <p>Lunes y miércoles 20%OFF.</p>
-
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                            data-bs-dismiss="modal">Cerrar</button>
                                     </div>
                                 </div>
                             </div>
@@ -209,12 +206,12 @@
                         </div>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
+                        <div class="modal fade promociones__modal" id="exampleModal1" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="exampleModalLabel">Pago en efectivo</h4>
+                                        <h5 class="modal-title" id="exampleModalLabel">Pago en efectivo</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
@@ -226,13 +223,13 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                            data-bs-dismiss="modal">Cerrar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-3 col-md-3 promociones__grupo">
                         <a href="#opiniones">
                             <div class="btn">
@@ -241,6 +238,7 @@
                             </div>
                         </a>
                     </div>
+
                     <div class="col-3 col-md-3 promociones__grupo">
                         <!-- Button trigger modal -->
                         <div class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
@@ -249,69 +247,61 @@
                         </div>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
+                        <div class="modal fade promociones__modal" id="exampleModal2" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="exampleModalLabel">Formas de Entrega</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                                        <h5 class="modal-title" id="exampleModalLabel">Formas de Entrega</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <div>
-                                            <p>
-                                                Ahorrá tiempo y dinero haciendo tu compra en PetLand. Pedí desde la
-                                                comodidad de tu casa y elegí la forma de entrega que más te convenga
-                                                para
-                                                recibir los productos para tu mascota.
-                                            </p>
-                                            <p>
-                                                ¿Preferís quedarte en casa? Te enviamos tu pedido online a cualquier
-                                                parte
-                                                del país de manera fácil y rápida. Si vivís en CABA o GBA tenes envío
-                                                GRATIS
-                                                en compras superiores a $3.500. Si tenés ganas de salir, elegí tu
-                                                entrega
-                                                para retirar sin cargo en una de nuestras 10 sucursales.
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <i class="fa-solid fa-truck-fast"></i>
-                                            <h5>Envío Express</h5>
-                                            <p>
-                                                <strong>CABA y GBA:</strong> Envíos de Lunes a Sábado en 3 franjas
-                                                horarias.
-                                                Comprá de Lunes
-                                                a Viernes antes de las 13 hs y recibilo en el día.
-                                                <strong>Envío GRATIS para compras superiores a $3.500</strong>
-                                            </p>
+                                        <p>
+                                            Ahorrá tiempo y dinero haciendo tu compra en PetLand. Pedí desde la
+                                            comodidad de tu casa y elegí la forma de entrega que más te convenga
+                                            para recibir los productos para tu mascota. Si vivís en CABA o GBA tenes
+                                            envío GRATIS en compras superiores a $3.500.
+                                        </p>
+                                        <div class="promociones__div">
+                                            <i class="fa-solid fa-truck-fast promociones__iconos"></i>
+                                            <h6 class="promociones__subtitulo promociones__iconos">Envío Express</h6>
                                         </div>
 
-                                        <div>
-                                            <i class="fa-solid fa-truck"></i>
-                                            <h5>Envío 24hs</h5>
-                                            <p>
-                                                <strong>La Plata</strong>, Envíos de Lunes a Sábado. Comprá de Lunes a
-                                                Viernes antes de las
-                                                12 hs y recibilo al día siguiente.
-                                                <strong>Envío GRATIS para compras superiores a $3.500</strong>
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <i class="fa-solid fa-map-location-dot"></i>
-                                            <h5>Envíos al interior</h5>
-                                            <p>
-                                                Llegamos a todos los puntos del país. En el último paso de la compra vas
-                                                a poder ver el costo de envío según el código postal.
-                                            </p>
+                                        <p>
+                                            <strong>CABA y GBA:</strong> Envíos de Lunes a Sábado en 3 franjas
+                                            horarias.
+                                            Comprá de Lunes
+                                            a Viernes antes de las 13 hs y recibilo en el día.
+                                            <strong>Envío GRATIS para compras superiores a $3.500</strong>
+                                        </p>
+
+                                        <div class="promociones__div">
+                                            <i class="fa-solid fa-truck promociones__iconos"></i>
+                                            <h6 class="promociones__subtitulo promociones__iconos">Envío 24hs</h6>
                                         </div>
 
+                                        <p>
+                                            <strong>La Plata</strong>, Envíos de Lunes a Sábado. Comprá de Lunes a
+                                            Viernes antes de las
+                                            12 hs y recibilo al día siguiente.
+                                            <strong>Envío GRATIS para compras superiores a $3.500</strong>
+                                        </p>
+
+                                        <div class="promociones__div">
+                                            <i class="fa-solid fa-map-location-dot promociones__iconos"></i>
+                                            <h6 class="promociones__subtitulo promociones__iconos">Envíos al interior
+                                            </h6>
+                                        </div>
+
+                                        <p>
+                                            Llegamos a todos los puntos del país. En el último paso de la compra vas
+                                            a poder ver el costo de envío según el código postal.
+                                        </p>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                            data-bs-dismiss="modal">Cerrar</button>
                                     </div>
                                 </div>
                             </div>
@@ -326,8 +316,8 @@
             <div class="alineado">
                 <i class="fa-solid fa-fire alineado__hijo"></i>
                 <h2 class="alineado__hijo">Más vendidos</h2>
-                <h2 class="alineado__hijo"><a href="./paginas/gatos.html">Gatos</a></h2>
-                <h2 class="alineado__hijo"><a href="./paginas/perros.html">Perros</a></h2>
+                <h2 class="alineado__hijo alineado__enlace"><a href="./paginas/gatos.html">Gatos</a></h2>
+                <h2 class="alineado__hijo alineado__enlace"><a href="./paginas/perros.html">Perros</a></h2>
                 <h2 class="alineado__hijo">Hasta 70% OFF</h2>
             </div>
 
@@ -335,33 +325,33 @@
                 <div class="row">
                     <div class="col-6 col-md-3 flex__contenedor">
                         <img class="flex__imagen" src="./imagenes/dog-pro.jpg" alt="dog pro">
-                        <p class="flex__texto">Dog Pro</p>
+                        <p class="flex__subtitulo">DOG PRO</p>
                         <span class="flex__precio">$8.000</span>
-                        <button class="flex__boton">Añadir al carrito</button>
+                        <button class="flex__boton">Comprar</button>
                     </div>
                     <div class="col-6 col-md-3 flex__contenedor">
                         <img class="flex__imagen" src="./imagenes/pedigree.jpg" alt="pedigree">
-                        <p class="flex__texto">Pedigree</p>
+                        <p class="flex__subtitulo">PEDIGREE</p>
                         <span class="flex__precio">$6.600</span>
-                        <button class="flex__boton">Añadir al carrito</button>
+                        <button class="flex__boton">Comprar</button>
                     </div>
                     <div class="col-6 col-md-3 flex__contenedor">
                         <img class="flex__imagen" src="./imagenes/royal-canin.png" alt="royal canin">
-                        <p class="flex__texto">Royal Canin</p>
+                        <p class="flex__subtitulo">ROYAL CANIN</p>
                         <span class="flex__precio">$4.800</span>
-                        <button class="flex__boton">Añadir al carrito</button>
+                        <button class="flex__boton">Comprar</button>
                     </div>
                     <div class="col-6 col-md-3 flex__contenedor">
                         <img class="flex__imagen" src="./imagenes/excellent.webp" alt="excellent">
-                        <p class="flex__texto">Excellent</p>
+                        <p class="flex__subtitulo">EXCELLENT</p>
                         <span class="flex__precio">$10.500</span>
-                        <button class="flex__boton">Añadir al carrito</button>
+                        <button class="flex__boton">Comprar</button>
                     </div>
                     <div class="col-6 col-md-3 flex__contenedor">
                         <img class="flex__imagen--1" src="./imagenes/royal-canin-fit.jpg" alt="royal canin fit">
-                        <p class="flex__texto">Royal Canin Fit</p>
+                        <p class="flex__subtitulo">ROYAL CANIN FIT</p>
                         <span class="flex__precio">$9.000</span>
-                        <button class="flex__boton">Añadir al carrito</button>
+                        <button class="flex__boton">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -407,7 +397,7 @@
                     </div>
                     <div class="col-12 col-sm-3 col-md-6 col-xl-7">
                         <input class="form__input" type="email" id="correo" name="correo" placeholder="Email">
-                        <button class="form__button">Recibir ofertas</button>
+                        <button class="form__button btn-secondary">Recibir ofertas</button>
                     </div>
                 </div>
             </div>
@@ -582,6 +572,7 @@
             </div>
         </div>
     </footer>
+
     <div class="whatsapp">
         <a href="https://wa.me/5491168026324" target="_blank"><img class="whatsapp__imagen"
                 src="./imagenes/whatsapp.png" alt="whatsapp"></a>

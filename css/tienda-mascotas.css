@@ -24,6 +24,11 @@ a {
   color: #2c2c2c;
 }
 
+a:hover {
+  color: #1b4f9f;
+  text-decoration: underline;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -168,6 +173,24 @@ ul li:hover ul {
   text-align: center;
 }
 
+.promociones__modal {
+  text-align: left;
+}
+
+.promociones__subtitulo {
+  font-weight: bold;
+  color: #1d1f83;
+}
+
+.promociones__iconos {
+  color: #1d1f83;
+  display: inline;
+}
+
+.promociones__div {
+  margin-bottom: 1rem;
+}
+
 .alineado {
   background-color: #e3eef0;
 }
@@ -179,6 +202,10 @@ ul li:hover ul {
   font-weight: bold;
 }
 
+.alineado__enlace {
+  text-decoration: underline;
+}
+
 /*Mixin Index*/
 .flex {
   display: flex;
@@ -187,6 +214,7 @@ ul li:hover ul {
   align-items: center;
   width: 100%;
   min-height: 60vh;
+  margin: 3rem 0;
 }
 
 .flex__contenedor {
@@ -223,9 +251,14 @@ ul li:hover ul {
   margin: auto;
 }
 
+.flex__subtitulo {
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+
 .flex__texto {
   text-align: center;
-  display: block;
   margin: 1rem 0 1rem 0;
 }
 
@@ -240,14 +273,15 @@ ul li:hover ul {
 .flex__boton {
   display: block;
   margin: auto;
-  border-radius: 5px;
+  border-radius: 4px;
+  border: none;
   padding: 0.3rem;
-  background-color: #a0a8a7;
+  background-color: #0f9751;
   color: white;
 }
 
 .flex__boton:hover {
-  background-color: #1a1414;
+  background-color: #13a85b;
 }
 
 .compra {
@@ -299,19 +333,20 @@ ul li:hover ul {
 }
 
 .form__button {
-  border-radius: 5px;
+  border-radius: 4px;
+  border: none;
   padding: 0.3rem;
-  background-color: #a0a8a7;
   color: white;
 }
 
 .form__button:hover {
-  background-color: #1a1414;
+  background-color: #686868;
 }
 
 .opiniones {
   width: 100%;
   min-height: 60vh;
+  padding: 3rem 0;
 }
 
 .opiniones__titulo {
@@ -443,14 +478,23 @@ ul li:hover ul {
 }
 
 .sucursales__subtitulo {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 1rem;
 }
 
 .sucursales__dire {
   font-size: 16px;
   font-weight: 700;
   margin: 1rem 0;
+}
+
+.sucursales__boton {
+  border: #fcc757 solid 0.5rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  background-color: white;
+  width: 15rem;
+  margin-bottom: 1rem;
 }
 
 .ayuda {
@@ -551,9 +595,8 @@ ul li:hover ul {
 }
 
 .flex {
-  padding: 1rem;
-  min-height: 100px;
-  width: 100%;
+  min-height: 30vh;
+  margin: 3rem 0;
 }
 
 .flex2 {
@@ -562,24 +605,6 @@ ul li:hover ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.servicios {
-  width: 50%;
-  min-height: 400px;
-  padding: 1rem;
-  text-align: center;
-  line-height: 1.6;
-}
-
-.servicios__titulo {
-  background-color: #f0f0f0;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.servicios__separacion {
-  margin: 1rem;
 }
 
 .titulos {
@@ -594,14 +619,16 @@ ul li:hover ul {
 }
 
 .marca__imagen {
-  width: 200px;
-  height: 150px;
+  width: 150px;
+  height: 110px;
 }
 
 .juguetes {
   width: 100%;
   min-height: 30vh;
-  padding: 1rem;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .juguetes__imagen {
@@ -620,10 +647,17 @@ ul li:hover ul {
   padding-left: 1.6rem;
 }
 
+.productos__enlace {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 3rem;
+}
+
 /*Extend Gatos-Perros*/
-.contenedor, .contenedor--1 {
-  width: 340px;
-  height: 400px;
+.contenedor {
+  width: 300px;
+  min-height: 20vh;
   padding: 1rem;
   margin: 3rem 1rem;
   border: 0.2rem solid #cfcdcd;
@@ -631,12 +665,8 @@ ul li:hover ul {
   transition: all 0.5s;
 }
 
-.contenedor:hover, .contenedor--1:hover {
+.contenedor:hover {
   transform: scale(1.1, 1.1);
-}
-
-.contenedor--1 {
-  height: 470px;
 }
 
 .productos {
@@ -701,6 +731,7 @@ ul li:hover ul {
 
 .productos__cards {
   width: 75%;
+  padding: 0 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -757,6 +788,40 @@ ul li:hover ul {
   translate: -50%;
 }
 
+.servicios {
+  width: 100%;
+  min-height: 100vh;
+  border: none;
+  padding: 0 3rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.servicios__titulo {
+  background-color: #f0f0f0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.servicios__separacion {
+  margin: 3rem 0;
+}
+
+.servicios__imagen {
+  width: 300px;
+  height: 200px;
+  display: inline;
+  margin: 1rem;
+}
+
+.servicios__acordeon {
+  margin: 5rem;
+}
+
+.accordion-item {
+  background-color: #fcc757;
+}
+
 input[type="radio"] {
   display: none;
 }
@@ -789,7 +854,9 @@ input[type="radio"] {
 [value="chico"]:checked ~ .productos__cards .card:not([data-category~="chico"]),
 [value="grande"]:checked ~ .productos__cards .card:not([data-category~="grande"]),
 [value="cachorro"]:checked ~ .productos__cards .card:not([data-category~="cachorro"]),
-[value="adulto"]:checked ~ .productos__cards .card:not([data-category~="adulto"]) {
+[value="adulto"]:checked ~ .productos__cards .card:not([data-category~="adulto"]),
+[value="peluqueria"]:checked ~ .productos__cards .card:not([data-category~="peluqueria"]),
+[value="veterinaria"]:checked ~ .productos__cards .card:not([data-category~="veterinaria"]) {
   display: none;
 }
 
@@ -803,8 +870,8 @@ input[type="radio"] {
 }
 
 .contacto__imagen {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   border-radius: 100px;
   border: 0.5rem solid black;
 }
@@ -825,6 +892,11 @@ input[type="radio"] {
 
 .contacto__form {
   margin: 2rem 0;
+}
+
+.contacto__boton {
+  background-color: #686868;
+  color: white;
 }
 
 .contacto__descripcion {
@@ -1031,7 +1103,7 @@ input[type="radio"] {
     width: 150px;
     height: 100px;
   }
-  .contenedor, .contenedor--1 {
+  .contenedor {
     width: 320px;
     height: 400px;
   }
@@ -1441,7 +1513,7 @@ input[type="radio"] {
     width: 100px;
     height: 80px;
   }
-  .contenedor, .contenedor--1 {
+  .contenedor {
     width: 220px;
     height: 260px;
     padding: 1rem;

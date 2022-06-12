@@ -17,13 +17,30 @@
         font-size: 40px;
         display: block;
         text-align: center;
-
     }
 
     &__texto {
         display: block;
         margin-top: 1rem;
         text-align: center;
+    }
+
+    &__modal {
+        text-align: left;
+    }
+
+    &__subtitulo {
+        font-weight: bold;
+        color: rgb(29, 31, 131);
+    }
+
+    &__iconos {
+        color: rgb(29, 31, 131);
+        display: inline;
+    }
+
+    &__div {
+        margin-bottom: 1rem;
     }
 }
 
@@ -35,6 +52,10 @@
         margin-left: 50px;
         font-size: 25px;
         font-weight: bold;
+    }
+
+    &__enlace {
+        text-decoration: underline;
     }
 }
 
@@ -51,6 +72,7 @@
     @include generarFlex (row, space-around, center);
     width: 100%;
     min-height: 60vh;
+    margin: 3rem 0;
 
     &__contenedor {
         border: 0.2rem solid rgb(207, 205, 205);
@@ -86,9 +108,14 @@
         }
     }
 
+    &__subtitulo{
+        font-weight: bold;
+        text-align: center;
+        margin: 1rem 0 1rem 0;
+    }
+
     &__texto {
         text-align: center;
-        display: block;
         margin: 1rem 0 1rem 0;
     }
 
@@ -103,13 +130,14 @@
     &__boton {
         display: block;
         margin: auto;
-        border-radius: 5px;
+        border-radius: 4px;
+        border: none;
         padding: 0.3rem;
-        background-color: #a0a8a7;
+        background-color: #0f9751;
         color: white;
 
         &:hover {
-            background-color: rgb(26, 20, 20);
+            background-color: #13a85b;
         }
     }
 }
@@ -162,13 +190,13 @@
     }
 
     &__button {
-        border-radius: 5px;
+        border-radius: 4px;
+        border: none;
         padding: 0.3rem;
-        background-color: #a0a8a7;
         color: white;
 
         &:hover {
-            background-color: rgb(26, 20, 20);
+            background-color: rgb(104, 104, 104);
         }
     }
 }
@@ -176,6 +204,7 @@
 .opiniones {
     width: 100%;
     min-height: 60vh;
+    padding: 3rem 0;
 
     &__titulo {
         text-align: center;

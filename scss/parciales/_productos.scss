@@ -59,6 +59,7 @@
 
     &__cards {
         width: 75%;
+        padding: 0 3rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -116,6 +117,39 @@
     }
 }
 
+.servicios {
+    width: 100%;
+    min-height: 100vh;
+    border: none;
+    padding: 0 3rem;
+    text-align: center;
+    line-height: 1.6;
+
+    &__titulo {
+        background-color: rgb(240, 240, 240);
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    &__separacion {
+        margin: 3rem 0;
+    }
+
+    &__imagen {
+        width: 300px;
+        height: 200px;
+        display: inline;
+        margin: 1rem;
+    }
+
+    &__acordeon{
+        margin: 5rem;
+    }
+}
+
+.accordion-item{
+    background-color: $color-principal;
+}
 
 input[type="radio"] {
     display: none;
@@ -151,6 +185,8 @@ input[type="radio"] {
 [value="chico"]:checked~.productos__cards .card:not([data-category~="chico"]),
 [value="grande"]:checked~.productos__cards .card:not([data-category~="grande"]),
 [value="cachorro"]:checked~.productos__cards .card:not([data-category~="cachorro"]),
-[value="adulto"]:checked~.productos__cards .card:not([data-category~="adulto"]) {
+[value="adulto"]:checked~.productos__cards .card:not([data-category~="adulto"]),
+[value="peluqueria"]:checked~.productos__cards .card:not([data-category~="peluqueria"]),
+[value="veterinaria"]:checked~.productos__cards .card:not([data-category~="veterinaria"]) {
     display: none;
 }

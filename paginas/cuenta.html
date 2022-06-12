@@ -27,110 +27,106 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 col-sm-3 col-md-3 d-flex align-items-center">
-                        <a href="../index.html">
-                            <img class="header__logo" src="../imagenes/petland-logo.png" alt="logotipo petland"
-                                width="200" height="150">
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-3 d-flex align-items-center">
+                    <a href="../index.html">
+                        <img class="header__logo" src="../imagenes/petland-logo.png" alt="logotipo petland" width="200"
+                            height="150">
+                    </a>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 input-group">
+                    <input type="text" class="form-control" placeholder="Buscar productos"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="col-2 col-sm-1 col-md-3 d-flex align-items-center justify-content-end">
+                    <h3 class="header__cuenta">
+                        <a href="cuenta.html">Ingresar / Crear cuenta</a>
+                    </h3>
+                    <a class="header__user" href="cuenta.html">
+                        <i class="fa-solid fa-user-large"></i>
+                    </a>
+                </div>
+                <div class="col-2 col-sm-3 col-md-2 d-flex align-items-center justify-content-end">
+                    <div class="header__compra">
+                        <button type="button" class="btn position-relative">
+                            <i class="fa-solid fa-cart-shopping header__carrito"></i>
+                            <span
+                                class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger">
+                                0
+                            </span>
+                        </button>
+                        <span class="header__precio">$ 0,00</span>
+                    </div>
+                </div>
+                <div class="col-2 col-sm-4 d-flex align-items-center justify-content-end">
+                    <div>
+                        <a href="#menu" class="header__open">
+                            <i class="fa-solid fa-bars"></i>
                         </a>
-                    </div>
-                    <div class="col-3 col-sm-3 col-md-3 input-group">
-                        <input type="text" class="form-control" placeholder="Buscar productos"
-                            aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
-                                class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                    <div class="col-2 col-sm-1 col-md-3 d-flex align-items-center justify-content-end">
-                        <h3 class="header__cuenta">
-                            <a href="cuenta.html">Ingresar / Crear cuenta</a>
-                        </h3>
-                        <a class="header__user" href="cuenta.html">
-                            <i class="fa-solid fa-user-large"></i>
-                        </a>
-                    </div>
-                    <div class="col-2 col-sm-3 col-md-2 d-flex align-items-center justify-content-end">
-                        <div class="header__compra">
-                            <button type="button" class="btn position-relative">
-                                <i class="fa-solid fa-cart-shopping header__carrito"></i>
-                                <span
-                                    class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-danger">
-                                    0
-                                </span>
-                            </button>
-                            <span class="header__precio">$ 0,00</span>
-                        </div>
-                    </div>
-                    <div class="col-2 col-sm-4 d-flex align-items-center justify-content-end">
-                        <div>
-                            <a href="#menu" class="header__open">
-                                <i class="fa-solid fa-bars"></i>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-8 input-group-2">
-                        <input type="text" class="form-control" placeholder="Buscar productos"
-                            aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
-                                class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <nav class="nav" id="menu">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12">
-                            <ul class="nav__lista">
-                                <li><a class="nav__item" href="perros.html">Perros <i
-                                            class="fa-solid fa-angle-down nav__icono"></i></a>
-                                    <ul>
-                                        <li><a href="perros.html">Alimento balanceado</a></li>
-                                        <li><a href="perros.html">Juguetes</a></li>
-                                        <li><a href="perros.html">Camitas</a></li>
-                                        <li><a href="perros.html">Peluquería</a></li>
-                                        <li><a href="perros.html">Veterinaria</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="nav__item" href="gatos.html">Gatos <i
-                                            class="fa-solid fa-angle-down nav__icono"></i></a>
-                                    <ul>
-                                        <li><a href="gatos.html">Alimento balanceado</a></li>
-                                        <li><a href="gatos.html">Juguetes</a></li>
-                                        <li><a href="gatos.html">Camitas</a></li>
-                                        <li><a href="gatos.html">Peluquería</a></li>
-                                        <li><a href="gatos.html">Veterinaria</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="nav__item" href="ayuda.html">Ayuda <i
-                                            class="fa-solid fa-angle-down nav__icono"></i></a>
-                                    <ul>
-                                        <li><a href="ayuda.html">Sobre PetLand</a></li>
-                                        <li><a href="ayuda.html">Preguntas frecuentes</a></li>
-                                        <li><a href="ayuda.html">Legales</a></li>
-                                        <li><a href="ayuda.html">Contacto</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="nav__item" href="sucursales.html">Sucursales <i
-                                            class="fa-solid fa-location-dot nav__location"></i></a>
-                                </li>
-                                <li>
-                                    <a class="nav__item nav__item--close" href="#"><i class="fa-solid fa-xmark"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
         </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-8 input-group-2">
+                    <input type="text" class="form-control" placeholder="Buscar productos"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav" id="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12">
+                        <ul class="nav__lista">
+                            <li><a class="nav__item" href="perros.html">Perros <i
+                                        class="fa-solid fa-angle-down nav__icono"></i></a>
+                                <ul>
+                                    <li><a href="perros.html">Alimento balanceado</a></li>
+                                    <li><a href="perros.html">Juguetes</a></li>
+                                    <li><a href="perros.html">Camitas</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav__item" href="gatos.html">Gatos <i
+                                        class="fa-solid fa-angle-down nav__icono"></i></a>
+                                <ul>
+                                    <li><a href="gatos.html">Alimento balanceado</a></li>
+                                    <li><a href="gatos.html">Juguetes</a></li>
+                                    <li><a href="gatos.html">Camitas</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav__item" href="ayuda.html">Ayuda <i
+                                        class="fa-solid fa-angle-down nav__icono"></i></a>
+                                <ul>
+                                    <li><a href="ayuda.html">Sobre PetLand</a></li>
+                                    <li><a href="ayuda.html">Preguntas frecuentes</a></li>
+                                    <li><a href="ayuda.html">Legales</a></li>
+                                    <li><a href="contacto.html">Contacto</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav__item" href="sucursales.html">Sucursales <i
+                                        class="fa-solid fa-location-dot nav__location"></i></a>
+                            </li>
+                            <li>
+                                <a class="nav__item nav__item--close" href="#"><i class="fa-solid fa-xmark"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
+
     <main>
         <section class="cuenta">
             <form class="cuenta__formulario">
@@ -264,6 +260,7 @@
             </div>
         </div>
     </footer>
+
     <div class="whatsapp">
         <a href="https://wa.me/5491168026324" target="_blank"><img class="whatsapp__imagen"
                 src="../imagenes/whatsapp.png" alt="whatsapp"></a>
