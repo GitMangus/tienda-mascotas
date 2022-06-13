@@ -59,6 +59,7 @@
 
     &__cards {
         width: 75%;
+        min-height: 100vh;
         padding: 0 3rem;
         display: flex;
         flex-wrap: wrap;
@@ -139,11 +140,11 @@
         width: 300px;
         height: 200px;
         display: inline;
-        margin: 1rem;
+        margin: 0 1rem;
     }
 
-    &__acordeon{
-        margin: 5rem;
+    &__accordion{
+        margin: 4rem 2.5rem;
     }
 }
 
