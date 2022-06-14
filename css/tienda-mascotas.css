@@ -147,7 +147,7 @@ ul li:hover ul {
 
 .banner {
   width: 100%;
-  height: 450px;
+  min-height: 50vh;
   padding-top: 170px;
 }
 
@@ -210,11 +210,11 @@ ul li:hover ul {
 .flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
   min-height: 60vh;
-  margin: 3rem 0;
+  padding: 1rem 5rem;
 }
 
 .flex__contenedor {
