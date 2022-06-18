@@ -34,9 +34,6 @@
 .juguetes {
     width: 100%;
     min-height: 30vh;
-    padding: 2rem 5rem;
-    display: flex;
-    justify-content: center;
 
     &__imagen {
         width: 100%;
@@ -55,7 +52,7 @@
     padding-left: 1.6rem;
 }
 
-.productos__enlace{
+.productos__enlace {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
@@ -65,10 +62,10 @@
 /*Extend Gatos-Perros*/
 
 .contenedor {
-    width: 300px;
+    width: 85%;
     min-height: 20vh;
     padding: 1rem;
-    margin: 3rem 1rem;
+    margin: 3rem;
     border: 0.2rem solid rgb(207, 205, 205);
     box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
     transition: all 0.5s;
@@ -77,4 +74,3 @@
         transform: scale(1.1, 1.1);
     }
 }
-

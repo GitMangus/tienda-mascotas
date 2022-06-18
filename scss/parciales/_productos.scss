@@ -24,7 +24,7 @@
     &__contenedor {
         display: flex;
         flex-direction: row;
-        padding: 0 20rem;
+        padding: 0 10rem;
     }
 
     &__label {
@@ -79,8 +79,9 @@
 
 .card {
     width: 250px;
-    height: 40vh;
+    min-height: 40vh;
     margin: 1rem;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
 
     &__imagen {
         width: 40%;
@@ -120,8 +121,7 @@
 
 .servicios {
     width: 100%;
-    min-height: 100vh;
-    border: none;
+    min-height: 110vh;
     padding: 0 3rem;
     text-align: center;
     line-height: 1.6;
@@ -186,8 +186,6 @@ input[type="radio"] {
 [value="chico"]:checked~.productos__cards .card:not([data-category~="chico"]),
 [value="grande"]:checked~.productos__cards .card:not([data-category~="grande"]),
 [value="cachorro"]:checked~.productos__cards .card:not([data-category~="cachorro"]),
-[value="adulto"]:checked~.productos__cards .card:not([data-category~="adulto"]),
-[value="peluqueria"]:checked~.productos__cards .card:not([data-category~="peluqueria"]),
-[value="veterinaria"]:checked~.productos__cards .card:not([data-category~="veterinaria"]) {
+[value="adulto"]:checked~.productos__cards .card:not([data-category~="adulto"]) {
     display: none;
 }
