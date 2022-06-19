@@ -121,10 +121,12 @@
 
 .servicios {
     width: 100%;
-    min-height: 110vh;
-    padding: 0 3rem;
-    text-align: center;
-    line-height: 1.6;
+    min-height: 100vh;
+
+    &__pelvet {
+        text-align: center;
+        line-height: 1.6;
+    }
 
     &__titulo {
         background-color: rgb(240, 240, 240);
@@ -132,23 +134,26 @@
         font-weight: bold;
     }
 
-    &__separacion {
+    &__parrafo {
         margin: 3rem 0;
+        padding: 0 10rem;
     }
 
     &__imagen {
-        width: 300px;
-        height: 200px;
+        width: 400px;
+        height: 300px;
         display: inline;
         margin: 0 1rem;
     }
 
-    &__accordion{
-        margin: 4rem 2.5rem;
+    &__accordion {
+        
+        margin: 5rem 0;
+        padding: 0 15rem;
     }
 }
 
-.accordion-item{
+.accordion-item {
     background-color: $color-principal;
 }
 

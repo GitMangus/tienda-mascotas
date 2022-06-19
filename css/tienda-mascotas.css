@@ -796,8 +796,10 @@ ul li:hover ul {
 
 .servicios {
   width: 100%;
-  min-height: 110vh;
-  padding: 0 3rem;
+  min-height: 100vh;
+}
+
+.servicios__pelvet {
   text-align: center;
   line-height: 1.6;
 }
@@ -808,19 +810,21 @@ ul li:hover ul {
   font-weight: bold;
 }
 
-.servicios__separacion {
+.servicios__parrafo {
   margin: 3rem 0;
+  padding: 0 10rem;
 }
 
 .servicios__imagen {
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   display: inline;
   margin: 0 1rem;
 }
 
 .servicios__accordion {
-  margin: 4rem 2.5rem;
+  margin: 5rem 0;
+  padding: 0 15rem;
 }
 
 .accordion-item {
@@ -1032,9 +1036,6 @@ input[type="radio"] {
     font-size: 18px;
     font-weight: bold;
   }
-  .footer__dos {
-    display: none;
-  }
   /* Main Sucursales*/
   .sucursales {
     padding-top: 150px;
@@ -1160,6 +1161,10 @@ input[type="radio"] {
   .card__precio {
     font-size: 18px;
   }
+  .servicios__imagen {
+    width: 300px;
+    height: 200px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1208,7 +1213,7 @@ input[type="radio"] {
   }
   /*Main*/
   .banner {
-    height: 350px;
+    height: 20vh;
     padding-top: 130px;
   }
   .promociones__icono {
@@ -1231,28 +1236,17 @@ input[type="radio"] {
   }
   /* Footer */
   .footer {
-    padding: 2rem;
+    text-align: center;
   }
-  .footer__logo {
-    width: 140px;
-    height: 110px;
-  }
-  .footer__iconos {
-    font-size: 20px;
-    padding-left: 2.2rem;
+  .footer__enlace {
+    text-align: center;
   }
   .footer__titulo {
-    font-size: 16px;
-    font-weight: bold;
+    margin-top: 2rem;
   }
-  .footer__uno {
-    display: none;
-  }
-  .footer__dos {
-    display: block;
-  }
-  .footer__contacto {
-    margin-bottom: 2rem;
+  .footer__iconos {
+    text-align: center;
+    padding: 0;
   }
   /*Main Gatos y perros*/
   .padding--top {
@@ -1262,8 +1256,12 @@ input[type="radio"] {
     width: 110px;
     height: 80px;
   }
-  .servicios__imagen {
-    width: 250px;
+  /*Productos*/
+  .servicios__accordion {
+    padding: 0 5rem;
+  }
+  .servicios__parrafo {
+    padding: 0 5rem;
   }
 }
 
@@ -1343,8 +1341,7 @@ input[type="radio"] {
   }
   /* Main */
   .banner {
-    width: 100%;
-    height: 300px;
+    min-height: 220px;
     padding-top: 130px;
   }
   .promociones {
@@ -1353,6 +1350,9 @@ input[type="radio"] {
   }
   .promociones__icono {
     font-size: 20px;
+  }
+  .promociones__modal {
+    width: 300px;
   }
   .alineado {
     padding: 0.3rem;
@@ -1367,7 +1367,7 @@ input[type="radio"] {
   .flex__contenedor {
     border: 0.2rem solid #cfcdcd;
     width: 150px;
-    height: 250px;
+    height: 260px;
     padding: 0.5rem;
     margin: 1rem;
     box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
@@ -1380,7 +1380,7 @@ input[type="radio"] {
     width: 80px;
     height: 130px;
   }
-  .flexx__texto {
+  .flex__texto {
     margin: 0.5rem 0;
   }
   .flex__precio {
@@ -1424,29 +1424,17 @@ input[type="radio"] {
   }
   /* Footer */
   .footer {
-    padding: 2rem;
-    padding-bottom: 4rem;
+    text-align: center;
   }
-  .footer__logo {
-    width: 100px;
-    height: 80px;
-  }
-  .footer__iconos {
-    font-size: 16px;
-    padding-left: 1.5rem;
+  .footer__enlace {
+    text-align: center;
   }
   .footer__titulo {
-    font-size: 16px;
-    font-weight: bold;
+    margin-top: 2rem;
   }
-  .footer__uno {
-    display: none;
-  }
-  .footer__dos {
-    display: block;
-  }
-  .footer__contacto {
-    margin-bottom: 0;
+  .footer__iconos {
+    text-align: center;
+    padding: 0;
   }
   .whatsapp {
     position: fixed;
@@ -1477,6 +1465,17 @@ input[type="radio"] {
     width: 100%;
     min-height: 100px;
     margin-top: 1rem;
+  }
+  .faq {
+    padding: 2rem;
+  }
+  .faq__titulo {
+    font-size: 20px;
+    margin: 2rem;
+  }
+  .faq__accordion {
+    width: 100%;
+    margin: auto 0;
   }
   /*Main Cuenta*/
   .cuenta {
@@ -1535,9 +1534,6 @@ input[type="radio"] {
   .padding--top {
     padding-top: 8rem;
   }
-  .flex__imagen--2 {
-    height: 130px;
-  }
   .marca__imagen {
     width: 100px;
     height: 80px;
@@ -1550,12 +1546,6 @@ input[type="radio"] {
     border: 0.2rem solid #cfcdcd;
     box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
     transition: all 0.5s;
-  }
-  .contenedor--1 {
-    width: 220px;
-    min-height: 260px;
-    padding: 1rem;
-    margin: 1rem;
   }
   .juguetes {
     width: 100%;
@@ -1578,11 +1568,23 @@ input[type="radio"] {
     flex-direction: column;
     justify-content: space-around;
   }
-  .servicios {
-    width: 100%;
+  /*Productos*/
+  .servicios__titulo {
+    font-size: 15px;
+  }
+  .servicios__parrafo {
+    margin: 3rem 0;
+    padding: 0 10rem;
   }
   .servicios__imagen {
-    width: 90%;
+    width: 400px;
+    height: 300px;
+    display: inline;
+    margin: 0 1rem;
+  }
+  .servicios__accordion {
+    margin: 5rem 0;
+    padding: 0 15rem;
   }
 }
 /*# sourceMappingURL=tienda-mascotas.css.map */
