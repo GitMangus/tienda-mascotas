@@ -95,7 +95,7 @@
 
         &--1 {
             width: 170px;
-            height: 270px;
+            height: 260px;
             display: block;
             margin: auto;
         }
@@ -110,6 +110,7 @@
     }
 
     &__subtitulo{
+        font-size: 1rem;
         font-weight: bold;
         text-align: center;
         margin: 1rem 0 1rem 0;

@@ -5,11 +5,6 @@
 .flex {
     min-height: 30vh;
     margin: 3rem 0;
-}
-
-.flex2 {
-    padding: 1rem;
-    min-height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -52,20 +47,15 @@
     padding-left: 1.6rem;
 }
 
-.productos__enlace {
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    padding-bottom: 3rem;
+.seccion {
+    min-height: 50vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /*Extend Gatos-Perros*/
 
 .contenedor {
-    width: 85%;
-    min-height: 20vh;
-    padding: 1rem;
-    margin: 3rem;
     border: 0.2rem solid rgb(207, 205, 205);
     box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
     transition: all 0.5s;

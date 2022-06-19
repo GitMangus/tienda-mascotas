@@ -21,6 +21,13 @@
         border-top: 0.1rem solid rgb(197, 197, 197);
     }
 
+    &__enlace {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        padding-bottom: 3rem;
+    }
+
     &__contenedor {
         display: flex;
         flex-direction: row;
@@ -147,7 +154,7 @@
     }
 
     &__accordion {
-        
+
         margin: 5rem 0;
         padding: 0 15rem;
     }

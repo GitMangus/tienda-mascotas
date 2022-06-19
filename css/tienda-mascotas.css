@@ -238,7 +238,7 @@ ul li:hover ul {
 
 .flex__imagen--1 {
   width: 170px;
-  height: 270px;
+  height: 260px;
   display: block;
   margin: auto;
 }
@@ -252,6 +252,7 @@ ul li:hover ul {
 }
 
 .flex__subtitulo {
+  font-size: 1rem;
   font-weight: bold;
   text-align: center;
   margin: 1rem 0 1rem 0;
@@ -604,11 +605,6 @@ ul li:hover ul {
 .flex {
   min-height: 30vh;
   margin: 3rem 0;
-}
-
-.flex2 {
-  padding: 1rem;
-  min-height: 300px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -651,19 +647,14 @@ ul li:hover ul {
   padding-left: 1.6rem;
 }
 
-.productos__enlace {
-  text-align: center;
-  font-size: 22px;
-  font-weight: bold;
-  padding-bottom: 3rem;
+.seccion {
+  min-height: 50vh;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /*Extend Gatos-Perros*/
 .contenedor {
-  width: 85%;
-  min-height: 20vh;
-  padding: 1rem;
-  margin: 3rem;
   border: 0.2rem solid #cfcdcd;
   box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
   transition: all 0.5s;
@@ -695,6 +686,13 @@ ul li:hover ul {
   margin: 1rem 0 0.5rem 0;
   padding-top: 1rem;
   border-top: 0.1rem solid #c5c5c5;
+}
+
+.productos__enlace {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 3rem;
 }
 
 .productos__contenedor {
@@ -1165,6 +1163,12 @@ input[type="radio"] {
     width: 300px;
     height: 200px;
   }
+  /*Contacto*/
+  .contacto__imagen {
+    width: 300px;
+    height: 300px;
+    border-radius: 60px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1256,12 +1260,26 @@ input[type="radio"] {
     width: 110px;
     height: 80px;
   }
+  .card {
+    min-height: 350px;
+  }
+  .flex__imagen {
+    height: 190px;
+  }
+  .flex__imagen--1 {
+    height: 190px;
+  }
   /*Productos*/
   .servicios__accordion {
     padding: 0 5rem;
   }
   .servicios__parrafo {
     padding: 0 5rem;
+  }
+  /*Contacto*/
+  .contacto {
+    padding-top: 180px;
+    padding-bottom: 50px;
   }
 }
 
@@ -1438,8 +1456,8 @@ input[type="radio"] {
   }
   .whatsapp {
     position: fixed;
-    bottom: 60px;
-    right: 60px;
+    bottom: 40px;
+    right: 70px;
   }
   .whatsapp__imagen {
     width: 40px;
@@ -1547,6 +1565,12 @@ input[type="radio"] {
     box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
     transition: all 0.5s;
   }
+  .card {
+    min-height: 350px;
+  }
+  .flex__subtitulo {
+    font-size: 12px;
+  }
   .juguetes {
     width: 100%;
     min-height: 55vh;
@@ -1569,22 +1593,48 @@ input[type="radio"] {
     justify-content: space-around;
   }
   /*Productos*/
+  .productos__titulo {
+    padding: 1rem;
+  }
+  .productos__contenedor {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+  .productos__label {
+    width: 100%;
+  }
+  .productos__cards {
+    width: 100%;
+    padding: 0;
+  }
   .servicios__titulo {
     font-size: 15px;
   }
   .servicios__parrafo {
-    margin: 3rem 0;
-    padding: 0 10rem;
+    margin: 1rem 0;
+    padding: 1rem;
   }
   .servicios__imagen {
-    width: 400px;
-    height: 300px;
-    display: inline;
-    margin: 0 1rem;
+    width: 200px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
   }
   .servicios__accordion {
-    margin: 5rem 0;
-    padding: 0 15rem;
+    margin: 1rem;
+    padding: 3rem;
+  }
+  /*Contacto*/
+  .contacto {
+    padding-top: 170px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .contacto__imagen {
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
   }
 }
 /*# sourceMappingURL=tienda-mascotas.css.map */
