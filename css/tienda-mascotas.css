@@ -1422,23 +1422,22 @@ input[type="radio"] {
     display: none;
   }
   .form {
-    padding: 3px;
-    min-height: 12vh;
-  }
-  .form__input {
-    max-width: 200px;
-    margin: 0.5rem 0 0.5rem 0.1rem;
+    padding-top: 1rem;
   }
   .form__titulo {
     font-size: 16px;
   }
-  .form__checkbox {
-    padding: 0;
-    margin: 0.8rem 0 0.5rem 1rem;
-  }
   .form__contenedor {
-    padding: 0.2rem;
-    margin-left: 0.5rem;
+    margin-left: 0;
+  }
+  .form__input {
+    width: 200px;
+  }
+  .form__checkbox {
+    margin: 0.3rem;
+  }
+  .form__button {
+    margin-top: 0.5rem;
   }
   /* Footer */
   .footer {
